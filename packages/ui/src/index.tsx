@@ -1,6 +1,4 @@
 // styles
 import "./styles.css";
+export * from "./Navbar";
 
-// components
-export * from "./Button";
-export * from "./Card";
