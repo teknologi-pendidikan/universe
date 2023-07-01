@@ -1,7 +1,16 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function ArticleCard({ slug, frontmatter }) {
+type Props = {
+  slug: string
+  frontmatter: {
+    title: string
+    description: string
+    image: string
+  }
+}
+
+export default function ArticleCard({ slug, frontmatter }: Props) {
   return (
     <div className="flex flex-col space-y-2 justify-start items-start border border-black-1 rounded-lg">
       {frontmatter.image ? (
@@ -21,7 +30,9 @@ export default function ArticleCard({ slug, frontmatter }) {
             {frontmatter.title.slice(0, 80)}
           </h3>
         </Link>
-        <p className="text-sm text-gray-800 pt-2">{frontmatter.description.slice(0, 80)}</p>
+        <p className="text-sm text-gray-800 pt-2">
+          {frontmatter.description.slice(0, 80)}
+        </p>
       </div>
     </div>
   )

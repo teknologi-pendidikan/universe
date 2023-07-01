@@ -6,7 +6,11 @@
     "dev": "next dev --port 3200",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "tsc --noEmit --watch",
+    "type-check:ci": "tsc --noEmit --pretty --noEmit --strict"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

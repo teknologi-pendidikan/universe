@@ -34,7 +34,20 @@ export async function getStaticProps() {
   }
 }
 
-export default function Home({ posts }) {
+type Props = {
+  posts: {
+    slug: string
+    frontmatter: {
+      title: string
+      description: string
+      image: string
+      date: string
+      author: string
+    }
+  }[]
+}
+
+export default function Home({ posts } : Props) {
   const sortedPosts = posts.sort(
     (a, b) =>
       Number(new Date(b.frontmatter.date)) -

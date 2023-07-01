@@ -1,3 +1,4 @@
+
 import SEO from 'components/SEO'
 import StructuredData from 'components/StructuredData'
 import fs from 'fs'
@@ -22,7 +23,13 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getStaticProps({ params: { slug } }) {
+// add types for params
+
+type Params = {
+  slug: string
+}
+
+export async function getStaticProps({ params: { slug } } : { params: Params }) {
   const fileName = fs.readFileSync(`_post/${slug}.md`, 'utf-8')
   const { data: frontmatter, content } = matter(fileName)
   return {
@@ -34,7 +41,19 @@ export async function getStaticProps({ params: { slug } }) {
   }
 }
 
-export default function Artikel({ frontmatter, content, slug }) {
+type Props = {
+  frontmatter: {
+    title: string
+    description: string
+    image: string
+    date: string
+    author: string
+  }
+  content: string
+  slug: string
+}
+
+export default function Artikel({ frontmatter, content, slug }: Props) {
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'NewsArticle',
@@ -67,7 +86,7 @@ export default function Artikel({ frontmatter, content, slug }) {
         ogUrl={`https://lofi.teknologipendidikan.or.id/${slug}`}
         ogImgUrl={`https://lofi.teknologipendidikan.or.id/${frontmatter.image}`}
         ogImgAlt={frontmatter.title}
-        ogType='article'
+        ogType="article"
       />
       <StructuredData data={structuredData} />
       <article
@@ -96,7 +115,7 @@ export default function Artikel({ frontmatter, content, slug }) {
             className="h-40 md:h-96 object-cover rounded-lg"
             width={1280}
             height={720}
-            loading='eager'
+            loading="eager"
             quality={75}
           />
           <p className="text-sm text-gray-500 pt-4">{frontmatter.title}</p>

@@ -2,7 +2,14 @@ import type { AppProps } from 'next/app'
 import { GoogleAnalytics, event } from 'nextjs-google-analytics'
 import 'styles/globals.css'
 
-export function reportWebVitals({ id, name, label, value }) {
+type webVitals = {
+  id: string
+  name: string
+  label: string
+  value: number
+}
+
+export function reportWebVitals({ id, name, label, value } : webVitals) {
   event(name, {
     category: label === 'web-vital' ? 'Web Vitals' : 'Next.js custom metric',
     value: Math.round(name === 'CLS' ? value * 1000 : value),
