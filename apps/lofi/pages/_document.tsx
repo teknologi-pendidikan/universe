@@ -1,6 +1,6 @@
 import Footer from 'components/Footer'
+import Navbar from 'components/Navbar'
 import { Head, Html, Main, NextScript } from 'next/document'
-import { Navbar } from 'ui'
 
 export default function Document() {
   return (
