@@ -10,10 +10,10 @@ export default function RunningEvents() {
       <Link href="https://grow.teknologipendidikan.or.id/running" className="">
         <Image
           src="/runningevents.png"
-          alt="placeholder"
+          alt="Event dan Kegiatan oleh Teknologi Pendidikan ID"
           width={2496}
           height={640}
-          className="w-full object-cover h-80 rounded-lg hover:scale-[103%] transition ease-in-out duration-500"
+          className="w-full object-cover h-36 lg:h-80 rounded-lg hover:scale-[103%] transition ease-in-out duration-500 object-left-top"
           unoptimized
         />
       </Link>

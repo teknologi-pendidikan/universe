@@ -7,21 +7,22 @@ export default function FrontHeader() {
       id="frontheader"
       className="container mx-auto px-4 my-10 max-w-screen-xl"
     >
-      <div className="grid grid-cols-3">
-        <div className="flex justify-around items-center">
+      <div className="flex flex-row justify-around items-center">
+        <div className="hidden lg:flex justify-between space-x-12 items-center">
           <p>Riset</p>
           <p>Pendidikan</p>
           <p>Kebijakan</p>
         </div>
-        <div className="flex justify-center items-center">
+        <div className="md:col-span-2 justify-center items-center">
           <Image src={LogoLOFI} alt="Logo LOFI" width={200} height={200} />
         </div>
-        <div className="flex justify-around items-center">
+        <div className="hidden lg:flex justify-between space-x-12 items-center">
           <p>Event</p>
           <p>Institute</p>
           <p>Publikasi</p>
         </div>
       </div>
+      <h1 className="text-center w-full pt-12 text-2xl font-semibold">Redaksi EDTECH-ID | Majalah dan Surat Kabar Teknologi Pendidikan</h1>
     </section>
   )
 }

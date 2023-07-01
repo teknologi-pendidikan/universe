@@ -34,13 +34,3 @@ Selama diselenggarakannya kegiatan ini, para pengunjung pameran memiliki keterta
 Total karya yang dipamerkan pada TEP FESTIVA berjumlah berkisar 90 karya. Berbagai jenis karya terdiri dari Modul Pembelajaran, Video Animasi, Website Pembelajaran hingga aplikasi Multimedia Interaktif. Karya - karya yang tampil di pameran karya merupakan karya terbaik dari hasil kurasi yang dilakukan oleh para kurator mahasiswa.
 
 ![suasana pengunjung melihat karya karyamahasiswa ditemani oleh para panitia](/posts/suasana-pengunjung-melihat-karya-karyamahasiswa-ditemani-oleh-para-panitia.jpg "suasana pengunjung melihat karya karyamahasiswa ditemani oleh para panitia")
-
-Press Release oleh:\
-Tim Redaksi Majalah dan Surat Kabar\
-Rengga Prakoso Nugroho\
-[rengganugroho@teknologipendidikan.or.id](mailto:rengganugroho@teknologipendidikan.or.id) 
-
-Fotografi & Dokumentasi Kegiatan oleh:\
-Tim Pameran Karya Teknologi Pendidikan\
-Muhammad Atha Nadhir & Dea Amanda Putri S.\
-[pamerandigital@teknologipendidikan.or.id](mailto:pamerandigital@teknologipendidikan.or.id)

@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lofi.teknologipendidikan.or.id/sitemap.xml
+
+User-agent: *
+Disallow: /api
+
+User-agent: *
+Disallow: /admin
+
+User-agent: *
+Disallow: /sso

@@ -17,11 +17,11 @@ export default function ArticleCard({ slug, frontmatter }) {
       )}
       <div className="px-4 pb-4 pt-2 w-full">
         <Link href={`/${slug}`}>
-          <h2 className="text-base font-bold text-black hover:underline">
+          <h3 className="text-base font-bold text-black hover:underline">
             {frontmatter.title.slice(0, 80)}
-          </h2>
+          </h3>
         </Link>
-        <p className="text-sm text-gray-400 pt-2">{frontmatter.description.slice(0, 80)}</p>
+        <p className="text-sm text-gray-800 pt-2">{frontmatter.description.slice(0, 80)}</p>
       </div>
     </div>
   )
