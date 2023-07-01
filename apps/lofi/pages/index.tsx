@@ -144,6 +144,26 @@ export default function Home({ posts }) {
         <meta key="twtsite" name="twitter:site" content="@haloedtechid" />
       </Head>
       <StructuredData data={structuredData} />
+      <section
+        id="hero"
+        className="hidden relative h-screen outline-1 outline-red-400 outline"
+      >
+        <Image
+          src="/opengraph-main.png"
+          width={1920}
+          height={1080}
+          alt="Hero Image"
+          className="max-h-screen object-cover object-center"
+        />
+        <div
+          id="arrowdown"
+          className="py-2 w-full bg-brandblue-800 absolute bottom-0"
+        >
+          <h1 className="text-center text-white">
+            Majalah dan Surat Kabar Mahasiswa Teknologi Pendidikan
+          </h1>
+        </div>
+      </section>
       <FrontHeader />
       <SectionInformationReference>
         {posts.slice(0, 3).map(({ slug, frontmatter }) => (

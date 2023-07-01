@@ -5,7 +5,7 @@ export default function FrontHeader() {
   return (
     <section
       id="frontheader"
-      className="container mx-auto px-4 my-10 max-w-screen-xl"
+      className="container mx-auto px-4 my-10 max-w-screen-xl pt-12"
     >
       <div className="flex flex-row justify-around items-center">
         <div className="hidden lg:flex justify-between space-x-12 items-center">
