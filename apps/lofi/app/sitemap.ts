@@ -24,7 +24,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }))
 
   // Static pages
-  const routes = ['', '/kirim-artikel', '/redaksi'].map((route) => ({
+  const routes = [
+    '',
+    '/kirim-artikel',
+    '/redaksi',
+    '/authors/chandrina',
+    '/authors/vzrenggamani',
+  ].map((route) => ({
     url: `${URL}${route}`,
     lastModified: new Date().toISOString(),
   }))
