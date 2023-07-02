@@ -75,9 +75,9 @@ export default function Home() {
         </p>
         <h1 className="text-6xl font-bold mb-8 lg:mb-24">
           <div className="flex flex-col items-start lg:text-8xl text-5xl justify-center">
-            <span className="text-blue">Inovasi.</span>
-            <span className="text-yellow">Teknologi.</span>
-            <span className="text-green">Pembelajaran.</span>
+            <span className="text-brandblue">Inovasi.</span>
+            <span className="text-brandyellow">Teknologi.</span>
+            <span className="text-brandgreen">Pembelajaran.</span>
           </div>
         </h1>
       </section>
@@ -107,7 +107,7 @@ export default function Home() {
           </a>
         </div>
       </section>
-      <section className="bg-yellow text-gray-800 py-12 px-5 lg:px-0" id="product-scale">
+      <section className="bg-brandyellow text-gray-800 py-12 px-5 lg:px-0" id="product-scale">
         <div className="container mx-auto my-24 flex flex-col items-center">
           <h1 className="text-6xl font-bold mb-24 text-gray-800">
             The impact of our program
@@ -259,7 +259,7 @@ export default function Home() {
         className="bg-gray-800 text-gray-100 px-5 lg:px-0 py-10"
         id="what-can-we-solve"
       >
-        <div className="container mx-auto h-screen my-14 flex flex-col items-center">
+        <div className="container mx-auto my-14 flex flex-col items-center">
           <h1 className="text-6xl font-bold mb-8 text-gray-100">
             What problems we could solve next?
           </h1>
