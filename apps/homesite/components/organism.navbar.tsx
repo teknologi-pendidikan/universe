@@ -1,32 +1,34 @@
-import symbol_horizontal from "assets/symbol-horizontal.svg";
-import AtomLink from "components/atom.link";
-import Image from "next/image";
+import symbol_horizontal from 'assets/symbol-horizontal.svg'
+import Image from 'next/image'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const NAVLINK = [
   {
-    href: "/",
-    label: "Home",
+    href: '/',
+    label: 'Home',
   },
   {
-    href: "/about",
-    label: "About",
+    href: '/about-us',
+    label: 'Tentang Kami',
   },
   {
-    href: "/about",
-    label: "About",
+    href: '/our-works',
+    label: 'Ciptaan Kami',
   },
   {
-    href: "/about",
-    label: "About",
+    href: '/career',
+    label: 'Career',
   },
-];
+]
 
 type Props = {
-  colorLogo?: string;
-  extendRootNavbar?: string;
-};
+  colorLogo?: string
+  extendRootNavbar?: string
+}
 
 function Navbar(props: Props) {
+  const router = useRouter()
   return (
     <header
       id="navbar-wrapper"
@@ -35,13 +37,23 @@ function Navbar(props: Props) {
       <div className="container mx-auto flex flex-row items-center justify-center lg:justify-between">
         <Image src={symbol_horizontal} alt="logo" width={200} height={50} />
         <nav className="hidden lg:block space-x-8 items-center">
-          {NAVLINK.map((item, index) => (
-            <AtomLink key={item.href} href={item.href} label={item.label} />
+          {NAVLINK.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={
+                router.pathname === item.href
+                  ? 'text-gray-800 hover:text-gray-600 transition duration-300 underline underline-offset-8'
+                  : 'text-gray-800 hover:text-gray-600 transition duration-300'
+              }
+            >
+              {item.label}
+            </Link>
           ))}
         </nav>
       </div>
     </header>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar
