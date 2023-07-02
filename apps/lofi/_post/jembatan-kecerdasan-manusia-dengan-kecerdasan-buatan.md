@@ -29,6 +29,6 @@ Menelisik lebih dalam mengapa kecerdasan buatan atau sistem cerdas belum mampu u
 1. Sumber pengetahuan AI berasal dari pengetahuan eksplisit, sedangkan tacit melibatkan pengalaman non-verbal, sensorik manusia hingga aspek sosial.
 2. Pengetahuan tacit tidak mudah diungkapkan dalam bentuk bahasa yang formal. Tacit terbentuk dari pengalaman dan pemahaman sehingga sulit untuk dinyatakan dalam program AI.
 
-## K﻿esimpulan
+## Kesimpulan
 
 Janganlah jadikan AI sebagai alat utama dalam melakukan pekerjaan, melainkan jadikan sebagai referensi atau rekomendasi kalian dalam bekerja. **Belajar dan terus Belajar.**
