@@ -1,65 +1,58 @@
-import ICON_Adoption from "assets/icon_adoption.svg";
-import ICON_kolaborasi from "assets/icon_kolaborasi.svg";
-import ICON_opensource from "assets/icon_opensource.svg";
-import ICON_trend from "assets/icon_trend.svg";
-import LOGO_github from "assets/logo_github.png";
-import LOGO_google from "assets/logo_googleeducation.png";
-import LOGO_imatepsi from "assets/logo_imatepsi.png";
-import LOGO_kemendikbud from "assets/logo_kemdikbud.png";
-import LOGO_microsoft from "assets/logo_microsoft.png";
-import LOGO_um from "assets/logo_um.png";
-import MUG_hilman from "assets/mug_hilman.png";
-import MUG_rengga from "assets/mug_rengga.png";
-import IMAGE_presentasi from "assets/presentasi-1.png";
-import { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
-
-export const metadata: Metadata = {
-  title: "Teknologi Pendidikan ID - EDTECH-ID",
-  description:
-    "Kami adalah sekelompok kecil ahli teknologi pendidikan yang memiliki misi untuk membuat pendidikan di Indonesia terbuka dan dapat dirasakan oleh setiap anggota masyarakat. Kami bekerja sama dengan berbagai lembaga pendidikan dan mitra teknologi",
-};
+import ICON_Adoption from 'assets/icon_adoption.svg'
+import ICON_kolaborasi from 'assets/icon_kolaborasi.svg'
+import ICON_opensource from 'assets/icon_opensource.svg'
+import ICON_trend from 'assets/icon_trend.svg'
+import LOGO_github from 'assets/logo_github.png'
+import LOGO_google from 'assets/logo_googleeducation.png'
+import LOGO_imatepsi from 'assets/logo_imatepsi.png'
+import LOGO_kemendikbud from 'assets/logo_kemdikbud.png'
+import LOGO_microsoft from 'assets/logo_microsoft.png'
+import LOGO_um from 'assets/logo_um.png'
+import MUG_hilman from 'assets/mug_hilman.png'
+import MUG_rengga from 'assets/mug_rengga.png'
+import IMAGE_presentasi from 'assets/presentasi-1.png'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const partner = [
   {
-    name: "Kementerian Pendidikan, Kebudayaan, Riset dan Teknologi",
+    name: 'Kementerian Pendidikan, Kebudayaan, Riset dan Teknologi',
     logo: LOGO_kemendikbud,
   },
   {
-    name: "Universitas Negeri Malang",
+    name: 'Universitas Negeri Malang',
     logo: LOGO_um,
   },
   {
-    name: "Ikatan Mahasiswa Teknologi Pendidikan Indonesia",
+    name: 'Ikatan Mahasiswa Teknologi Pendidikan Indonesia',
     logo: LOGO_imatepsi,
   },
   {
-    name: "Google for Education",
+    name: 'Google for Education',
     logo: LOGO_google,
   },
   {
-    name: "Microsoft for Education",
+    name: 'Microsoft for Education',
     logo: LOGO_microsoft,
   },
   {
-    name: "Github for Schools",
+    name: 'Github for Schools',
     logo: LOGO_github,
   },
-];
+]
 
 const peoples = [
   {
-    name: "Rengga Prakoso Nugroho",
-    role: "Direktur Pengembangan Teknologi dan Sistem Informasi",
+    name: 'Rengga Prakoso Nugroho',
+    role: 'Direktur Pengembangan Teknologi dan Sistem Informasi',
     cover: MUG_rengga,
   },
   {
-    name: "Moch. Hilman Amirudin Nahri",
-    role: "Direktur Inovasi, Komunikasi, dan Kerjasama",
+    name: 'Moch. Hilman Amirudin Nahri',
+    role: 'Direktur Inovasi, Komunikasi, dan Kerjasama',
     cover: MUG_hilman,
   },
-];
+]
 
 export default function Home() {
   return (
@@ -71,7 +64,7 @@ export default function Home() {
         <p className="max-w-2xl text-2xl mb-8 lg:mb-32 mt-24 text-gray-800">
           Kami adalah sekelompok kecil ahli teknologi pendidikan yang memiliki
           misi untuk membuat pendidikan di Indonesia terbuka dan dapat dirasakan
-          oleh setiap anggota masyarakat.{" "}
+          oleh setiap anggota masyarakat.{' '}
         </p>
         <h1 className="text-6xl font-bold mb-8 lg:mb-24">
           <div className="flex flex-col items-start lg:text-8xl text-5xl justify-center">
@@ -90,7 +83,10 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="bg-gray-100 text-gray-800 py-12 px-5 lg:px-0" id="what-we-do">
+      <section
+        className="bg-gray-100 text-gray-800 py-12 px-5 lg:px-0"
+        id="what-we-do"
+      >
         <div className="container mx-auto my-14 flex flex-col items-center">
           <h1 className="text-5xl lg:text-6xl font-bold mb-8 text-green">
             What we do?
@@ -107,7 +103,10 @@ export default function Home() {
           </a>
         </div>
       </section>
-      <section className="bg-brandyellow text-gray-800 py-12 px-5 lg:px-0" id="product-scale">
+      <section
+        className="bg-brandyellow text-gray-800 py-12 px-5 lg:px-0"
+        id="product-scale"
+      >
         <div className="container mx-auto my-24 flex flex-col items-center">
           <h1 className="text-6xl font-bold mb-24 text-gray-800">
             The impact of our program
@@ -140,10 +139,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-gray-800 text-gray-100 py-8 px-5 lg:px-0" id="our-process">
-        <div className="container min-h-[110vh] mx-auto flex flex-col items-center">
-          <h1 className="text-6xl font-bold mb-14 mt-14">How we do it?</h1>
-          <p className="max-w-6xl text-xl lg:text-center mb-20">
+      <section
+        className="bg-gray-800 text-gray-100 py-24 px-5 lg:px-0"
+        id="our-process"
+      >
+        <div className="container mx-auto flex flex-col items-center py-8">
+          <h1 className="text-6xl font-bold mb-14">How we do it?</h1>
+          <p className="max-w-6xl text-xl lg:text-center">
             Kami menciptakan, memanfaatkan, dan mengelola teknologi yang
             tersedia di lingkungan pendidikan. Kami terbuka akan kolaborasi ide,
             proses serta pengembangan dalam segala lingkup untuk mencapai tujuan
@@ -196,7 +198,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-gray-100 text-gray-800 py-8 px-5 lg:px-0" id="our-partner">
+      <section
+        className="bg-gray-100 text-gray-800 py-8 px-5 lg:px-0"
+        id="our-partner"
+      >
         <div className="container py-20 mx-auto flex flex-col items-center justify-center">
           <h1 className="text-6xl font-bold mb-14">Our Partner</h1>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 w-full">
@@ -278,5 +283,5 @@ export default function Home() {
         </div>
       </section>
     </main>
-  );
+  )
 }
