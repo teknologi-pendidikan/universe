@@ -1,11 +1,13 @@
-
 import SEO from 'components/SEO'
 import StructuredData from 'components/StructuredData'
+import AuthorData from 'data/author.json'
 import fs from 'fs'
 import matter from 'gray-matter'
 import Image from 'next/image'
+import Link from 'next/link'
 import IMAGEPLACEHOLDER from 'public/opengraph-main.png'
 import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 
 const dateRegex = /([0-9]{4}-[0-9]{2}-[0-9]{2})-/
 
@@ -23,13 +25,18 @@ export async function getStaticPaths() {
   }
 }
 
-// add types for params
-
 type Params = {
   slug: string
 }
 
-export async function getStaticProps({ params: { slug } } : { params: Params }) {
+type AuthorData = {
+  username: string
+  name: string
+  email: string
+  role: string
+}
+
+export async function getStaticProps({ params: { slug } }: { params: Params }) {
   const fileName = fs.readFileSync(`_post/${slug}.md`, 'utf-8')
   const { data: frontmatter, content } = matter(fileName)
   return {
@@ -95,14 +102,36 @@ export default function Artikel({ frontmatter, content, slug }: Props) {
       >
         <section
           id="article-title"
-          className="flex flex-col items-center justify-center"
+          className="flex flex-col items-center justify-center mb-8"
         >
           <h1 className="text-3xl lg:text-5xl text-gray-900 pt-24 mb-12 text-center max-w-screen-lg">
             {frontmatter.title}
           </h1>
-          <p className="text-sm text-gray-500 text-center mb-12 max-w-screen-md">
+          <p className="text-sm text-gray-500 text-center max-w-screen-md">
             {frontmatter.description}
           </p>
+          <span className="text-sm text-gray-500 text-center max-w-screen-md pt-4">
+            <time dateTime={frontmatter.date}>
+              {
+                // format date to Indonesian
+                new Date(frontmatter.date).toLocaleDateString('id-ID', {
+                  weekday: 'long',
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric',
+                })
+              }
+            </time>{' '}
+            -{' '}
+            <Link href={`/authors/${frontmatter.author}`}>
+              {
+                AuthorData.find(
+                  (author: AuthorData) =>
+                    author.username === frontmatter.author,
+                )?.name
+              }
+            </Link>
+          </span>
         </section>
 
         <section
@@ -124,7 +153,31 @@ export default function Artikel({ frontmatter, content, slug }: Props) {
           id="article-content"
           className="prose-full prose-xl text-gray-900 px-5 lg:px-48 lg:text-justify"
         >
-          <ReactMarkdown>{content}</ReactMarkdown>
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            components={{
+              img: ({ node, ...props }) => (
+                // @ts-ignore
+                <Image
+                  {...props}
+                  alt={`${props.alt}`}
+                  className="rounded-lg"
+                  width={1280}
+                  height={720}
+                  loading="lazy"
+                  quality={75}
+                />
+              ),
+              a: ({ node, ...props }) => (
+                <a {...props} className="text-blue-500 hover:underline" />
+              ),
+              table: ({ node, ...props }) => (
+                <table {...props} className="table-auto" />
+              ),
+            }}
+          >
+            {content}
+          </ReactMarkdown>
         </section>
       </article>
     </div>
