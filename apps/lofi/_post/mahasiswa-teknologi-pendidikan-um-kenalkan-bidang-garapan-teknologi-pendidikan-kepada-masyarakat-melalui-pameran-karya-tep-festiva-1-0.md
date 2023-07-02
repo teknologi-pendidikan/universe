@@ -1,6 +1,5 @@
 ---
 date: "2023-05-25 15:41:38"
-layout: post
 title: Mahasiswa Teknologi Pendidikan UM kenalkan bidang garapan teknologi
   pendidikan kepada masyarakat melalui Pameran Karya TEP FESTIVA 1.0
 subtitle: Mahasiswa Departemen Teknologi Pendidikan, menyelenggarakan TEP
@@ -9,15 +8,13 @@ description: Mahasiswa Departemen Teknologi Pendidikan,
   menyelenggarakan TEP Festiva 1.0 atau yang dikenal sebagai Pameran Karya
   Teknologi Pendidikan.
 image: /posts/para-panitia-pameran-karya-tep-festiva.jpg
-optimized_image: /assets/img/uploads/para-panitia-pameran-karya-tep-festiva.jpg
-category: "{{slug}}"
+category: kegiatan
 tags:
   - TEPFestivas
   - Kegiatanmahasiswa
   - pamerankarya
   - karyamahasiswa
 author: vzrenggamani
-paginate: false
 ---
 Mahasiswa Departemen Teknologi Pendidikan, menyelenggarakan TEP Festiva 1.0 atau yang dikenal sebagai Pameran Karya Teknologi Pendidikan. Kegiatan ini merupakan bentuk upaya memperkenalkan bidang garapan teknologi pendidikan kepada masyarakat umum. Kegiatan tersebut berlangsung pada 24 - 25 Mei 2023 di Gedung Sasana Krida Universitas Negeri Malang. Selain dilaksanakan secara luring di Gedung Sasana Krida, TEP Festiva dilaksanakan secara daring melalui situs web pameran karya yang dapat diakses secara bebas oleh masyarakat umum.
 

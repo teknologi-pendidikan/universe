@@ -2,16 +2,11 @@
 date: "2022-11-21 23:53:11"
 layout: post
 title: Apa itu TEP? Apa itu Teknologi Pendidikan?
-subtitle: Saduran informasi oleh Wikipedia Indonesia
-description: Saduran informasi oleh Wikipedia Indonesia
+subtitle: Association for Educational Communications and Technology (AECT) mendefinisikan teknologi pendidikan sebagai "studi dan praktik etis untuk memfasilitasi pembelajaran dan meningkatkan kinerja dengan menciptakan, menggunakan, dan mengelola proses dan sumber daya teknologi yang sesuai".
+description: Association for Educational Communications and Technology (AECT) mendefinisikan teknologi pendidikan sebagai "studi dan praktik etis untuk memfasilitasi pembelajaran dan meningkatkan kinerja dengan menciptakan, menggunakan, dan mengelola proses dan sumber daya teknologi yang sesuai".
 category: referensi
 author: vzrenggamani
-paginate: false
 ---
-Teknologi Pendidikan (biasa disingkat edutech, atau edtech) adalah gabungan penggunaan perangkat keras dan perangkat lunak komputer dengan teori pendidikan dan praktik untuk memfasilitasi pembelajaran Jika disebut dengan singkatannya, edtech, seringkali mengacu pada industri perusahaan yang menciptakan teknologi pendidikan.
-
-Selain pengalaman pendidikan praktis, teknologi pendidikan didasarkan pada pengetahuan teoritis dari berbagai disiplin ilmu seperti komunikasi, pendidikan, psikologi, sosiologi, kecerdasan buatan, dan ilmu komputer. Ini mencakup beberapa domain termasuk teori pembelajaran, pelatihan berbasis komputer, pembelajaran online, dan m-learning, di mana teknologi seluler digunakan.
-
 ## Definisi Teknologi Pendidikan (TEP)
 
 Association for Educational Communications and Technology (AECT) mendefinisikan teknologi pendidikan sebagai "studi dan praktik etis untuk memfasilitasi pembelajaran dan meningkatkan kinerja dengan menciptakan, menggunakan, dan mengelola proses dan sumber daya teknologi yang sesuai". Ini dilambangkan teknologi instruksional sebagai "teori dan praktek desain, pengembangan, pemanfaatan, manajemen, dan evaluasi proses dan sumber daya untuk belajar".

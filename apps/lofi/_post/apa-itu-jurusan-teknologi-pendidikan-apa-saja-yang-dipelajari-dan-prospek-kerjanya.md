@@ -1,15 +1,13 @@
 ---
 date: "2022-12-03 14:26:52"
-layout: post
 title: Apa itu jurusan Teknologi Pendidikan? Apa saja yang dipelajari dan
   prospek kerjanya?
-subtitle: BERINOVASI DALAM MEMFASILITASI BELAJAR DAN MENINGKATKAN PERFORMANSI BELAJAR
+subtitle: Berinovasi Dalam Memfasilitasi Belajar dan Meningkatkan Performansi Belajar
 description: "Jurusan Teknologi Pendidikan adalah salah satu program studi di
   bidang pendidikan yang mempelajari tentang teknologi dan penerapannya dalam
   proses belajar mengajar. "
 image: /posts/pktp-cover.png
-optimized_image: /assets/img/uploads/214214.jpg
-category: skilas-info
+category: referensi
 tags:
   - teknologi pendidikan
   - jurusan teknologi pendidikan
@@ -22,9 +20,8 @@ tags:
   - edtech adalah
   - apa itu jurusan teknologi pendidikan
 author: vzrenggamani
-paginate: false
 ---
-## A﻿pa itu Jurusan Teknologi Pendidikan
+## Apa itu Jurusan Teknologi Pendidikan
 
 Jurusan Teknologi Pendidikan adalah salah satu program studi di bidang pendidikan yang mempelajari tentang teknologi dan penerapannya dalam proses belajar mengajar. Mahasiswa yang mengambil program studi ini akan mempelajari tentang teknologi informasi dan komunikasi, metode pembelajaran yang efektif, serta bagaimana mengaplikasikan teknologi dalam pendidikan. Mereka juga akan mempelajari tentang cara mengelola dan mengembangkan sistem pendidikan, serta bagaimana membuat kurikulum yang efektif.
 

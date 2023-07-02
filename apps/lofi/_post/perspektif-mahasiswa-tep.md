@@ -1,17 +1,14 @@
 ---
 date: "2022-03-24 13:26:41"
-layout: post
 title: "Perspektif mahasiswa TEP terhadap kelas digital"
 subtitle: "Membahas secara sederhana terhadap ruang kelas virtual berdasarkan sudut pandang dari mahasiswa TEP."
 description: >-
     Membahas secara sederhana terhadap ruang kelas virtual berdasarkan sudut pandang dari mahasiswa TEP.
 image:
-optimized_image:
 category: opini
 tags:
 - opini
 author: chandrina
-paginate: false
 ---
 
 Semakin hari selalu ada perubahan, lebih tepatnya dituntut untuk berubah beradaptasi dengan kejadian-kejadian baru. Berbagai persoalan yang harus diselesaikan dengan cara-cara baru menjadikan kita terus bergerak membuat sebuah inovasi. Salah satunya di sektor pendidikan untuk mencapai tujuan yang diharapkan.

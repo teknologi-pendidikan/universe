@@ -1,17 +1,14 @@
 ---
 date: "2022-11-23 16:29:41"
-layout: post
 title: Sejarah Singkat Dunia Teknologi Pendidikan
 subtitle: Mengenal lebih dekat dengan bidang ilmu teknologi pendidikan
 description: Pada tahun 1960-an teknologi pendidikan menjadi salah satu kajian
   yang banyak mendapat perhatian di lingkungan ahli pendidikan.
-category: skilas-info
+category: referensi
 image: /posts/sjtp-cover.png
 tags:
   - sejarahsingkat
-  - ""
 author: mahasiswa-tep
-paginate: false
 ---
 Pada tahun 1960-an teknologi pendidikan menjadi salah satu kajian yang banyak mendapat perhatian di lingkungan ahli pendidikan. Pada awalnya, teknologi pendidikan merupakan kelanjutan perkembangan dari kajian-kajian tentang penggunaan Audiovisual, dan program belajar dalam penyelenggaraan pendidikan. Kajian tersebut pada hakekatnya merupakan usaha dalam memecahkan masalah belajar manusia (human learning). Solusi yang diambil melalui kajian teknologi pendidikan bahwa pemecahan masalah belajar perlu menggunakan pendekatan-pendekatan yang tepat dengan banyak memfungsikan pemanfaatan sumber belajar (learning resources).
 

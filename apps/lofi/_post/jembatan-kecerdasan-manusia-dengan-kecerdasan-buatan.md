@@ -1,20 +1,17 @@
 ---
 date: "2023-06-26 02:00:42"
-layout: post
 title: Jembatan Kecerdasan Manusia dengan Kecerdasan Buatan
 subtitle: Seberapa jauh kecerdasan buatan (AI) akan mengambil alih pekerjaan manusia?
 description: "Seberapa jauh kecerdasan buatan (AI) akan mengambil alih pekerjaan
   manusia? Dr. Henry Praherdhiono menjawab: Meskipun AI sangat membantu, mereka
   (AI) hanya membantu sebagian kecil dari seluruh pekerjaan kita."
 image: /posts/jkmdkb-cover.png
-optimized_image: /assets/img/uploads/jkmdkb-cover.png
 category: opini
 tags:
   - kecerdasanbuatan
   - manusia
   - henrypraherdhiono
 author: vzrenggamani
-paginate: false
 ---
 Sebuah pertanyaan singkat: 
 

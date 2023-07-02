@@ -1,14 +1,12 @@
 ---
 date: "2022-11-20 16:31:53"
-layout: post
 title: Matakuliah Jurusan Teknologi Pendidikan Tahun 2022 terbaru
 subtitle: Daftar Matakuliah Jurusan Teknologi Pendidikan Kurikulum 2020
 description: Daftar Matakuliah Jurusan Teknologi Pendidikan Kurikulum 2020
 category: referensi
 author: vzrenggamani
-paginate: false
 ---
-## S﻿emester 1
+## Semester 1
 
 | **Nomor** | **KODE**   | **NAMA MATAKULIAH**                  | **SKS** | **WAJIB/PILIHAN** |
 | --------- | ---------- | ------------------------------------ | ------- | ----------------- |
