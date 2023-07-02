@@ -16,7 +16,6 @@ export async function getStaticPaths() {
       category: category.CategoryId,
     },
   }))
-  console.log(paths)
   return {
     paths,
     fallback: false,
@@ -71,16 +70,14 @@ type CategoryPostViewType = {
   categoryData: ListOfCategoryType
 }
 
-export default function CategoryPostView({ categoryPosts, categoryData }: any) {
-  console.log(categoryData)
-  console.log(categoryPosts)
+export default function CategoryPostView({ categoryPosts, categoryData }: CategoryPostViewType) {
   return (
     <main className={`relative`}>
       <FrontHeader title={`Rilisan ${categoryData.title}`} />
       <section className="container mx-auto px-4 my-10 max-w-screen-xl font-serif">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {categoryPosts.map((post: any) => (
-            <div className="flex flex-col space-y-2 justify-start items-start border border-black-1 rounded-lg">
+            <div key={post.slug} className="flex flex-col space-y-2 justify-start items-start border border-black-1 rounded-lg">
             {post.frontmatter.image ? (
               <Image
                 src={post.frontmatter.image}

@@ -47,7 +47,7 @@ export default function FrontHeader({
       <div className="flex flex-row justify-around items-center text-brandblue-800">
         <div className="hidden lg:flex justify-between space-x-12 items-center">
           {LeftLink.map((link) => (
-            <Link href={link.link} className="hover:underline">
+            <Link href={link.link} key={link.link} className="hover:underline">
               <p>{link.title}</p>
             </Link>
           ))}
@@ -59,7 +59,7 @@ export default function FrontHeader({
         </div>
         <div className="hidden lg:flex justify-between space-x-12 items-center">
           {RightLink.map((link) => (
-            <Link href={link.link} className="hover:underline">
+            <Link href={link.link} key={link.link} className="hover:underline">
               <p>{link.title}</p>
             </Link>
           ))}

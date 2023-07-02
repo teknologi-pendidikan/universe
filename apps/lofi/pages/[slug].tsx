@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import SEO from 'components/SEO'
 import StructuredData from 'components/StructuredData'
 import AuthorData from 'data/author.json'
@@ -156,6 +157,7 @@ export default function Artikel({ frontmatter, content, slug }: Props) {
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             components={{
+              // eslint-disable-next-line no-unused-vars
               img: ({ node, ...props }) => (
                 // @ts-ignore
                 <Image
@@ -168,9 +170,11 @@ export default function Artikel({ frontmatter, content, slug }: Props) {
                   quality={75}
                 />
               ),
+              // eslint-disable-next-line no-unused-vars
               a: ({ node, ...props }) => (
                 <a {...props} className="text-blue-500 hover:underline" />
               ),
+              // eslint-disable-next-line no-unused-vars
               table: ({ node, ...props }) => (
                 <table {...props} className="table-auto" />
               ),

@@ -11,12 +11,6 @@ type AuthorData = {
   role: string
 }
 
-type Params = {
-  params: {
-    username: string
-  }
-}
-
 export async function getStaticPaths() {
   const paths = AuthorData.map((author) => ({
     params: {
@@ -30,7 +24,7 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getStaticProps({ params: { username } }: Params) {
+export async function getStaticProps() {
   const files = fs.readdirSync('_post')
   const posts = files.map((fileName) => {
     const slug = fileName.replace('.md', '')
@@ -52,7 +46,7 @@ export default function Author({ posts }: any) {
   const router = useRouter()
   const { username } = router.query
   const author = AuthorData.find((author) => author.username === username)
-  const { name, email, role } = author as AuthorData
+  const { name, role } = author as AuthorData
 
   const filteredPosts = posts.filter(
     (post: any) => post.frontmatter.author === username,
