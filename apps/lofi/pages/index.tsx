@@ -3,6 +3,7 @@ import FrontHeader from 'components/FrontHeader'
 import RunningEvents from 'components/RunningEvents'
 import SectionInformationReference from 'components/SectionInformationReference'
 import StructuredData from 'components/StructuredData'
+import ListOfCategory from 'data/category.json'
 import fs from 'fs'
 import matter from 'gray-matter'
 import { Inter } from 'next/font/google'
@@ -43,11 +44,12 @@ type Props = {
       image: string
       date: string
       author: string
+      category: string
     }
   }[]
 }
 
-export default function Home({ posts } : Props) {
+export default function Home({ posts }: Props) {
   const sortedPosts = posts.sort(
     (a, b) =>
       Number(new Date(b.frontmatter.date)) -
@@ -96,6 +98,9 @@ export default function Home({ posts } : Props) {
       'https://teknologipendidikan.or.id',
     ],
   }
+  const postCategoryReferensi = sortedPosts.filter(
+    (post) => post.frontmatter.category === 'referensi',
+  )
 
   return (
     <main className={`relative ${inter.className} text-brandblue-700`}>
@@ -179,12 +184,42 @@ export default function Home({ posts } : Props) {
       </section>
       <FrontHeader />
       <SectionInformationReference>
-        {posts.slice(0, 3).map(({ slug, frontmatter }) => (
-          <ArticleCard key={slug} slug={slug} frontmatter={frontmatter} />
+        {postCategoryReferensi.slice(0,3).map((post) => (
+          <ArticleCard
+            key={post.slug}
+            slug={post.slug}
+            frontmatter={post.frontmatter}
+          />
         ))}
       </SectionInformationReference>
+      <section
+        id="release-category"
+        className="mx-auto container px-4 mb-8 mt-5 max-w-screen-xl"
+      >
+        <div className="flex flex-col space-y-4 justify-start items-start">
+          <h2 className="text-xl font-bold text-black pb-2">
+            Rubrik & Kategori Rilisan
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 w-full">
+            {ListOfCategory.map((category) => (
+              <Link
+                key={category.CategoryId}
+                href={`/category/${category.CategoryId}`}
+                className="flex flex-col space-y-2 justify-start items-start border border-black-1 rounded-lg p-4 hover:bg-brandblue-800 hover:text-white text-brandblue-800"
+              >
+                <h3 className="text-xl font-semibold hover:underline">
+                  {category.title}
+                </h3>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
       <RunningEvents />
-      <section className="mx-auto container px-4 mb-8 mt-5 max-w-screen-xl">
+      <section
+        id="new-release"
+        className="mx-auto container px-4 mb-8 mt-5 max-w-screen-xl"
+      >
         <div className="flex flex-col space-y-4 justify-start items-start">
           <h2 className="text-5xl font-bold text-black pb-2">
             Artikel Terbaru
