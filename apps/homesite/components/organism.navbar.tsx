@@ -22,12 +22,7 @@ const NAVLINK = [
   },
 ]
 
-type Props = {
-  colorLogo?: string
-  extendRootNavbar?: string
-}
-
-function Navbar(props: Props) {
+function Navbar() {
   const router = useRouter()
   return (
     <header
