@@ -228,7 +228,7 @@ export default function Home({ posts } : Props) {
                     className="lg:h-16 lg:w-16  h-36 object-cover rounded-md object-top"
                   />
                 </div>
-                <p className="hidden lg:block text-black h-full break-words">
+                <p className="hidden lg:block text-black h-full line-clamp-3">
                   {/* pull date and convert to Indonesian Locale DD/MM/YYYY */}
                   {new Date(frontmatter.date).toLocaleDateString('id-ID', {
                     day: 'numeric',
@@ -236,7 +236,7 @@ export default function Home({ posts } : Props) {
                     year: 'numeric',
                   })}
                   {' - '}
-                  {frontmatter.description.slice(0, 130)}
+                  {frontmatter.description}
                 </p>
               </Link>
             ))}
