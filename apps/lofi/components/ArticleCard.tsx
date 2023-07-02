@@ -30,8 +30,7 @@ export default function ArticleCard({ slug, frontmatter }: Props) {
             {frontmatter.title.slice(0, 80)}
           </h3>
         </Link>
-        <p className="text-sm text-gray-800 pt-2 line-clamp-4">
-        </p>
+        <p className="text-sm text-gray-800 pt-2 line-clamp-2">{frontmatter.description}</p>
       </div>
     </div>
   )
