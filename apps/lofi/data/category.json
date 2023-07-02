@@ -1,0 +1,22 @@
+[
+  {
+    "CategoryId": "prestasi",
+    "title": "Prestasi"
+  },
+  {
+    "CategoryId": "referensi",
+    "title": "Referensi Informasi"
+  },
+  {
+    "CategoryId": "opini",
+    "title": "Opini Publik"
+  },
+  {
+    "CategoryId": "kegiatan",
+    "title": "Berita & Kegiatan"
+  },
+  {
+    "CategoryId": "kemahasiswaan",
+    "title": "Kemahasiswaan"
+  }
+]
