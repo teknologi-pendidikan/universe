@@ -1,10 +1,10 @@
-import AuthorData from 'data/author.json'
+import TeamRedaksi from 'data/redaksi.json'
 import fs from 'fs'
 import matter from 'gray-matter'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-type AuthorData = {
+type TeamRedaksi = {
   username: string
   name: string
   email: string
@@ -12,7 +12,7 @@ type AuthorData = {
 }
 
 export async function getStaticPaths() {
-  const paths = AuthorData.map((author) => ({
+  const paths = TeamRedaksi.reporterlist.map((author) => ({
     params: {
       username: author.username,
     },
@@ -45,8 +45,10 @@ export async function getStaticProps() {
 export default function Author({ posts }: any) {
   const router = useRouter()
   const { username } = router.query
-  const author = AuthorData.find((author) => author.username === username)
-  const { name, role } = author as AuthorData
+  const author = TeamRedaksi.reporterlist.find(
+    (author) => author.username === username,
+  )
+  const { name, role } = author as TeamRedaksi
 
   const filteredPosts = posts.filter(
     (post: any) => post.frontmatter.author === username,

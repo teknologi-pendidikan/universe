@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import SEO from 'components/SEO'
 import StructuredData from 'components/StructuredData'
-import AuthorData from 'data/author.json'
+import TeamRedaksi from 'data/redaksi.json'
 import fs from 'fs'
 import matter from 'gray-matter'
 import Image from 'next/image'
@@ -30,7 +30,7 @@ type Params = {
   slug: string
 }
 
-type AuthorData = {
+type TeamRedaksi = {
   username: string
   name: string
   email: string
@@ -124,10 +124,10 @@ export default function Artikel({ frontmatter, content, slug }: Props) {
               }
             </time>{' '}
             -{' '}
-            <Link href={`/authors/${frontmatter.author}`}>
+            <Link href={`/authors/${frontmatter.author}`} className='hover:underline hover:text-gray-700'>
               {
-                AuthorData.find(
-                  (author: AuthorData) =>
+                TeamRedaksi.reporterlist.find(
+                  (author: TeamRedaksi) =>
                     author.username === frontmatter.author,
                 )?.name
               }
