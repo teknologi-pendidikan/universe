@@ -4,7 +4,7 @@ local_backend: true
 # github backend
 backend:
   name: github
-  repo: teknologipendidikan/universe
+  repo: teknologi-pendidikan/universe
   branch: main
 
 site_url: https://lofi.teknologipendidikan.or.id
