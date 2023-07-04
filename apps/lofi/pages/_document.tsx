@@ -5,7 +5,13 @@ import { Head, Html, Main, NextScript } from 'next/document'
 
 export default function Document() {
   const nonce = randomBytes(128).toString('base64')
-  const csp = `object-src 'none'; base-uri 'none'; script-src 'self' 'unsafe-eval' 'nonce-${nonce}' 'strict-dynamic'`
+  const csp = `
+      connect-src 'self' webpack://* https: data:;
+      frame-src 'none';
+      img-src 'self' blob: https://*.teknologipendidikan.or.id https://is3.cloudhost.id/teknologipendidikan/ https://drive.google.com https://*.googleusercontent.com https://www.netlify.com/img/;
+      script-src 'self' 'unsafe-eval' 'nonce-${nonce}' 'strict-dynamic' https://www.googletagmanager.com/gtag/js https://netlify-rum.netlify.app/;
+      style-src 'self' 'unsafe-inline';
+      worker-src 'self' blob:;`
   return (
     <Html lang="id">
       <Head nonce={nonce}>
