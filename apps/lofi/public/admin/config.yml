@@ -1,0 +1,66 @@
+# local development backend
+local_backend: true
+
+# github backend
+backend:
+  name: github
+  repo: teknologipendidikan/universe
+  branch: main
+
+site_url: https://lofi.teknologipendidikan.or.id
+logo_url: https://lofi.teknologipendidikan.or.id/logo-lofi.svg
+locale: id
+search: false
+
+media_folder: 'apps/lofi/public/posts'
+public_folder: '/posts'
+slug:
+  encoding: 'ascii'
+  clean_accents: true
+  sanitize_replacement: '-'
+
+collections:
+  - name: 'posts'
+    label: 'Artikel Berita'
+    folder: 'apps/lofi/_post'
+    create: true
+    format: 'frontmatter'
+    sortable_fields:
+      - 'title'
+      - 'date'
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'description', name: 'description', widget: 'text' }
+      - { label: 'category', name: 'category', widget: 'string' }
+      - { label: 'author', name: 'author', widget: 'string' }
+      - { image: 'image', label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+    view_filters:
+      - label: 'Artikel Opini'
+        field: 'category'
+        pattern: 'opini'
+      - label: 'Artikel Refensi'
+        field: 'category'
+        pattern: 'referensi'
+
+  - name: 'redaksi'
+    label: 'Tim Redaksi'
+    editor:
+      preview: false
+    delete: false
+    files:
+      - label: 'Reporter Berita'
+        name: 'reporter'
+        file: 'apps/lofi/data/_author.json'
+        fields:
+          - label: 'Reporter Berita'
+            name: 'reporterlist'
+            widget: 'list'
+            allow_add: true
+            fields:
+              - { label: 'Name', name: 'name', widget: 'string' }
+              - { label: 'username', name: 'username', widget: 'string' }
+              - { label: 'Role', name: 'role', widget: 'string' }
+              - { label: 'Email', name: 'email', widget: 'string' }

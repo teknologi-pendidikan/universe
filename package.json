@@ -8,7 +8,8 @@
     "clean": "turbo clean",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "tsc": "tsc --noEmit --pretty",
-    "postinstall": "manypkg check"
+    "postinstall": "manypkg check",
+    "local:cms": "npx netlify-cms-proxy-server"
   },
   "packageManager": "pnpm@7.15.0",
   "dependencies": {
