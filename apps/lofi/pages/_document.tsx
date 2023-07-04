@@ -1,11 +1,14 @@
 import Footer from 'components/Footer'
 import Navbar from 'components/Navbar'
+import { randomBytes } from 'crypto'
 import { Head, Html, Main, NextScript } from 'next/document'
 
 export default function Document() {
+  const nonce = randomBytes(128).toString('base64')
+  const csp = `object-src 'none'; base-uri 'none'; script-src 'self' 'unsafe-eval' 'nonce-${nonce}' 'strict-dynamic'`
   return (
     <Html lang="id">
-      <Head>
+      <Head nonce={nonce}>
         <meta name="theme-color" content="#10528B" />
         <meta
           name="description"
@@ -23,12 +26,14 @@ export default function Document() {
         <link rel="icon" href="/icons/favicon-62x62.png" sizes="62x62" />
         <link rel="icon" href="/icons/favicon-192x192.png" sizes="192x192" />
         <link rel="icon" href="/icons/favicon-512x512.png" sizes="512x512" />
+        {/* Content Security Policy Rules */}
+        <meta httpEquiv="Content-Security-Policy" content={csp} />
       </Head>
       <body>
         <Navbar />
         <Main />
         <Footer />
-        <NextScript />
+        <NextScript nonce={nonce} />
       </body>
     </Html>
   )
