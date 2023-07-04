@@ -1,6 +1,6 @@
 ---
 title: Kirim Artikel
-date: 2023-07-04T23:28:39.649Z
+date: "2023-07-04"
 description: "Kirim reportase, opini atau press release Anda tentang suatu topik
   atau kegiatan, lalu dapatkan kesempatan untuk diterbitkan di koran dan majalah
   REDAKSI EDTECH.ID. "
