@@ -20,6 +20,7 @@ slug:
   sanitize_replacement: '-'
 
 collections:
+  # ARTIKEL COLLECTION
   - name: 'posts'
     label: 'Artikel Berita'
     folder: 'apps/lofi/_post'
@@ -34,7 +35,13 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'description', name: 'description', widget: 'text' }
       - { label: 'category', name: 'category', widget: 'string' }
-      - { label: 'author', name: 'author', widget: 'string' }
+      - label: 'Repoter'
+        name: 'author'
+        widget: 'relation'
+        collection: 'redaksi'
+        search_fields: ['reporterlist.*.username','reporterlist.*.name' ]
+        value_field: 'reporterlist.*.username'
+        display_fields: ['reporterlist.*.name']
       - { image: 'image', label: 'Image', name: 'image', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
     view_filters:
@@ -45,6 +52,7 @@ collections:
         field: 'category'
         pattern: 'referensi'
 
+  # TEAM REDAKSI COLLECTION
   - name: 'redaksi'
     label: 'Tim Redaksi'
     editor:
@@ -53,7 +61,7 @@ collections:
     files:
       - label: 'Reporter Berita'
         name: 'reporter'
-        file: 'apps/lofi/data/_author.json'
+        file: 'apps/lofi/data/redaksi.json'
         fields:
           - label: 'Reporter Berita'
             name: 'reporterlist'
