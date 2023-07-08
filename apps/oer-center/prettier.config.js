@@ -2,7 +2,7 @@
 
 /** @type {import("prettier").Options} */
 module.exports = {
-    ...require('../..prettier.config.js'),
+    ...require('../../prettier.config.js'),
     plugins: ['prettier-plugin-tailwindcss'],
     tailwindConfig: './tailwind.config.js',
 };
