@@ -9,7 +9,20 @@ export default function NavigationBar() {
   return (
     <header
       id="component-layout-header"
-      className="absolute inset-x-0 top-0 w-full bg-white shadow-md"
+      className="fixed inset-x-0 top-0 z-50 w-full bg-white shadow-md"
+      onScroll={
+        // hide global navigation when scrolling down
+        () => {
+          const globalNavigation = document.getElementById('global-navigation')
+          if (globalNavigation) {
+            if (window.scrollY > 0) {
+              globalNavigation.classList.add('hidden')
+            } else {
+              globalNavigation.classList.remove('hidden')
+            }
+          }
+        }
+      }
     >
       <div
         id="global-navigation"
