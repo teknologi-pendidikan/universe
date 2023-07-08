@@ -4,6 +4,10 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  prettier: ^3.0.0
+  prettier-plugin-tailwindcss: ^0.1.13
+
 importers:
 
   .:
@@ -206,6 +210,9 @@ importers:
       prettier:
         specifier: ^3.0.0
         version: 3.0.0
+      prettier-plugin-tailwindcss:
+        specifier: ^0.1.13
+        version: 0.1.13(prettier@3.0.0)
       tailwind-config:
         specifier: 0.0.0
         version: link:../../packages/tailwind-config
@@ -3121,7 +3128,6 @@ packages:
       prettier: '>=2.2.0'
     dependencies:
       prettier: 3.0.0
-    dev: false
 
   /prettier@3.0.0:
     resolution: {integrity: sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==}
