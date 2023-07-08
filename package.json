@@ -20,9 +20,5 @@
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.1.13",
     "turbo": "latest"
-  },
-  "resolutions": {
-    "prettier": "^2.8.8",
-    "prettier-plugin-tailwindcss": "^0.1.13"
   }
 }
