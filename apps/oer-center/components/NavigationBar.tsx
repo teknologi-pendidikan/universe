@@ -9,22 +9,22 @@ export default function NavigationBar() {
   return (
     <header
       id="component-layout-header"
-      className="w-full shadow-md bg-white absolute top-0 inset-x-0"
+      className="absolute inset-x-0 top-0 w-full bg-white shadow-md"
     >
       <div
         id="global-navigation"
-        className="flex justify-between items-center container mx-auto py-5"
+        className="container mx-auto flex items-center justify-between py-5"
       >
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
             <img
               src="/logo-horizontal-color.svg"
               alt="Logo EDTECH-ID"
-              className="w-full h-8"
+              className="h-8 w-full"
             />
           </Link>
         </div>
-        <nav className="flex items-center justify-around text-lg space-x-8">
+        <nav className="flex items-center justify-around space-x-8 text-lg">
           {GlobalNavigation.map((item) => (
             <Link
               key={item.url}
@@ -42,9 +42,9 @@ export default function NavigationBar() {
       </div>
       <div
         id="content-navigation"
-        className="py-5 flex justify-between item-start bg-brandblue"
+        className="item-start flex justify-between bg-brandblue py-5"
       >
-        <nav className="flex items-center justify-start text-xl text-white font-bold space-x-8 mx-auto container">
+        <nav className="container mx-auto flex items-center justify-start space-x-8 text-xl font-bold text-white">
           {ContentNavigation.map((item) => (
             <Link key={item.url} href={item.url}>
               {item.name}

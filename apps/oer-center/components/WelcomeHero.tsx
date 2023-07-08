@@ -7,20 +7,20 @@ export default function WelcomeHero() {
       <Image
         src="/welcome-hero-bg.png"
         alt="Welcome Hero Background"
-        className="w-full max-h-screen h-screen object-cover"
+        className="h-screen max-h-screen w-full object-cover"
         width={1920}
         height={1080}
         quality={75}
       />
       <div id="hero-content" className="absolute bottom-10 w-full">
-        <div className="p-12 flex flex-col items-start justify-start space-y-4 max-w-2xl">
-          <h1 className="text-2xl font-bold  bg-brandblue text-white p-3">
+        <div className="flex max-w-2xl flex-col items-start justify-start space-y-4 p-12">
+          <h1 className="bg-brandblue p-3  text-2xl font-bold text-white">
             {ContentData.contentComponentWelcomeHero.title}
           </h1>
-          <p className="text-2xl font-bold bg-brandyellow text-brandblue-800 p-3">
+          <p className="bg-brandyellow p-3 text-2xl font-bold text-brandblue-800">
             {ContentData.contentComponentWelcomeHero.subtitle}
           </p>
-          <p className="text-base bg-brandgreen text-white p-3">
+          <p className="bg-brandgreen p-3 text-base text-white">
             {ContentData.contentComponentWelcomeHero.description}
           </p>
         </div>
@@ -29,7 +29,7 @@ export default function WelcomeHero() {
         id="hero-bottomline"
         className="absolute bottom-0 w-full bg-brandblue-800"
       >
-        <p className="p-2 text-center font-bold text-brandyellow text-lg">
+        <p className="p-2 text-center text-lg font-bold text-brandyellow">
           {ContentData.contentComponentWelcomeHero.actionText}
         </p>
       </div>

@@ -18,12 +18,12 @@ export default function SectionLayout({
       <div className="container mx-auto">
         <div className="flex flex-col items-start justify-start py-16">
           <h2
-            className="text-6xl font-bold text-center
-            text-gray-800 mb-2"
+            className="mb-2 text-center text-6xl
+            font-bold text-gray-800"
           >
             {title}
           </h2>
-          <p className="text-xl text-gray-600 text-center">{subtitle}</p>
+          <p className="text-center text-xl text-gray-600">{subtitle}</p>
         </div>
         {children}
       </div>

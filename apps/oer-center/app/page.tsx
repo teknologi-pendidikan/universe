@@ -1,5 +1,5 @@
-import SectionLayout from "components/SectionLayout"
-import WelcomeHero from "components/WelcomeHero"
+import SectionLayout from 'components/SectionLayout'
+import WelcomeHero from 'components/WelcomeHero'
 
 export default function Page() {
   return (
