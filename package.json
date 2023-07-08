@@ -17,8 +17,12 @@
     "dotenv-cli": "^7.2.1",
     "eslint": "8.40.0",
     "eslint-config-custom": "0.0.0",
-    "prettier": "latest",
+    "prettier": "^3.0.0",
     "prettier-plugin-tailwindcss": "^0.1.13",
     "turbo": "latest"
-  }
+  },
+    "resolutions": {
+    "prettier": "^3.0.0",
+    "prettier-plugin-tailwindcss": "^0.1.13"
+    }
 }

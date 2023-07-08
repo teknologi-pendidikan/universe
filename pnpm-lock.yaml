@@ -21,7 +21,7 @@ importers:
         specifier: 0.0.0
         version: link:packages/eslint-config-custom
       prettier:
-        specifier: latest
+        specifier: ^3.0.0
         version: 3.0.0
       prettier-plugin-tailwindcss:
         specifier: ^0.1.13
@@ -173,15 +173,51 @@ importers:
         specifier: ^3.0.1
         version: 3.0.1
     devDependencies:
+      '@tailwindcss/aspect-ratio':
+        specifier: ^0.4.2
+        version: 0.4.2(tailwindcss@3.3.2)
+      '@tailwindcss/forms':
+        specifier: ^0.5.3
+        version: 0.5.3(tailwindcss@3.3.2)
+      '@tailwindcss/line-clamp':
+        specifier: ^0.4.4
+        version: 0.4.4(tailwindcss@3.3.2)
+      '@tailwindcss/typography':
+        specifier: ^0.5.9
+        version: 0.5.9(tailwindcss@3.3.2)
+      '@types/node':
+        specifier: 20.1.5
+        version: 20.1.5
+      '@types/react':
+        specifier: 18.2.6
+        version: 18.2.6
+      '@types/react-dom':
+        specifier: 18.2.4
+        version: 18.2.4
+      autoprefixer:
+        specifier: 10.4.14
+        version: 10.4.14(postcss@8.4.24)
       eslint-config-custom:
         specifier: 0.0.0
         version: link:../../packages/eslint-config-custom
+      postcss:
+        specifier: 8.4.24
+        version: 8.4.24
+      prettier:
+        specifier: ^3.0.0
+        version: 3.0.0
       tailwind-config:
         specifier: 0.0.0
         version: link:../../packages/tailwind-config
+      tailwindcss:
+        specifier: 3.3.2
+        version: 3.3.2
       tsconfig:
         specifier: 0.0.0
         version: link:../../packages/tsconfig
+      typescript:
+        specifier: 5.1.6
+        version: 5.1.6
 
   packages/eslint-config-custom:
     dependencies:
@@ -3091,7 +3127,6 @@ packages:
     resolution: {integrity: sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==}
     engines: {node: '>=14'}
     hasBin: true
-    dev: false
 
   /prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
