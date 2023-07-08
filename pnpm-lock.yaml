@@ -22,10 +22,10 @@ importers:
         version: link:packages/eslint-config-custom
       prettier:
         specifier: latest
-        version: 2.8.8
+        version: 3.0.0
       prettier-plugin-tailwindcss:
         specifier: ^0.1.13
-        version: 0.1.13(prettier@2.8.8)
+        version: 0.1.13(prettier@3.0.0)
       turbo:
         specifier: latest
         version: 1.10.7
@@ -148,6 +148,40 @@ importers:
       typescript:
         specifier: 5.1.6
         version: 5.1.6
+
+  apps/oer-center:
+    dependencies:
+      gray-matter:
+        specifier: ^4.0.3
+        version: 4.0.3
+      next:
+        specifier: 13.4.7
+        version: 13.4.7(react-dom@18.2.0)(react@18.2.0)
+      next-safe:
+        specifier: ^3.4.1
+        version: 3.4.1(next@13.4.7)
+      react:
+        specifier: 18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: 18.2.0
+        version: 18.2.0(react@18.2.0)
+      react-markdown:
+        specifier: ^8.0.7
+        version: 8.0.7(@types/react@18.2.6)(react@18.2.0)
+      remark-gfm:
+        specifier: ^3.0.1
+        version: 3.0.1
+    devDependencies:
+      eslint-config-custom:
+        specifier: 0.0.0
+        version: link:../../packages/eslint-config-custom
+      tailwind-config:
+        specifier: 0.0.0
+        version: link:../../packages/tailwind-config
+      tsconfig:
+        specifier: 0.0.0
+        version: link:../../packages/tsconfig
 
   packages/eslint-config-custom:
     dependencies:
@@ -3044,18 +3078,18 @@ packages:
     engines: {node: '>=4'}
     dev: false
 
-  /prettier-plugin-tailwindcss@0.1.13(prettier@2.8.8):
+  /prettier-plugin-tailwindcss@0.1.13(prettier@3.0.0):
     resolution: {integrity: sha512-/EKQURUrxLu66CMUg4+1LwGdxnz8of7IDvrSLqEtDqhLH61SAlNNUSr90UTvZaemujgl3OH/VHg+fyGltrNixw==}
     engines: {node: '>=12.17.0'}
     peerDependencies:
       prettier: '>=2.2.0'
     dependencies:
-      prettier: 2.8.8
+      prettier: 3.0.0
     dev: false
 
-  /prettier@2.8.8:
-    resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
-    engines: {node: '>=10.13.0'}
+  /prettier@3.0.0:
+    resolution: {integrity: sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==}
+    engines: {node: '>=14'}
     hasBin: true
     dev: false
 

@@ -1,0 +1,29 @@
+{
+  "name": "oer-center",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3200",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "tsc --noEmit --watch",
+    "type-check:ci": "tsc --noEmit --pretty --noEmit --strict"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "next": "13.4.7",
+    "next-safe": "^3.4.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-markdown": "^8.0.7",
+    "remark-gfm": "^3.0.1"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "0.0.0",
+    "tailwind-config": "0.0.0",
+    "tsconfig": "0.0.0"
+  }
+}
