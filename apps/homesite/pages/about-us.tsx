@@ -10,27 +10,27 @@ export default function AboutUs() {
     <main>
       <section
         id="big-about"
-        className="container mx-auto h-[90vh] bg-gray-100 text-white px-5 py-8 lg:px-0"
+        className="container mx-auto h-[90vh] bg-gray-100 px-5 py-8 text-white lg:px-0"
       >
-        <div className="flex flex-col items-center justify-center space-y-12 h-full w-full">
-          <p className="max-w-screen-xl text-6xl text-gray-800 text-center leading-snug">
+        <div className="flex h-full w-full flex-col items-center justify-center space-y-12">
+          <p className="max-w-screen-xl text-center text-6xl leading-snug text-gray-800">
             Kami adalah sekelompok kecil ahli teknologi pendidikan yang memiliki
             misi untuk membuat pendidikan di Indonesia terbuka dan dapat
             dirasakan oleh setiap anggota masyarakat.
           </p>
-          <p className="max-w-screen-lg text-3xl text-gray-800 text-center leading-snug">
+          <p className="max-w-screen-lg text-center text-3xl leading-snug text-gray-800">
             Kami memanfaatkan teknologi untuk menciptakan inovasi dalam
             memfasilitasi pembelajaran dan meningkatkan performa manusia.
           </p>
         </div>
       </section>
       <section id="principle" className="container mx-auto px-5 py-64">
-        <div className="grid grid-cols-2 grid-cols-min p-8 bg-white shadow-brandblue-100 shadow-2xl text-gray-800 rounded-lg">
-          <div className="flex flex-col items-start justify-center space-y-4 h-full px-12">
+        <div className="grid-cols-min shadow-brandblue-100 grid grid-cols-2 rounded-lg bg-white p-8 text-gray-800 shadow-2xl">
+          <div className="flex h-full flex-col items-start justify-center space-y-4 px-12">
             <h2 className="text-4xl font-semibold leading-snug">
               Prinsip kami dalam memberikan kontribusi kepada masyarakat
             </h2>
-            <p className="text-lg leading-relaxed font-normal">
+            <p className="text-lg font-normal leading-relaxed">
               Sebagai lembaga yang belajar dan membelajarkan ilmu pengetahuan,
               Inovasi menjadi orientasi kami dalam bergerak dan memberikan
               pelayanan. Melalui teknologi, kami membuka cakrawala baru bagi
@@ -49,22 +49,22 @@ export default function AboutUs() {
         </div>
       </section>
       <section id="team" className="py-24">
-        <div className="relative w-full h-[90vh] bg-gray-100">
+        <div className="relative h-[90vh] w-full bg-gray-100">
           <Image
             src="/full-team.png"
             quality={100}
             width={1920}
             height={1080}
             alt="Founder EDTECH-ID"
-            className="w-full h-[90vh] object-cover"
+            className="h-[90vh] w-full object-cover"
           />
-          <div className="container mx-auto absolute top-36 text-brandblue-700 inset-0 flex flex-col items-center justify-start space-y-4">
-            <h2 className="text-4xl font-semibold leading-snug text-center">
+          <div className="text-brandblue-700 container absolute inset-0 top-36 mx-auto flex flex-col items-center justify-start space-y-4">
+            <h2 className="text-center text-4xl font-semibold leading-snug">
               Kami terdiri dari berbagai latar belakang yang berbeda - mulai
               dari mahasiswa, dosen, dan profesional, dari lembaga pendidikan
               hingga perusahaan teknologi.
             </h2>
-            <p className="text-lg leading-relaxed font-normal text-center">
+            <p className="text-center text-lg font-normal leading-relaxed">
               Kami memiliki tujuan yang sama, yaitu menciptakan teknologi yang
               dapat digunakan untuk meningkatkan pendidikan dan pembelajaran.
             </p>
@@ -72,17 +72,17 @@ export default function AboutUs() {
         </div>
       </section>
       <section id="our-strategy" className="container mx-auto px-5 py-64">
-        <div className="container mx-auto text-gray-700 max-w-screen-xl flex flex-col items-center justify-start space-y-12 py-4">
-          <h2 className="text-6xl font-semibold leading-snug text-center">
+        <div className="container mx-auto flex max-w-screen-xl flex-col items-center justify-start space-y-12 py-4 text-gray-700">
+          <h2 className="text-center text-6xl font-semibold leading-snug">
             Kami tidak hanya membangun produk; Kami fokus pada pelaksanaan
             desain hingga evaluasi solusi. Kami membangun hal yang dapat
             diimplementasikan dan berkelanjutan.
           </h2>
-          <p className="text-2xl leading-relaxed font-normal">
+          <p className="text-2xl font-normal leading-relaxed">
             Untuk mencapai tujuan tersebut, kami memiliki strategi yang terdiri
             dari 4 prinsip, yaitu:
           </p>
-          <ol className="text-2xl list-decimal list-inside text-center space-y-1">
+          <ol className="list-inside list-decimal space-y-1 text-center text-2xl">
             <li className="">Kolaborasi dengan teknolog muda</li>
             <li className="">Mendesain solusi berbasis tren kebutuhan</li>
             <li className="">Menggunakan teknologi open source</li>
@@ -91,11 +91,11 @@ export default function AboutUs() {
         </div>
       </section>
       <section
-        className="bg-gray-800 text-gray-100 py-24 px-5 lg:px-0"
+        className="bg-gray-800 px-5 py-24 text-gray-100 lg:px-0"
         id="our-process"
       >
         <div className="container mx-auto flex flex-col items-center py-8">
-          <h1 className="text-6xl font-bold mb-14">How we do it?</h1>
+          <h1 className="mb-14 text-6xl font-bold">How we do it?</h1>
           <p className="max-w-6xl text-xl lg:text-center">
             Kami menciptakan, memanfaatkan, dan mengelola teknologi yang
             tersedia di lingkungan pendidikan. Kami terbuka akan kolaborasi ide,
@@ -103,7 +103,7 @@ export default function AboutUs() {
             sederhana kami. Kami telah bereksperimen dengan berbagai hal untuk
             menciptakan berbagai berbagai teknologi.
           </p>
-          <div className="flex flex-col lg:flex-row mt-6 justify-around items-center w-full text-center lg:space-y-0 space-y-12">
+          <div className="mt-6 flex w-full flex-col items-center justify-around space-y-12 text-center lg:flex-row lg:space-y-0">
             <div className="flex flex-col items-center ">
               <Image
                 className="pb-10"
@@ -112,7 +112,7 @@ export default function AboutUs() {
                 width={190}
                 height={190}
               />
-              <p className="text-4xl  max-w-xs">
+              <p className="max-w-xs  text-4xl">
                 Kolaborasi dengan teknolog muda
               </p>
             </div>
@@ -124,7 +124,7 @@ export default function AboutUs() {
                 width={190}
                 height={190}
               />
-              <p className="text-4xl  max-w-xs">Designing trend-based issues</p>
+              <p className="max-w-xs  text-4xl">Designing trend-based issues</p>
             </div>
             <div className="flex flex-col items-center justify-center text-center">
               <Image
@@ -134,7 +134,7 @@ export default function AboutUs() {
                 width={190}
                 height={190}
               />
-              <p className="text-4xl  max-w-xs">Open Source Technology</p>
+              <p className="max-w-xs  text-4xl">Open Source Technology</p>
             </div>
             <div className="flex flex-col items-center justify-center text-center">
               <Image
@@ -144,17 +144,17 @@ export default function AboutUs() {
                 width={190}
                 height={190}
               />
-              <p className="text-4xl  max-w-xs">User Adoption & Satisfaction</p>
+              <p className="max-w-xs  text-4xl">User Adoption & Satisfaction</p>
             </div>
           </div>
         </div>
       </section>
       <section
-        className="bg-gray-100 text-gray-700 px-5 lg:px-0 py-10"
+        className="bg-gray-100 px-5 py-10 text-gray-700 lg:px-0"
         id="what-can-we-solve"
       >
         <div className="container mx-auto my-14 flex flex-col items-center">
-          <p className="max-w-6xl text-xl lg:text-4xl lg:text-center leading-loose">
+          <p className="max-w-6xl text-xl leading-loose lg:text-center lg:text-4xl">
             Teknologi Pendidikan ID adalahorganisasi nirlaba (komunitas) yang
             bergerak di bidang pengembangan Pendidikan dan Pembelajaran dan
             tidak terafiliasi dengan lembaga mana pun, baik partai politik,
@@ -166,7 +166,7 @@ export default function AboutUs() {
           <Link
             href="https://aplikasi.teknologipendidikan/sikarsa"
             passHref
-            className="bg-gray-700 hover:bg-gray-900 text-white text-lg py-3 px-4 lg:px-24 rounded-full mt-12"
+            className="mt-12 rounded-full bg-gray-700 px-4 py-3 text-lg text-white hover:bg-gray-900 lg:px-24"
           >
             Berkolaborasi dengan kami
           </Link>

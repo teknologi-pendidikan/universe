@@ -164,7 +164,7 @@ export default function Home({ posts }: Props) {
       <StructuredData data={structuredData} />
       <section
         id="hero"
-        className="hidden relative h-screen outline-1 outline-red-400 outline"
+        className="relative hidden h-screen outline outline-1 outline-red-400"
       >
         <Image
           src="/opengraph-main.png"
@@ -175,7 +175,7 @@ export default function Home({ posts }: Props) {
         />
         <div
           id="arrowdown"
-          className="py-2 w-full bg-brandblue-800 absolute bottom-0"
+          className="bg-brandblue-800 absolute bottom-0 w-full py-2"
         >
           <h1 className="text-center text-white">
             Majalah dan Surat Kabar Mahasiswa Teknologi Pendidikan
@@ -184,7 +184,7 @@ export default function Home({ posts }: Props) {
       </section>
       <FrontHeader />
       <SectionInformationReference>
-        {postCategoryReferensi.slice(0,3).map((post) => (
+        {postCategoryReferensi.slice(0, 3).map((post) => (
           <ArticleCard
             key={post.slug}
             slug={post.slug}
@@ -194,18 +194,18 @@ export default function Home({ posts }: Props) {
       </SectionInformationReference>
       <section
         id="release-category"
-        className="mx-auto container px-4 mb-8 mt-5 max-w-screen-xl"
+        className="container mx-auto mb-8 mt-5 max-w-screen-xl px-4"
       >
-        <div className="flex flex-col space-y-4 justify-start items-start">
-          <h2 className="text-xl font-bold text-black pb-2">
+        <div className="flex flex-col items-start justify-start space-y-4">
+          <h2 className="pb-2 text-xl font-bold text-black">
             Rubrik & Kategori Rilisan
           </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 w-full">
+          <div className="grid w-full grid-cols-1 gap-4 lg:grid-cols-5">
             {ListOfCategory.map((category) => (
               <Link
                 key={category.CategoryId}
                 href={`/category/${category.CategoryId}`}
-                className="flex flex-col space-y-2 justify-start items-start border border-black-1 rounded-lg p-4 hover:bg-brandblue-800 hover:text-white text-brandblue-800"
+                className="border-black-1 hover:bg-brandblue-800 text-brandblue-800 flex flex-col items-start justify-start space-y-2 rounded-lg border p-4 hover:text-white"
               >
                 <h3 className="text-xl font-semibold hover:underline">
                   {category.title}
@@ -218,16 +218,16 @@ export default function Home({ posts }: Props) {
       <RunningEvents />
       <section
         id="new-release"
-        className="mx-auto container px-4 mb-8 mt-5 max-w-screen-xl"
+        className="container mx-auto mb-8 mt-5 max-w-screen-xl px-4"
       >
-        <div className="flex flex-col space-y-4 justify-start items-start">
-          <h2 className="text-5xl font-bold text-black pb-2">
+        <div className="flex flex-col items-start justify-start space-y-4">
+          <h2 className="pb-2 text-5xl font-bold text-black">
             Artikel Terbaru
           </h2>
-          <div className="grid grid-cols-1 lg:grid-rows-3 lg:grid-flow-col lg:gap-x-6 w-full">
+          <div className="grid w-full grid-cols-1 lg:grid-flow-col lg:grid-rows-3 lg:gap-x-6">
             {sortedPosts[0] && (
               <Link
-                className="lg:row-span-3 flex flex-col border-b-gray-200 lg:border-0"
+                className="flex flex-col border-b-gray-200 lg:row-span-3 lg:border-0"
                 href={sortedPosts[0].slug}
               >
                 <Image
@@ -235,9 +235,9 @@ export default function Home({ posts }: Props) {
                   alt={sortedPosts[0].frontmatter.title}
                   width={1280}
                   height={720}
-                  className="w-full rounded-lg object-cover h-36 lg:h-[480px] object-right-top"
+                  className="h-36 w-full rounded-lg object-cover object-right-top lg:h-[480px]"
                 />
-                <h3 className="text-2xl font-bold text-black pb-2 pt-4 hover:underline">
+                <h3 className="pb-2 pt-4 text-2xl font-bold text-black hover:underline">
                   {sortedPosts[0].frontmatter.title}
                 </h3>
                 <p className="text-black">
@@ -248,11 +248,11 @@ export default function Home({ posts }: Props) {
             {sortedPosts.slice(2, 5).map(({ slug, frontmatter }) => (
               <Link
                 key={slug}
-                className="lg:max-w-sm col-span-2 flex flex-col h-full w-full border-spacing-4 border-gray-200 border-b-2 pb-4 pt-4 lg:pt-0"
+                className="col-span-2 flex h-full w-full border-spacing-4 flex-col border-b-2 border-gray-200 pb-4 pt-4 lg:max-w-sm lg:pt-0"
                 href={slug}
               >
                 <div className="flex flex-col-reverse lg:flex-row">
-                  <h3 className="text-md font-bold text-black pb-2 pt-4 hover:underline">
+                  <h3 className="text-md pb-2 pt-4 font-bold text-black hover:underline">
                     {frontmatter.title.slice(0, 75)}
                   </h3>
                   <Image
@@ -260,10 +260,10 @@ export default function Home({ posts }: Props) {
                     alt={frontmatter.title}
                     width={1280}
                     height={720}
-                    className="lg:h-16 lg:w-16  h-36 object-cover rounded-md object-top"
+                    className="h-36 rounded-md  object-cover object-top lg:h-16 lg:w-16"
                   />
                 </div>
-                <p className="hidden lg:block text-black h-full line-clamp-3">
+                <p className="line-clamp-3 hidden h-full text-black lg:block">
                   {/* pull date and convert to Indonesian Locale DD/MM/YYYY */}
                   {new Date(frontmatter.date).toLocaleDateString('id-ID', {
                     day: 'numeric',

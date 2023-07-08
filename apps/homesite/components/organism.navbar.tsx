@@ -27,19 +27,19 @@ function Navbar() {
   return (
     <header
       id="navbar-wrapper"
-      className="py-12 text-xl bg-gray-100 text-gray-800"
+      className="bg-gray-100 py-12 text-xl text-gray-800"
     >
       <div className="container mx-auto flex flex-row items-center justify-center lg:justify-between">
         <Image src={symbol_horizontal} alt="logo" width={200} height={50} />
-        <nav className="hidden lg:block space-x-8 items-center">
+        <nav className="hidden items-center space-x-8 lg:block">
           {NAVLINK.map((item) => (
             <Link
               key={item.href}
               href={item.href}
               className={
                 router.pathname === item.href
-                  ? 'text-gray-800 hover:text-gray-600 transition duration-300 underline underline-offset-8'
-                  : 'text-gray-800 hover:text-gray-600 transition duration-300'
+                  ? 'text-gray-800 underline underline-offset-8 transition duration-300 hover:text-gray-600'
+                  : 'text-gray-800 transition duration-300 hover:text-gray-600'
               }
             >
               {item.label}

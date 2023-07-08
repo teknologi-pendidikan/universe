@@ -12,25 +12,27 @@ type Props = {
 
 export default function ArticleCard({ slug, frontmatter }: Props) {
   return (
-    <div className="flex flex-col space-y-2 justify-start items-start border border-black-1 rounded-lg">
+    <div className="border-black-1 flex flex-col items-start justify-start space-y-2 rounded-lg border">
       {frontmatter.image ? (
         <Image
           src={frontmatter.image}
           alt={frontmatter.title}
           width={1280}
           height={720}
-          className="w-full h-36 object-cover rounded-t-lg object-right-top"
+          className="h-36 w-full rounded-t-lg object-cover object-right-top"
         />
       ) : (
-        <div className="w-full h-24 rounded-t-lg bg-gray-300" />
+        <div className="h-24 w-full rounded-t-lg bg-gray-300" />
       )}
-      <div className="px-4 pb-4 pt-2 w-full">
+      <div className="w-full px-4 pb-4 pt-2">
         <Link href={`/${slug}`}>
           <h3 className="text-base font-bold text-black hover:underline">
             {frontmatter.title.slice(0, 80)}
           </h3>
         </Link>
-        <p className="text-sm text-gray-800 pt-2 line-clamp-2">{frontmatter.description}</p>
+        <p className="line-clamp-2 pt-2 text-sm text-gray-800">
+          {frontmatter.description}
+        </p>
       </div>
     </div>
   )

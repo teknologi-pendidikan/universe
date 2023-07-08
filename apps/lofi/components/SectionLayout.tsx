@@ -4,14 +4,11 @@ interface Props {
   children: React.ReactNode
 }
 
-export default function SectionLayout({
-  children,
-  ...props
-}: Props) {
+export default function SectionLayout({ children, ...props }: Props) {
   return (
     <section
       {...props}
-      className="mx-auto container px-4 mb-8 mt-5 max-w-screen-xl"
+      className="container mx-auto mb-8 mt-5 max-w-screen-xl px-4"
     >
       {children}
     </section>

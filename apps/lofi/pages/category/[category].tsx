@@ -70,34 +70,42 @@ type CategoryPostViewType = {
   categoryData: ListOfCategoryType
 }
 
-export default function CategoryPostView({ categoryPosts, categoryData }: CategoryPostViewType) {
+export default function CategoryPostView({
+  categoryPosts,
+  categoryData,
+}: CategoryPostViewType) {
   return (
     <main className={`relative`}>
       <FrontHeader title={`Rilisan ${categoryData.title}`} />
-      <section className="container mx-auto px-4 my-10 max-w-screen-xl font-serif">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <section className="container mx-auto my-10 max-w-screen-xl px-4 font-serif">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           {categoryPosts.map((post: any) => (
-            <div key={post.slug} className="flex flex-col space-y-2 justify-start items-start border border-black-1 rounded-lg">
-            {post.frontmatter.image ? (
-              <Image
-                src={post.frontmatter.image}
-                alt={post.frontmatter.title}
-                width={1280}
-                height={720}
-                className="w-full h-40 object-cover rounded-t-lg object-right-top"
-              />
-            ) : (
-              <div className="w-full h-40 rounded-t-lg bg-gray-300" />
-            )}
-            <div className="px-4 pb-4 pt-2 w-full">
-              <Link href={`/${post.slug}`}>
-                <h2 className="text-2xl text-black hover:underline">
-                  {post.frontmatter.title.slice(0, 80)}
-                </h2>
-              </Link>
-              <p className="text-sm text-gray-800 pt-2 line-clamp-3">{post.frontmatter.description}</p>
+            <div
+              key={post.slug}
+              className="border-black-1 flex flex-col items-start justify-start space-y-2 rounded-lg border"
+            >
+              {post.frontmatter.image ? (
+                <Image
+                  src={post.frontmatter.image}
+                  alt={post.frontmatter.title}
+                  width={1280}
+                  height={720}
+                  className="h-40 w-full rounded-t-lg object-cover object-right-top"
+                />
+              ) : (
+                <div className="h-40 w-full rounded-t-lg bg-gray-300" />
+              )}
+              <div className="w-full px-4 pb-4 pt-2">
+                <Link href={`/${post.slug}`}>
+                  <h2 className="text-2xl text-black hover:underline">
+                    {post.frontmatter.title.slice(0, 80)}
+                  </h2>
+                </Link>
+                <p className="line-clamp-3 pt-2 text-sm text-gray-800">
+                  {post.frontmatter.description}
+                </p>
+              </div>
             </div>
-          </div>
           ))}
         </div>
       </section>

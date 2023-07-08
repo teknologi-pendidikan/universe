@@ -1,10 +1,10 @@
 ---
-date: "2023-06-26 02:00:42"
+date: '2023-06-26 02:00:42'
 title: Jembatan Kecerdasan Manusia dengan Kecerdasan Buatan
 subtitle: Seberapa jauh kecerdasan buatan (AI) akan mengambil alih pekerjaan manusia?
-description: "Seberapa jauh kecerdasan buatan (AI) akan mengambil alih pekerjaan
+description: 'Seberapa jauh kecerdasan buatan (AI) akan mengambil alih pekerjaan
   manusia? Dr. Henry Praherdhiono menjawab: Meskipun AI sangat membantu, mereka
-  (AI) hanya membantu sebagian kecil dari seluruh pekerjaan kita."
+  (AI) hanya membantu sebagian kecil dari seluruh pekerjaan kita.'
 image: /posts/jkmdkb-cover.png
 category: opini
 tags:
@@ -13,14 +13,15 @@ tags:
   - henrypraherdhiono
 author: vzrenggamani
 ---
-Sebuah pertanyaan singkat: 
+
+Sebuah pertanyaan singkat:
 
 Dr. Henry Praherdhiono menjawab:
 Meskipun AI sangat membantu, mereka (AI) hanya membantu sebagian kecil dari seluruh pekerjaan kita. Mereka hanya terbatas pada pengetahuan eksplisit, mereka belum mampu untuk mencapai pengetahuan tacit.
 
 Pengetahuan eksplisit merupakan jenis pengetahan yang **dapat ditransmisikan melalui bahasa**, media cetak atau elektronik. Sedangkan tacit diartikan sebagai pengetahuan yang **sulit untuk dibahasakan secara formal**, tetapi melekat pada pengalaman, keterampilan dan intuisi seseorang.
 
-![Perbedaan Pengetahuan Tacit dan Eksplisit](/posts/ai-05.png "Perbedaan Pengetahuan Tacit dan Eksplisit")
+![Perbedaan Pengetahuan Tacit dan Eksplisit](/posts/ai-05.png 'Perbedaan Pengetahuan Tacit dan Eksplisit')
 
 AI mampu memproses dan menghasilkan pengetahuan dengan cepat dan akurat sesuai dengan data yang diberikan. Hal tersebut menjadi kelebihan utama dari kecerdasan buatan. Namun, mereka masih **belum mampu** untuk mengaplikasikan pengetahuan tacit layaknya seorang manusia.
 

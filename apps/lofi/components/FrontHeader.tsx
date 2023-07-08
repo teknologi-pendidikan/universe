@@ -42,22 +42,22 @@ export default function FrontHeader({
   return (
     <section
       id="frontheader"
-      className="container mx-auto px-4 my-10 max-w-screen-xl pt-12"
+      className="container mx-auto my-10 max-w-screen-xl px-4 pt-12"
     >
-      <div className="flex flex-row justify-around items-center text-brandblue-800">
-        <div className="hidden lg:flex justify-between space-x-12 items-center">
+      <div className="text-brandblue-800 flex flex-row items-center justify-around">
+        <div className="hidden items-center justify-between space-x-12 lg:flex">
           {LeftLink.map((link) => (
             <Link href={link.link} key={link.link} className="hover:underline">
               <p>{link.title}</p>
             </Link>
           ))}
         </div>
-        <div className="md:col-span-2 justify-center items-center">
+        <div className="items-center justify-center md:col-span-2">
           <Link href="/">
             <Image src={LogoLOFI} alt="Logo LOFI" width={200} height={200} />
           </Link>
         </div>
-        <div className="hidden lg:flex justify-between space-x-12 items-center">
+        <div className="hidden items-center justify-between space-x-12 lg:flex">
           {RightLink.map((link) => (
             <Link href={link.link} key={link.link} className="hover:underline">
               <p>{link.title}</p>
@@ -65,7 +65,7 @@ export default function FrontHeader({
           ))}
         </div>
       </div>
-      <h1 className="text-center w-full font-serif pt-12 text-4xl">{title}</h1>
+      <h1 className="w-full pt-12 text-center font-serif text-4xl">{title}</h1>
     </section>
   )
 }

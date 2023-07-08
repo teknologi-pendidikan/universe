@@ -1,5 +1,5 @@
 ---
-date: "2022-11-23 16:29:41"
+date: '2022-11-23 16:29:41'
 title: Sejarah Singkat Dunia Teknologi Pendidikan
 subtitle: Mengenal lebih dekat dengan bidang ilmu teknologi pendidikan
 description: Pada tahun 1960-an teknologi pendidikan menjadi salah satu kajian
@@ -10,6 +10,7 @@ tags:
   - sejarahsingkat
 author: mahasiswa-tep
 ---
+
 Pada tahun 1960-an teknologi pendidikan menjadi salah satu kajian yang banyak mendapat perhatian di lingkungan ahli pendidikan. Pada awalnya, teknologi pendidikan merupakan kelanjutan perkembangan dari kajian-kajian tentang penggunaan Audiovisual, dan program belajar dalam penyelenggaraan pendidikan. Kajian tersebut pada hakekatnya merupakan usaha dalam memecahkan masalah belajar manusia (human learning). Solusi yang diambil melalui kajian teknologi pendidikan bahwa pemecahan masalah belajar perlu menggunakan pendekatan-pendekatan yang tepat dengan banyak memfungsikan pemanfaatan sumber belajar (learning resources).
 
 Perkembangan kajian teknologi pendidikan menghasilkan berbagai konsep dan praktek pendidikan yang banyak memanfaatkan media sebagai sumber belajar. Oleh karena itu, terdapat persepsi bahwa teknologi pendidikan sama dengan media, padahal kedudukan media berfungsi sebagai sarana untuk mempermudah dalam penyampaian informasi atau bahan belajar. Dari segi sistem pendidikan, kedudukan teknologi pendidikan berfungsi untuk memperkuat pengembangan kurikulum terutama dalam disain dan pengembangan, serta implementasinya, bahkan terdapat asumsi bahwa kurikulum berkaitan dengan “what”, sedangkan teknologi pendidikan mengkaji tentang “how”. Dalam kaitannya dengan pembelajaran, teknologi pendidikan memperkuat dalam merekayasa berbagai cara dan teknik dari mulai tahap disain, pengembangan, pemanfaatan berbagai sumber belajar, implementasi, dan penilaian program dan hasil belajar.

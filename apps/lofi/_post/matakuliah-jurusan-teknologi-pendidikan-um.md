@@ -1,11 +1,12 @@
 ---
-date: "2022-11-20 16:31:53"
+date: '2022-11-20 16:31:53'
 title: Matakuliah Jurusan Teknologi Pendidikan Tahun 2022 terbaru
 subtitle: Daftar Matakuliah Jurusan Teknologi Pendidikan Kurikulum 2020
 description: Daftar Matakuliah Jurusan Teknologi Pendidikan Kurikulum 2020
 category: referensi
 author: vzrenggamani
 ---
+
 ## Semester 1
 
 | **Nomor** | **KODE**   | **NAMA MATAKULIAH**                  | **SKS** | **WAJIB/PILIHAN** |
@@ -80,7 +81,7 @@ author: vzrenggamani
 | ------ | ---------- | ------------------- | ------- | ----------------- |
 | 1      | UKKNUM6090 | Kuliah Kerja Nyata  | 4       | Wajiv             |
 
-## S﻿emester 
+## S﻿emester
 
 | **\#** | **KODE**   | **NAMA MATAKULIAH** | **SKS** | **WAJIB/PILIHAN** |
 | ------ | ---------- | ------------------- | ------- | ----------------- |

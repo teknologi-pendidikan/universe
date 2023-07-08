@@ -87,7 +87,7 @@ export default function Artikel({ frontmatter, content, slug }: Props) {
     articleBody: content,
   }
   return (
-    <div className="mx-auto container px-4 mb-8 mt-5 max-w-screen-xl">
+    <div className="container mx-auto mb-8 mt-5 max-w-screen-xl px-4">
       <SEO
         title={`${frontmatter.title} - Redaksi EDTECH-ID`}
         description={frontmatter.description}
@@ -99,19 +99,19 @@ export default function Artikel({ frontmatter, content, slug }: Props) {
       <StructuredData data={structuredData} />
       <article
         id={slug}
-        className="container mx-auto text-black mb-20 font-serif"
+        className="container mx-auto mb-20 font-serif text-black"
       >
         <section
           id="article-title"
-          className="flex flex-col items-center justify-center mb-8"
+          className="mb-8 flex flex-col items-center justify-center"
         >
-          <h1 className="text-3xl lg:text-5xl text-gray-900 pt-24 mb-12 text-center max-w-screen-lg">
+          <h1 className="mb-12 max-w-screen-lg pt-24 text-center text-3xl text-gray-900 lg:text-5xl">
             {frontmatter.title}
           </h1>
-          <p className="text-sm text-gray-500 text-center max-w-screen-md">
+          <p className="max-w-screen-md text-center text-sm text-gray-500">
             {frontmatter.description}
           </p>
-          <span className="text-sm text-gray-500 text-center max-w-screen-md pt-4">
+          <span className="max-w-screen-md pt-4 text-center text-sm text-gray-500">
             <time dateTime={frontmatter.date}>
               {
                 // format date to Indonesian
@@ -124,7 +124,10 @@ export default function Artikel({ frontmatter, content, slug }: Props) {
               }
             </time>{' '}
             -{' '}
-            <Link href={`/authors/${frontmatter.author}`} className='hover:underline hover:text-gray-700'>
+            <Link
+              href={`/authors/${frontmatter.author}`}
+              className="hover:text-gray-700 hover:underline"
+            >
               {
                 TeamRedaksi.reporterlist.find(
                   (author: TeamRedaksi) =>
@@ -137,22 +140,22 @@ export default function Artikel({ frontmatter, content, slug }: Props) {
 
         <section
           id="article-heroimage"
-          className="overflow-hidden relative max-w-screen-md mx-auto mb-12"
+          className="relative mx-auto mb-12 max-w-screen-md overflow-hidden"
         >
           <Image
             src={frontmatter.image || IMAGEPLACEHOLDER}
             alt={frontmatter.title}
-            className="h-40 md:h-96 object-cover rounded-lg"
+            className="h-40 rounded-lg object-cover md:h-96"
             width={1280}
             height={720}
             loading="eager"
             quality={75}
           />
-          <p className="text-sm text-gray-500 pt-4">{frontmatter.title}</p>
+          <p className="pt-4 text-sm text-gray-500">{frontmatter.title}</p>
         </section>
         <section
           id="article-content"
-          className="prose-full prose-xl text-gray-900 px-5 lg:px-48 lg:text-justify"
+          className="prose-full prose-xl px-5 text-gray-900 lg:px-48 lg:text-justify"
         >
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}

@@ -5,7 +5,7 @@ export default function RunningEvents() {
   return (
     <section
       id="runningevents"
-      className="mx-auto container px-4 mb-8 mt-5 max-w-screen-xl"
+      className="container mx-auto mb-8 mt-5 max-w-screen-xl px-4"
     >
       <Link href="https://grow.teknologipendidikan.or.id/running" className="">
         <Image
@@ -13,7 +13,7 @@ export default function RunningEvents() {
           alt="Event dan Kegiatan oleh Teknologi Pendidikan ID"
           width={2496}
           height={640}
-          className="w-full object-cover h-36 lg:h-80 rounded-lg hover:scale-[103%] transition ease-in-out duration-500 object-left-top"
+          className="h-36 w-full rounded-lg object-cover object-left-top transition duration-500 ease-in-out hover:scale-[103%] lg:h-80"
           unoptimized
         />
       </Link>

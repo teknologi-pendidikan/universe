@@ -1,5 +1,5 @@
 ---
-date: "2022-05-21 23:10:34"
+date: '2022-05-21 23:10:34'
 layout: post
 title: Program Pertukaran Mahasiswa Merdeka UM 2022 (PMM2 UM)
 subtitle: Pada dua minggu yang lalu (13/5) Wakil Rektor I, Prof. Dr. H. Budi Eko
@@ -17,9 +17,10 @@ tags:
   - pmm2
 author: chandrina
 ---
+
 Pada dua minggu yang lalu (13/5) Wakil Rektor I, Prof. Dr. H. Budi Eko Soetjipto, M.Ed., M.Si mengeluarkan surat edaran Nomor 13.5.26/UN32.I/SE/2022 tentang pembukaan pendaftaran Pertukaran Mahasiswa Merdeka 2 (PMM 2). Program Pertukaran Mahasiswa Merdeka (PMM) merupakan bagian dari program MBKM yang diadakan oleh Kementrian Pendidikan, Budaya, Riset, dan Teknologi (Kemendikbud Ristek) kembali dibuka untuk yang kedua kalinya.
 
-Dalam surat tersebut, dijelaskan bahwa Universitas Negeri Malang membuka Program Pertukaran Mahasiswa Merdeka (PMM UM) tahun 2022. Sebanyak 76 Perguruan Tinggi penerima yang tersebar di cluster Bali-Nusa Tenggara, Kalimantan, Papua- Maluku, Sulawesi, dan Sumatera dapat dipilih oleh mahasiswa UM. Pendaftaran program tersebut dapat dilakukan melalui tautan <https://program-pmm.id> serta <https://kampusmerdeka.um.ac.id>. Wajib diketahui bahwa batas akhir pendaftaran dan kelengkapan berkas pendaftaran ialah tanggal 28 Mei 2022. 
+Dalam surat tersebut, dijelaskan bahwa Universitas Negeri Malang membuka Program Pertukaran Mahasiswa Merdeka (PMM UM) tahun 2022. Sebanyak 76 Perguruan Tinggi penerima yang tersebar di cluster Bali-Nusa Tenggara, Kalimantan, Papua- Maluku, Sulawesi, dan Sumatera dapat dipilih oleh mahasiswa UM. Pendaftaran program tersebut dapat dilakukan melalui tautan <https://program-pmm.id> serta <https://kampusmerdeka.um.ac.id>. Wajib diketahui bahwa batas akhir pendaftaran dan kelengkapan berkas pendaftaran ialah tanggal 28 Mei 2022.
 
 Bagi kalian yang tertarik untuk mengikuti program ini, UM sangat mendukung para mahasiswa dengan memberikan konversi hingga 20 SKS bagi para mahasiswa yang menuntaskan keseluruhan program pertukaran mahasiswa merdeka. Dengan pedoman yang berlaku, alangkah baiknya kalian untuk berkonsultasi dengan pihak departemen dan fakultas terkait keinginan kalian dalam mengikuti program PMM 2.
 

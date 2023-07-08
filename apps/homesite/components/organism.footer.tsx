@@ -5,5 +5,5 @@ export default function Footer() {
         <p className="text-2xl font-bold">Teknologi Pendidikan ID</p>
       </div>
     </footer>
-  );
+  )
 }

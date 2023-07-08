@@ -55,38 +55,38 @@ export default function Author({ posts }: any) {
   )
 
   return (
-    <div className="mx-auto container px-4 mb-8 mt-24 max-w-screen-xl">
+    <div className="container mx-auto mb-8 mt-24 max-w-screen-xl px-4">
       <div
         id={`${username}`}
-        className="container mx-auto text-black mb-20 font-serif"
+        className="container mx-auto mb-20 font-serif text-black"
       >
         <section
           id="article-title"
-          className="flex flex-col items-center justify-center mb-8"
+          className="mb-8 flex flex-col items-center justify-center"
         >
-          <h1 className="text-3xl lg:text-5xl text-gray-900 text-center max-w-screen-lg">
+          <h1 className="max-w-screen-lg text-center text-3xl text-gray-900 lg:text-5xl">
             {name}
           </h1>
-          <p className="text-xl text-gray-500 text-center pt-4 max-w-screen-md">
+          <p className="max-w-screen-md pt-4 text-center text-xl text-gray-500">
             {role}
           </p>
         </section>
         <section id="article-list">
-          <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <ul className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
             {filteredPosts.map((post: any) => (
               <li
                 key={post.slug}
-                className="flex flex-col items-start justify-start mb-8 border-spacing-2 border rounded-md p-4 border-gray-500"
+                className="mb-8 flex border-spacing-2 flex-col items-start justify-start rounded-md border border-gray-500 p-4"
               >
                 <Link href={`/${post.slug}`}>
-                  <h2 className="text-xl lg:text-2xl text-gray-900 max-w-screen-lg hover:underline hover:text-brandblue-700">
+                  <h2 className="hover:text-brandblue-700 max-w-screen-lg text-xl text-gray-900 hover:underline lg:text-2xl">
                     {post.frontmatter.title}
                   </h2>
                 </Link>
-                <p className="text-sm text-gray-500 pt-2">
+                <p className="pt-2 text-sm text-gray-500">
                   {post.frontmatter.category}
                 </p>
-                <p className="text-md text-gray-800 pt-4 max-w-screen-md line-clamp-4">
+                <p className="text-md line-clamp-4 max-w-screen-md pt-4 text-gray-800">
                   {post.frontmatter.description}
                 </p>
               </li>
