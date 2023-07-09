@@ -4,6 +4,14 @@ const nextSafe = require('next-safe')
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**.youtube.com',
+      },
+    ],
+  },
   async headers() {
     return [
       {
