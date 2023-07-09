@@ -1,3 +1,5 @@
+import React from 'react'
+
 type SectionLayoutProps = {
   children: React.ReactNode
   title: string

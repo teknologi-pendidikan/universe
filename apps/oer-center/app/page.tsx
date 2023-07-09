@@ -33,7 +33,12 @@ export default function Page() {
           ))}
         </div>
       </SectionLayout>
-      <Banner />
+      <Banner
+        title="Are you a teacher in a disadvantaged, frontier, and outermost area?"
+        description="We have a special collection of learning materials for your students!"
+        ctaLink="/thematic/outermost-area"
+        ctaText="Explore the collection"
+      />
       <SectionLayout
         id="lecture-videos"
         className="container mx-auto py-16"
@@ -45,10 +50,10 @@ export default function Page() {
             {contentVideoData.videolist.slice(0, 4).map((video) => (
               <CommonCard
                 key={video.slug}
-                slug={video.slug}
+                slug={`${video.slug}`}
                 title={video.title}
                 author={video.author}
-                image={`/${video.image}`}
+                image={`${video.image}`}
               />
             ))}
           </div>

@@ -29,7 +29,7 @@ export default function ThematicContentPage() {
       <PageThematicLayout
         title={thematic.title}
         subtitle={thematic.description}
-        className="container mx-auto py-16"
+        className="container mx-auto py-48"
         id="thematic-content"
       >
         <SectionLayout
@@ -52,7 +52,7 @@ export default function ThematicContentPage() {
                     (videoContent) => videoContent.slug === video,
                   )?.author
                 }`}
-                image={`/${
+                image={`${
                   videoContentData.videolist.find(
                     (videoContent) => videoContent.slug === video,
                   )?.image

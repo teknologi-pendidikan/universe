@@ -23,7 +23,7 @@ export function CommonCard({
   return (
     <Link
       className="flex flex-col items-start justify-start space-y-2 rounded-lg border border-gray-300"
-      href={`/${slug}`}
+      href={`${slug}`}
     >
       <Image
         className="aspect-video w-full rounded-t-lg object-cover object-right-top"
