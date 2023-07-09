@@ -2,15 +2,12 @@
   "thematiclist": [
     {
       "thematicvideolist": [
-        "/video/example-slug",
-        "/video/example-slug-3",
-        "/video/example-slug-1",
-        "/video/example-slug-5"
+        "/video/a-system-approach"
       ],
       "image": "placeholder.jpg",
-      "description": "sdasd",
-      "slug": "dasd-asd-sad",
-      "title": "sdasda",
+      "description": "Kumpulan material pembelajaran terbuka yang dikhususkan untuk pengajaran di wilayah 3T di Indonesia",
+      "slug": "frontier-project",
+      "title": "Frontier Project",
       "author": "persons",
       "date": "2017-01-01T00:00:00.000Z"
     }

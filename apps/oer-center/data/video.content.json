@@ -1,66 +1,12 @@
 {
   "videolist": [
     {
-      "slug": "/video/example-slug",
-      "title": "Example Title",
-      "author": "Example Author",
-      "description": "Example Description",
-      "image": "placeholder.jpg",
-      "url": "youtube.com/example-video",
-      "date": "2019-01-01"
-    },
-    {
-      "slug": "/video/example-slug-1",
-      "title": "Example Title",
-      "author": "Example Author",
-      "description": "Example Description",
-      "image": "placeholder.jpg",
-      "url": "youtube.com/example-video",
-      "date": "2019-01-01"
-    },
-    {
-      "slug": "/video/example-slug-2",
-      "title": "Example Title",
-      "author": "Example Author",
-      "description": "Example Description",
-      "image": "placeholder.jpg",
-      "url": "youtube.com/example-video",
-      "date": "2019-01-01"
-    },
-    {
-      "slug": "/video/example-slug-3",
-      "title": "Example Title",
-      "author": "Example Author",
-      "description": "Example Description",
-      "image": "placeholder.jpg",
-      "url": "youtube.com/example-video",
-      "date": "2019-01-01"
-    },
-    {
-      "slug": "/video/example-slug-4",
-      "title": "Example Title",
-      "author": "Example Author",
-      "description": "Example Description",
-      "image": "placeholder.jpg",
-      "url": "youtube.com/example-video",
-      "date": "2019-01-01"
-    },
-    {
-      "slug": "/video/example-slug-5",
-      "title": "Example Title",
-      "author": "Example Author",
-      "description": "Example Description",
-      "image": "placeholder.jpg",
-      "url": "youtube.com/example-video",
-      "date": "2019-01-01"
-    },
-    {
-      "slug": "/video/example-slug-6",
-      "title": "Example Title",
-      "author": "Example Author",
-      "description": "Example Description",
-      "image": "placeholder.jpg",
-      "url": "youtube.com/example-video",
+      "slug": "/video/a-system-approach",
+      "title": "The Power of Educational Technology: A Systems Approach",
+      "author": "Teknologi Pendidikan UM - Herlina Ike Oktaviani",
+      "description": "Teknologi Pendidikan UM - Herlina Ike Oktaviani",
+      "image": "https://img.youtube.com/vi/M8C8dDjvdsk/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=M8C8dDjvdsk",
       "date": "2019-01-01"
     }
   ]
