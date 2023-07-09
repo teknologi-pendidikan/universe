@@ -1,6 +1,13 @@
-import { ThematicCard } from 'components/ResourcesCard'
-import SectionLayout from 'components/SectionLayout'
-import WelcomeHero from 'components/WelcomeHero'
+import WelcomeHero from 'components/common/WelcomeHero'
+import SectionLayout from 'components/layout/CommonSectionLayout'
+import Banner from 'components/organism/CommonBanner'
+import {
+  CommonCard,
+  ThematicCard,
+} from 'components/organism/CommonResourcesCard'
+import thematicdata from 'data/thematic.content.json'
+import contentVideoData from 'data/video.content.json'
+import Link from 'next/link'
 
 export default function Page() {
   return (
@@ -8,17 +15,49 @@ export default function Page() {
       <WelcomeHero />
       <SectionLayout
         id="thematic-resources"
-        className="py-16"
-        title="Sumber Belajar"
+        className="container mx-auto py-16"
+        title="Thematic Resources"
         subtitle="Sumber belajar yang tersedia di EDTECH-ID"
       >
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
-          <ThematicCard />
-          <ThematicCard />
-          <ThematicCard />
-          <ThematicCard />
-          <ThematicCard />
-          <ThematicCard />
+          {thematicdata.thematiclist.map((thematic) => (
+            <ThematicCard
+              key={thematic.slug}
+              title={thematic.title}
+              author={thematic.author}
+              description={thematic.description}
+              date={thematic.date}
+              image={`/${thematic.image}`}
+              slug={thematic.slug}
+            />
+          ))}
+        </div>
+      </SectionLayout>
+      <Banner />
+      <SectionLayout
+        id="lecture-videos"
+        className="container mx-auto py-16"
+        title="Lecture Videos"
+        subtitle="Open Educational Lecture Videos, curated by EDTECH-ID"
+      >
+        <div className="flex flex-col items-start justify-start space-y-8">
+          <div className="grid auto-cols-auto grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            {contentVideoData.videolist.slice(0, 4).map((video) => (
+              <CommonCard
+                key={video.slug}
+                slug={video.slug}
+                title={video.title}
+                author={video.author}
+                image={`/${video.image}`}
+              />
+            ))}
+          </div>
+          <Link
+            href="/resources"
+            className="rounded-lg bg-gray-800 p-4 font-semibold text-white hover:bg-gray-900 hover:underline"
+          >
+            Watch more lecture videos
+          </Link>
         </div>
       </SectionLayout>
     </main>
