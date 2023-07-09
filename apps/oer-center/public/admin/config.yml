@@ -1,0 +1,45 @@
+# local development backend
+local_backend: true
+
+# github backend
+backend:
+  name: github
+  repo: teknologi-pendidikan/universe
+  branch: main
+
+site_url: https://lofi.teknologipendidikan.or.id
+logo_url: https://lofi.teknologipendidikan.or.id/logo-lofi.svg
+locale: id
+search: false
+
+media_folder: 'apps/oer-center/public/content'
+public_folder: '/content'
+slug:
+  encoding: 'ascii'
+  clean_accents: true
+  sanitize_replacement: '-'
+
+collections:
+  # TEAM REDAKSI COLLECTION
+  - name: 'oercontent'
+    label: 'OER Content'
+    editor:
+      preview: false
+    delete: false
+    files:
+      - label: 'Video Content'
+        name: 'videocontent'
+        file: 'apps/oer-center/data/video.content.json'
+        fields:
+          - label: 'Video List'
+            name: 'videolist'
+            widget: 'list'
+            allow_add: true
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Slug', name: 'slug', widget: 'string' }
+              - { label: 'Author', name: 'author', widget: 'string' }
+              - { label: 'Description', name: 'description', widget: 'text' }
+              - { label: 'Thumbnail', name: 'image', widget: 'string' }
+              - { label: 'Video URL', name: 'url', widget: 'string' }
+              - { label: 'Upload Date', name: 'date', widget: 'string' }
