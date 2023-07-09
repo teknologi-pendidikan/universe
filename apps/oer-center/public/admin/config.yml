@@ -43,3 +43,31 @@ collections:
               - { label: 'Thumbnail', name: 'image', widget: 'string' }
               - { label: 'Video URL', name: 'url', widget: 'string' }
               - { label: 'Upload Date', name: 'date', widget: 'string' }
+
+  - name: 'thematicontent'
+    label: 'Thematic Content'
+    editor:
+      preview: false
+    delete: false
+    files:
+      - label: 'Thematic Content'
+        name: 'videocontent'
+        file: 'apps/oer-center/data/thematic.content.json'
+        fields:
+          - label: 'Thematic List'
+            name: 'thematiclist'
+            widget: 'list'
+            allow_add: true
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Slug', name: 'slug', widget: 'string' }
+              - { label: 'Description', name: 'description', widget: 'text' }
+              - { label: 'Thumbnail', name: 'image', widget: 'string' }
+              - label: 'Video Content'
+                name: 'thematicvideolist'
+                widget: 'relation'
+                collection: 'oercontent'
+                search_fields: ['videolist.*.title', 'videolist.*.description']
+                value_field: 'videolist.*.slug'
+                display_fields: ['videolist.*.title']
+                multiple: true
