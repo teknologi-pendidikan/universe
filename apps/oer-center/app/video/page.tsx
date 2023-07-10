@@ -2,9 +2,6 @@ import SectionLayout from 'components/layout/CommonSectionLayout'
 import { CommonCard } from 'components/organism/CommonResourcesCard'
 import contentVideoData from 'data/video.content.json'
 
-const youtubeIdRegex =
-  /(http:|https:)?(\/\/)?(www\.)?(youtube.com|youtu.be)\/(watch|embed)?(\?v=|\/)?(\S+)?/
-
 export default function Page() {
   return (
     <main>
