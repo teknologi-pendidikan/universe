@@ -2,7 +2,7 @@ import SectionLayout from 'components/layout/CommonSectionLayout'
 import { ThematicCard } from 'components/organism/CommonResourcesCard'
 import ThematicData from 'data/thematic.content.json'
 
-export function ThematicBrowserPage() {
+export default function ThematicBrowserPage() {
   return (
     <main>
       <SectionLayout
