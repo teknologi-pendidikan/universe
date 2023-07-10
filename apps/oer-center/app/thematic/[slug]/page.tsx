@@ -1,5 +1,3 @@
-'use client'
-
 import SectionLayout from 'components/layout/CommonSectionLayout'
 import PageThematicLayout from 'components/layout/PageThematicLayout'
 import { CommonCard } from 'components/organism/CommonResourcesCard'
@@ -17,6 +15,12 @@ type Thematic = {
   thematicvideolist: any[]
 }
 
+interface Props {
+  params: {
+    slug: string
+  }
+}
+
 export async function generateStaticParams() {
   return thematicData.thematiclist.map((thematic) => ({
     params: {
@@ -25,26 +29,15 @@ export async function generateStaticParams() {
   }))
 }
 
-async function getThematicData(params: { slug: string }) {
+export default function ThematicContentPage({ params }: Props) {
   const thematic = thematicData.thematiclist.find(
     (thematic) => thematic.slug === params.slug,
   ) as Thematic
-  return {
-    thematic,
-  }
-}
-
-export default async function ThematicContentPage({
-  params,
-}: {
-  params: { slug: string }
-}) {
-  const data = await getThematicData(params)
   return (
     <main>
       <PageThematicLayout
-        title={data.thematic.title}
-        subtitle={data.thematic.description}
+        title={thematic.title}
+        subtitle={thematic.description}
         className="container mx-auto py-48"
         id="thematic-content"
       >
@@ -54,7 +47,7 @@ export default async function ThematicContentPage({
           subtitle="Resources"
         >
           <div className="grid auto-cols-auto grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {data.thematic.thematicvideolist.map((video) => (
+            {thematic.thematicvideolist.map((video) => (
               <CommonCard
                 key={video}
                 slug={video}

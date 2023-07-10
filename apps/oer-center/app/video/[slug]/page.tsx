@@ -1,9 +1,6 @@
-'use client'
-
 import LayoutCommonContent from 'components/layout/CommonContentLayout'
 import videoContentData from 'data/video.content.json'
 import dynamic from 'next/dynamic'
-import { usePathname } from 'next/navigation'
 const ReactPlayer = dynamic(() => import('react-player'), { ssr: false })
 
 type Video = {
@@ -16,9 +13,22 @@ type Video = {
   url: string
 }
 
-export default function VideoContentPage() {
-  const pathname = usePathname()
-  const slug = pathname
+interface Props {
+  params: {
+    slug: string
+  }
+}
+
+export async function generateStaticParams() {
+  return videoContentData.videolist.map((video) => ({
+    params: {
+      slug: video.slug,
+    },
+  }))
+}
+
+export default function VideoContentPage({ params }: Props) {
+  const { slug } = params
   const video = videoContentData.videolist.find(
     (video) => video.slug === slug,
   ) as Video
