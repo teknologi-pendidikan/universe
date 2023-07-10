@@ -32,14 +32,14 @@ collections:
     slug: '{{slug}}'
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Publish Date', name: 'date', widget: 'string' }
       - { label: 'description', name: 'description', widget: 'text' }
       - { label: 'category', name: 'category', widget: 'string' }
       - label: 'Repoter'
         name: 'author'
         widget: 'relation'
         collection: 'redaksi'
-        search_fields: ['reporterlist.*.username','reporterlist.*.name' ]
+        search_fields: ['reporterlist.*.username', 'reporterlist.*.name']
         value_field: 'reporterlist.*.username'
         display_fields: ['reporterlist.*.name']
       - { image: 'image', label: 'Image', name: 'image', widget: 'image' }
