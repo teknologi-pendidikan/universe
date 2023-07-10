@@ -25,7 +25,7 @@ export async function generateStaticParams() {
   }))
 }
 
-export async function getThematicData(params: { slug: string }) {
+async function getThematicData(params: { slug: string }) {
   const thematic = thematicData.thematiclist.find(
     (thematic) => thematic.slug === params.slug,
   ) as Thematic
