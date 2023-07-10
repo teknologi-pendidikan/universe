@@ -6,12 +6,6 @@ const youtubeIdRegex =
   /(http:|https:)?(\/\/)?(www\.)?(youtube.com|youtu.be)\/(watch|embed)?(\?v=|\/)?(\S+)?/
 
 export default function Page() {
-  // get youtube id from url
-  const getYoutubeId = (url: string) => {
-    const match = url.match(youtubeIdRegex)
-    return match && match[7].length === 11 ? match[7] : false
-  }
-
   return (
     <main>
       <SectionLayout
