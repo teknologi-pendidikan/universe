@@ -13,12 +13,17 @@
     "type-check:ci": "tsc --noEmit --pretty --noEmit --strict"
   },
   "dependencies": {
+    "@mdx-js/loader": "^2.3.0",
+    "@mdx-js/react": "^2.3.0",
+    "@next/mdx": "^13.4.9",
+    "@types/mdx": "^2.0.5",
     "gray-matter": "^4.0.3",
     "next": "13.4.7",
     "next-safe": "^3.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-markdown": "^8.0.7",
+    "react-player": "^2.12.0",
     "remark-gfm": "^3.0.1"
   },
   "devDependencies": {
