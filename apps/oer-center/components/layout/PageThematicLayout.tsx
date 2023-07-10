@@ -18,10 +18,7 @@ export default function LayoutThematicContent({
   return (
     <section id={id} className={className}>
       <div className="flex flex-col items-start justify-start space-y-16 pb-10">
-        <h1
-          className="mb-2 text-center text-6xl
-            font-bold text-gray-800"
-        >
+        <h1 className="mb-2 max-w-screen-lg text-6xl font-bold text-gray-800">
           {title}
         </h1>
         <div className="flex w-full max-w-screen-md flex-col items-start justify-start space-y-4">

@@ -20,6 +20,15 @@ export function CommonCard({
   author = 'Dr. Henry Praherdhiono',
   image = '/placeholder.jpg',
 }: CardProps) {
+  // Detect Youtube URL
+  const youtubeIdRegex =
+    /(http:|https:)?(\/\/)?(www\.)?(youtube.com|youtu.be)\/(watch|embed)?(\?v=|\/)?(\S+)?/
+  const isYoutube = image.match(youtubeIdRegex)
+  const getYoutubeId = (url: string) => {
+    const match = url.match(youtubeIdRegex)
+    return match && match[7].length === 11 ? match[7] : false
+  }
+
   return (
     <Link
       className="flex flex-col items-start justify-start space-y-2 rounded-lg border border-gray-300"
@@ -27,7 +36,11 @@ export function CommonCard({
     >
       <Image
         className="aspect-video w-full rounded-t-lg object-cover object-right-top"
-        src={image}
+        src={
+          isYoutube
+            ? `https://img.youtube.com/vi/${getYoutubeId(image)}/hqdefault.jpg`
+            : `${image}`
+        }
         alt="video"
         width={500}
         height={200}

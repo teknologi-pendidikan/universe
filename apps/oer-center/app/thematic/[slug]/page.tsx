@@ -5,7 +5,6 @@ import PageThematicLayout from 'components/layout/PageThematicLayout'
 import { CommonCard } from 'components/organism/CommonResourcesCard'
 import thematicData from 'data/thematic.content.json'
 import videoContentData from 'data/video.content.json'
-import { usePathname } from 'next/navigation'
 
 // thematic type
 type Thematic = {
@@ -18,17 +17,34 @@ type Thematic = {
   thematicvideolist: any[]
 }
 
-export default function ThematicContentPage() {
-  const pathname = usePathname()
-  const slug = pathname.split('/')[2]
+export async function generateStaticParams() {
+  return thematicData.thematiclist.map((thematic) => ({
+    params: {
+      slug: thematic.slug,
+    },
+  }))
+}
+
+export async function getThematicData(params: { slug: string }) {
   const thematic = thematicData.thematiclist.find(
-    (thematic) => thematic.slug === slug,
+    (thematic) => thematic.slug === params.slug,
   ) as Thematic
+  return {
+    thematic,
+  }
+}
+
+export default async function ThematicContentPage({
+  params,
+}: {
+  params: { slug: string }
+}) {
+  const data = await getThematicData(params)
   return (
     <main>
       <PageThematicLayout
-        title={thematic.title}
-        subtitle={thematic.description}
+        title={data.thematic.title}
+        subtitle={data.thematic.description}
         className="container mx-auto py-48"
         id="thematic-content"
       >
@@ -38,7 +54,7 @@ export default function ThematicContentPage() {
           subtitle="Resources"
         >
           <div className="grid auto-cols-auto grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {thematic.thematicvideolist.map((video) => (
+            {data.thematic.thematicvideolist.map((video) => (
               <CommonCard
                 key={video}
                 slug={video}
