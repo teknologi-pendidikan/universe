@@ -53,9 +53,6 @@ const constructUrl = (
   return baseUrl
 }
 
-// Regex for extracting presentation id
-// eslint-disable-next-line @typescript-eslint/no-inferrable-types
-// regex
 const regex: RegExp = /[-\w]{25,}/g
 
 // Extracts the slide id from the share-able url
