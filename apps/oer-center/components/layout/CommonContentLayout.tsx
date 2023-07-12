@@ -6,6 +6,8 @@ type LayoutProps = {
   subtitle: string
   className: string
   id: string
+  author: string
+  uploadDate: string
 }
 
 export default function LayoutCommonContent({
@@ -14,6 +16,8 @@ export default function LayoutCommonContent({
   className = 'container mx-auto py-48',
   children = null,
   id = 'thematic-content',
+  author = 'Example Author',
+  uploadDate = 'Example Date',
 }: LayoutProps) {
   return (
     <section id={id} className={className}>
@@ -26,6 +30,8 @@ export default function LayoutCommonContent({
           <div className="flex w-full max-w-screen-sm flex-col items-start justify-start space-y-4">
             <h2 className="text-4xl font-bold">Lecture Notes</h2>
             <p className="text-2xl">{subtitle}</p>
+            <p className="text-2xl">Author: {author}</p>
+            <p className="text-2xl">Date: {uploadDate}</p>
           </div>
         </div>
       </article>
