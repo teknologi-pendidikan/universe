@@ -7,19 +7,15 @@ export type ContentNavigation = ContentNavigationItem[]
 export const ContentNavigation: ContentNavigation = [
   {
     name: 'Discover',
-    url: '/discover',
-  },
-  {
-    name: 'Share',
-    url: '/share',
+    url: '/learning-content',
   },
   {
     name: 'Get Involved',
     url: '/contributors',
   },
   {
-    name: 'Support',
-    url: '/support',
+    name: 'Support Us',
+    url: '/support-us',
   },
 ]
 
