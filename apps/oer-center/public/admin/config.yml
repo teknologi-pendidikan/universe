@@ -22,27 +22,33 @@ slug:
 collections:
   # TEAM REDAKSI COLLECTION
   - name: 'oercontent'
-    label: 'OER Content'
+    label: 'OER Hub Content'
     editor:
       preview: false
     delete: false
     files:
-      - label: 'Video Content'
-        name: 'videocontent'
-        file: 'apps/oer-center/data/video.content.json'
+      - label: 'Learning Content'
+        name: 'contentdata'
+        file: 'apps/oer-center/data/learning.content.json'
         fields:
-          - label: 'Video List'
-            name: 'videolist'
+          - label: 'Content List'
+            name: 'learningcontent'
             widget: 'list'
             allow_add: true
             fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'Slug', name: 'slug', widget: 'string' }
-              - { label: 'Author', name: 'author', widget: 'string' }
-              - { label: 'Description', name: 'description', widget: 'text' }
-              - { label: 'Thumbnail', name: 'image', widget: 'string' }
-              - { label: 'Video URL', name: 'url', widget: 'string' }
-              - { label: 'Upload Date', name: 'date', widget: 'string' }
+              - { label: 'Title', name: 'contentTitle', widget: 'string' }
+              - { label: 'UUID', name: 'uuid', widget: 'string' }
+              - { label: 'Author', name: 'contentAuthor', widget: 'string' }
+              - {
+                  label: 'Content Type',
+                  name: 'contentType',
+                  widget: 'select',
+                  options: ['video', 'image', 'slides', 'text'],
+                }
+              - { label: 'Description', name: 'contentDescription', widget: 'text' }
+              - { label: 'Thumbnail', name: 'contentThumbnail', widget: 'string' }
+              - { label: 'Content URL', name: 'contentUrl', widget: 'string' }
+              - { label: 'Upload Date', name: 'contentUploadDate', widget: 'string' }
 
   - name: 'thematicontent'
     label: 'Thematic Content'
@@ -51,7 +57,7 @@ collections:
     delete: false
     files:
       - label: 'Thematic Content'
-        name: 'videocontent'
+        name: 'thematicdata'
         file: 'apps/oer-center/data/thematic.content.json'
         fields:
           - label: 'Thematic List'
@@ -59,15 +65,15 @@ collections:
             widget: 'list'
             allow_add: true
             fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'Slug', name: 'slug', widget: 'string' }
-              - { label: 'Description', name: 'description', widget: 'text' }
-              - { label: 'Thumbnail', name: 'image', widget: 'string' }
-              - label: 'Video Content'
-                name: 'thematicvideolist'
+              - { label: 'Title', name: 'thematicTitle', widget: 'string' }
+              - { label: 'UUID', name: 'uuid', widget: 'string' }
+              - { label: 'Description', name: 'thematicDescription', widget: 'text' }
+              - { label: 'Thumbnail', name: 'thematicThumbnail', widget: 'string' }
+              - label: 'Learning Content List'
+                name: 'thematicLearningContents'
                 widget: 'relation'
                 collection: 'oercontent'
-                search_fields: ['videolist.*.title', 'videolist.*.description']
-                value_field: 'videolist.*.slug'
-                display_fields: ['videolist.*.title']
+                search_fields: ['learningcontent.*.contentTitle', 'learningcontent.*.contentDescription']
+                value_field: 'learningcontent.*.uuid'
+                display_fields: ['learningcontent.*.contentTitle']
                 multiple: true
