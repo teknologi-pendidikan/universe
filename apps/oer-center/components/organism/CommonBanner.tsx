@@ -16,7 +16,7 @@ export default function Banner({
   ctaText = 'Explore the collection',
 }: BannerProps) {
   return (
-    <section className={`w-full py-14 ${className}`}>
+    <section className={`mt-12 w-full py-14 ${className}`}>
       <div className="container mx-auto flex flex-col items-center justify-center space-y-6">
         <h2 className="text-center text-5xl font-bold">{title}</h2>
         <p className="text-center text-3xl font-bold">{description}</p>
