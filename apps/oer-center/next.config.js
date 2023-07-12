@@ -11,6 +11,26 @@ const nextConfig = {
         protocol: 'https',
         hostname: '**.youtube.com',
       },
+      {
+        protocol: 'https',
+        hostname: '**.googleusercontent.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '**.githubusercontent.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '**.teknologipendidikan.or.id',
+      },
+      {
+        protocol: 'https',
+        hostname: '**.cloudhost.id',
+      },
+      {
+        protocol: 'https',
+        hostname: '**.google.com',
+      },
     ],
   },
   experimental: {
@@ -25,8 +45,7 @@ const nextConfig = {
           // contentSecurityPolicy: false
           contentSecurityPolicy: {
             'connect-src': "'self' webpack://* https: data:",
-            'frame-src':
-              "'self' https://*.youtube.com/ https://docs.google.com/",
+            'frame-src': "'self' https://*.youtube.com/ https://*.google.com/",
             'img-src':
               "'self' blob: https://*.teknologipendidikan.or.id https://is3.cloudhost.id/teknologipendidikan/ https://drive.google.com https://*.googleusercontent.com https://www.netlify.com/img/",
             'script-src':
