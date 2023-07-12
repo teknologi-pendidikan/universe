@@ -3,7 +3,7 @@ declare global {
     uuid: string
     contentTitle: string
     contentAuthor: string
-    contentType: 'video' | 'slides' | 'image' | 'text' | 'audio'
+    contentType: 'video' | 'slides' | 'image' | 'text'
     contentDescription: string
     contentUrl: string
     contentThumbnail: string
