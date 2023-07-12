@@ -1,3 +1,5 @@
+import LayoutCommonContent from 'components/layout/CommonContentLayout'
+import { getGoogleDriveFileId, getYoutubeVideoId } from 'lib/contentTypeChecker'
 import {
   getAllLearningContent,
   getLearningContent,
@@ -10,14 +12,49 @@ import {
 export const dynamicParams = false
 
 export default async function Page({ params }: LearningContentPageViewProps) {
-  const { uuid, contentTitle } = (await getLearningContent(
-    params.uuid,
-  )) as LearningContentProperties
+  const {
+    uuid,
+    contentTitle,
+    contentAuthor,
+    contentDescription,
+    contentType,
+    contentUploadDate,
+    contentUrl,
+  } = (await getLearningContent(params.uuid)) as LearningContentProperties
+
   return (
-    <div>
-      <h1 className="bg-red-500 pt-64 text-6xl">{contentTitle}</h1>
-      <h1 className="text-6xl">{uuid}</h1>
-    </div>
+    <main>
+      <LayoutCommonContent
+        title={contentTitle}
+        subtitle={contentDescription}
+        className="container mx-auto py-48"
+        id={uuid}
+        author={contentAuthor}
+        uploadDate={contentUploadDate}
+      >
+        {contentType === 'video' && (
+          <iframe
+            src={`https://www.youtube.com/embed/${getYoutubeVideoId(
+              contentUrl,
+            )}?modestbranding=1&rel=0&cc_load_policy=1&iv_load_policy=3`}
+            width="100%"
+            height="100%"
+            title="Nyan Cat [original]"
+          ></iframe>
+        )}
+
+        {contentType === 'slides' && (
+          <iframe
+            src={`https://docs.google.com/presentation/d/${getGoogleDriveFileId(
+              contentUrl,
+            )}/embed?start=false&loop=false&delayms=3000`}
+            width="100%"
+            height="100%"
+            title="Nyan Cat [original]"
+          ></iframe>
+        )}
+      </LayoutCommonContent>
+    </main>
   )
 }
 
