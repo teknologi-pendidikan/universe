@@ -1,6 +1,7 @@
 'use client'
 
 import { ContentNavigation, GlobalNavigation } from 'data/SiteNavigation.config'
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -30,7 +31,7 @@ export default function NavigationBar() {
       >
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
-            <img
+            <Image
               src="/logo-horizontal-color.svg"
               alt="Logo EDTECH-ID"
               className="h-8 w-full"

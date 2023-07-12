@@ -1,0 +1,24 @@
+{
+  "learningcontent": [
+    {
+      "uuid": "06f1fa1e-147d-4e67-94e6-a23fc0f3b8d3",
+      "contentTitle": "Model Pengembangan Konten Digital Pendidikan",
+      "contentAuthor": "Rengga Prakoso Nugroho",
+      "contentType": "video",
+      "contentDescription": "Membahas tentang parental guiding siswa",
+      "contentUrl": "https://youtube.com/abcd",
+      "contentThumbnail": "https://youtube.com/abcd",
+      "contentUploadDate": "17/02/2024"
+    },
+    {
+      "uuid": "5d4ac8c1-0349-4917-b350-fc349ef8f2d0",
+      "contentTitle": "Exploring Educational Technology Prospect and Career in the Digital Era",
+      "contentAuthor": "Guru Kreatif",
+      "contentType": "slides",
+      "contentDescription": "Exploring Educational Technology Prospect and Career in the Digital Era",
+      "contentUrl": "https://docs.google.com/presentation/d/1wS4PnVrCUs6cbH2MM5Q127ufW_AoP5giUbBvYvOXIYM",
+      "contentThumbnail": "https://docs.google.com/presentation/d/1wS4PnVrCUs6cbH2MM5Q127ufW_AoP5giUbBvYvOXIYM",
+      "contentUploadDate": "17/02/2024"
+    }
+  ]
+}
