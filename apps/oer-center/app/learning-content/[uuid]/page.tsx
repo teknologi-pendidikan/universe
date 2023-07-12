@@ -4,6 +4,7 @@ import {
   getAllLearningContent,
   getLearningContent,
 } from 'lib/fetchLearningContent'
+import Image from 'next/image'
 import {
   LearningContentPageViewProps,
   LearningContentProperties,
@@ -50,7 +51,29 @@ export default async function Page({ params }: LearningContentPageViewProps) {
             )}/embed?start=false&loop=false&delayms=3000`}
             width="100%"
             height="100%"
-            title="Nyan Cat [original]"
+            title={contentTitle}
+          ></iframe>
+        )}
+
+        {contentType === 'image' && (
+          <Image
+            src={`https://drive.google.com/uc?export=view&id=${getGoogleDriveFileId(
+              contentUrl,
+            )}`}
+            width={1000}
+            height={1000}
+            alt={contentDescription}
+          />
+        )}
+
+        {contentType === 'text' && (
+          <iframe
+            src={`https://drive.google.com/file/d/${getGoogleDriveFileId(
+              contentUrl,
+            )}/preview`}
+            width="100%"
+            height="100%"
+            title={contentTitle}
           ></iframe>
         )}
       </LayoutCommonContent>
