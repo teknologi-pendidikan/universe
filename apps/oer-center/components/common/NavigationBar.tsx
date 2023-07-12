@@ -35,6 +35,8 @@ export default function NavigationBar() {
               src="/logo-horizontal-color.svg"
               alt="Logo EDTECH-ID"
               className="h-8 w-full"
+              width={100}
+              height={50}
             />
           </Link>
         </div>
