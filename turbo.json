@@ -6,6 +6,9 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
     },
+    "start": {
+      "dependsOn": ["^start"]
+    },
     "lint": {
       "dependsOn": ["^lint"],
       "outputs": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"]
