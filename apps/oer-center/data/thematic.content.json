@@ -1,0 +1,18 @@
+{
+  "thematiclist": [
+    {
+      "thematicTitle": "Acclerating Education",
+      "uuid": "f37cf60c-8314-480a-be1e-c1bf34a7549d",
+      "thematicDescription": "Halo Satu",
+      "thematicThumbnail": "/placeholder.jpg",
+      "thematicLearningContents": [
+        "06f1fa1e-147d-4e67-94e6-a23fc0f3b8d3",
+        "efe7f056-3f0a-4272-9679-bb839b6a00a3",
+        "d4f5788d-319d-4370-99ef-1f975ba37ad7",
+        "95bf51f2-5956-4b42-a58b-ee2220f84bdc",
+        "2f8968f2-e073-4707-97bc-a55e8c459b8e",
+        "caef05f7-9e56-406b-86ce-533fbcdc2719"
+      ]
+    }
+  ]
+}
