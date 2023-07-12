@@ -26,7 +26,7 @@ const nextConfig = {
           contentSecurityPolicy: {
             'connect-src': "'self' webpack://* https: data:",
             'frame-src':
-              "'self' https://www.youtube.com/ https://docs.google.com/",
+              "'self' https://*.youtube.com/ https://docs.google.com/",
             'img-src':
               "'self' blob: https://*.teknologipendidikan.or.id https://is3.cloudhost.id/teknologipendidikan/ https://drive.google.com https://*.googleusercontent.com https://www.netlify.com/img/",
             'script-src':
