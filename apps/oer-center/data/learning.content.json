@@ -1,344 +1,394 @@
 {
   "learningcontent": [
     {
-      "uuid": "06f1fa1e-147d-4e67-94e6-a23fc0f3b8d3",
-      "contentTitle": "Model Pengembangan Konten Digital Pendidikan",
-      "contentAuthor": "Rengga Prakoso Nugroho",
+      "uuid": "b6eea9a2-ed85-4f6b-97e4-aa7860bf1b99",
+      "contentTitle": "Education and Training Overview | Career Cluster/Industry Video Series",
+      "contentAuthor": "careerOneStop",
       "contentType": "video",
-      "contentDescription": "Membahas tentang parental guiding siswa",
-      "contentUrl": "https://www.youtube.com/watch?v=y6e_kztXG04",
-      "contentThumbnail": "https://youtube.com/abcd",
-      "contentUploadDate": "17/02/2024"
+      "contentDescription": "Education and Training relates to planning, managing and providing education and training services, and related learning support services.",
+      "contentUrl": "https://www.youtube.com/watch?v=N6_cGS9yy7w",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
     },
     {
-      "uuid": "5d4ac8c1-0349-4917-b350-fc349ef8f2d0",
-      "contentTitle": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentAuthor": "Guru Kreatif",
+      "uuid": "95ce7746-d335-43b3-b17f-3bdf95b44d67",
+      "contentTitle": "Training and Development Specialist Career Video",
+      "contentAuthor": "careerOneStop",
+      "contentType": "video",
+      "contentDescription": "membahas tentang career dan apa yang akan dilakukan",
+      "contentUrl": "https://www.youtube.com/watch?v=-0eCYWbjbyU",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
+    },
+    {
+      "uuid": "c0d543a2-f777-4da0-aa32-66c7d2f7b0f6",
+      "contentTitle": "The Difference Between Training and Education",
+      "contentAuthor": "Strategic Enhancement Group",
+      "contentType": "video",
+      "contentDescription": "membahas tentang perbedaan pelatihan dan pendidikan",
+      "contentUrl": "https://www.youtube.com/watch?v=nM-fhgNEk08",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
+    },
+    {
+      "uuid": "4d061528-31c3-4863-ab71-438ea49af385",
+      "contentTitle": "Sejarah dan Asas Pengembangan Kurikulum",
+      "contentAuthor": "Resti Nur",
+      "contentType": "video",
+      "contentDescription": "membahas tentang sejarah dan pengembangan kurikulum",
+      "contentUrl": "https://www.youtube.com/watch?v=Ibtac9F2_Y4",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
+    },
+    {
+      "uuid": "ef721ede-23b4-4e1c-be76-82e8ce71f82c",
+      "contentTitle": "Konsep komunikasi",
+      "contentAuthor": "Tedi Juniardi",
       "contentType": "slides",
-      "contentDescription": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentUrl": "https://docs.google.com/presentation/d/1wS4PnVrCUs6cbH2MM5Q127ufW_AoP5giUbBvYvOXIYM",
-      "contentThumbnail": "https://docs.google.com/presentation/d/1wS4PnVrCUs6cbH2MM5Q127ufW_AoP5giUbBvYvOXIYM",
-      "contentUploadDate": "17/02/2024"
+      "contentDescription": "Membahas tentang konsep komunikasi dan apa saja yang ada didalamnya",
+      "contentUrl": "https://docs.google.com/presentation/d/106exb27NNaWZhsSyYu77q2-_3WEJzDhN/edit?usp=drive_link&ouid=115761424590808363375&rtpof=true&sd=true",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
     },
     {
-      "uuid": "6de38313-c43f-47dc-80dd-6c4747d66cf7",
-      "contentTitle": "Jembatan Kecerdasan Manusia dan Buatan",
-      "contentAuthor": "Henry Praherdhinono",
-      "contentType": "image",
-      "contentDescription": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentUrl": "https://drive.google.com/file/d/1Z8hgnmZ9EHq8avECzuse4FD8GoxhWovI/view?usp=drive_link",
-      "contentThumbnail": "https://drive.google.com/file/d/1Z8hgnmZ9EHq8avECzuse4FD8GoxhWovI/view?usp=drive_link",
-      "contentUploadDate": "17/02/2024"
+      "uuid": "9711e876-584f-4460-94b1-a8b56fcbe36b",
+      "contentTitle": "Psikologi Pesan",
+      "contentAuthor": "Tine Wulandari",
+      "contentType": "slides",
+      "contentDescription": "Membahas mengenai psikologi pesan",
+      "contentUrl": "https://drive.google.com/file/d/1sSMM7dkNLtj5HDmNv1QHEwXmSmNeu4bW/view?usp=drive_link",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
     },
     {
-      "uuid": "e707eb66-2c55-41b7-ad91-9528c2e660c0",
-      "contentTitle": "Behind of Pameran Karya Teknologi Pendidikan UM",
-      "contentAuthor": "Rengga Prakoso Nugroho",
+      "uuid": "76adc153-74f2-4662-a208-de2f31ca8e14",
+      "contentTitle": "Orientasi dan Fungsi Kurikulum",
+      "contentAuthor": "Teknologi Pendidikan UM",
       "contentType": "text",
-      "contentDescription": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentUrl": "https://drive.google.com/file/d/1rnsncCgdMgnUOHPCI-zudmixtUTksfIb/view",
-      "contentThumbnail": "https://drive.google.com/file/d/1rnsncCgdMgnUOHPCI-zudmixtUTksfIb/view",
-      "contentUploadDate": "17/02/2024"
+      "contentDescription": "Membahas Orientasi dan Fungsi Kurikulum dalam Pendidikan",
+      "contentUrl": "https://drive.google.com/file/d/1OjckwItvU2_0UEEJkn7Ug8NC2RLWAK9b/view?usp=sharing",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
     },
     {
-      "uuid": "4d7c2172-51b6-4771-8271-e3d0ee3b0817",
-      "contentTitle": "Model Pengembangan Konten Digital Pendidikan",
-      "contentAuthor": "Rengga Prakoso Nugroho",
-      "contentType": "video",
-      "contentDescription": "Membahas tentang parental guiding siswa",
-      "contentUrl": "https://www.youtube.com/watch?v=y6e_kztXG04",
-      "contentThumbnail": "https://youtube.com/abcd",
-      "contentUploadDate": "17/02/2024"
+      "uuid": "a548d4e1-e644-415a-b047-7767b5a24136",
+      "contentTitle": "Kamu Calon Guru?? Harus Tau Nih !! Sekilas Komponen Kurikulum",
+      "contentAuthor": "Tentang Rasa",
+      "contentType": "Video",
+      "contentDescription": "Membahas Komponen Kurikulum",
+      "contentUrl": "https://www.youtube.com/watch?v=_3qedx2qndw",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
     },
     {
-      "uuid": "efe7f056-3f0a-4272-9679-bb839b6a00a3",
-      "contentTitle": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentAuthor": "Guru Kreatif",
-      "contentType": "slides",
-      "contentDescription": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentUrl": "https://docs.google.com/presentation/d/1wS4PnVrCUs6cbH2MM5Q127ufW_AoP5giUbBvYvOXIYM",
-      "contentThumbnail": "https://docs.google.com/presentation/d/1wS4PnVrCUs6cbH2MM5Q127ufW_AoP5giUbBvYvOXIYM",
-      "contentUploadDate": "17/02/2024"
-    },
-    {
-      "uuid": "412bfdc4-ee1d-4b3e-8d7b-1e95635ab5de",
-      "contentTitle": "Jembatan Kecerdasan Manusia dan Buatan",
-      "contentAuthor": "Henry Praherdhinono",
-      "contentType": "image",
-      "contentDescription": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentUrl": "https://drive.google.com/file/d/1Z8hgnmZ9EHq8avECzuse4FD8GoxhWovI/view?usp=drive_link",
-      "contentThumbnail": "https://drive.google.com/file/d/1Z8hgnmZ9EHq8avECzuse4FD8GoxhWovI/view?usp=drive_link",
-      "contentUploadDate": "17/02/2024"
-    },
-    {
-      "uuid": "aadc191b-b578-467d-a1cd-18a527bb03ab",
-      "contentTitle": "Behind of Pameran Karya Teknologi Pendidikan UM",
-      "contentAuthor": "Rengga Prakoso Nugroho",
+      "uuid": "15d9fd3e-f81e-497c-804a-114000ea69d4",
+      "contentTitle": "Desain pesan dalam pembelajaran",
+      "contentAuthor": "Teknologi Pendidikan UM",
       "contentType": "text",
-      "contentDescription": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentUrl": "https://drive.google.com/file/d/1rnsncCgdMgnUOHPCI-zudmixtUTksfIb/view",
-      "contentThumbnail": "https://drive.google.com/file/d/1rnsncCgdMgnUOHPCI-zudmixtUTksfIb/view",
-      "contentUploadDate": "17/02/2024"
+      "contentDescription": "membahas desain pesan dalam pembelajaran",
+      "contentUrl": "https://drive.google.com/file/d/19QUyuf8sThj-vksVgf__Fj2x_RUw_-_U/view?usp=drive_link",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
     },
     {
-      "uuid": "d4f5788d-319d-4370-99ef-1f975ba37ad7",
-      "contentTitle": "Model Pengembangan Konten Digital Pendidikan",
+      "uuid": "e3235713-f2ba-417d-93d1-2e827a040f5c",
+      "contentTitle": "konsep pesan",
+      "contentAuthor": "KPI B IAIN KUDUS",
+      "contentType": "Video",
+      "contentDescription": "membahas konsep pesan",
+      "contentUrl": "https://www.youtube.com/watch?v=LtYbPcqeo3c",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
+    },
+    {
+      "uuid": "75fb5463-4ffd-4dc0-8e6c-b3a11f74f0ad",
+      "contentTitle": "Desain Kurikulum",
+      "contentAuthor": "Teknologi Pendidikan UM",
+      "contentType": "slides",
+      "contentDescription": "Desain Kurikulum",
+      "contentUrl": "https://docs.google.com/presentation/d/1rcmgaXpy8n0plYVjztgUGNs2KpvQ7RKx/edit?usp=sharing&ouid=111319486950445046175&rtpof=true&sd=true",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
+    },
+    {
+      "uuid": "1746e0ac-5a19-4272-bcf0-74bd08f32007",
+      "contentTitle": "Model Konsep Kurikulum",
+      "contentAuthor": "Teknologi Pendidikan UM",
+      "contentType": "slides",
+      "contentDescription": "Model Konsep Kurikulum",
+      "contentUrl": "https://docs.google.com/presentation/d/1c3gVJA5gvheJZzwK9XzIZXQNdA1YMOCj/edit?usp=sharing&ouid=111319486950445046175&rtpof=true&sd=true",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
+    },
+    {
+      "uuid": "ea3bdc3d-ea14-4f78-a088-1ddc96367be7",
+      "contentTitle": "Pengantar Filsafat Pendidikan",
       "contentAuthor": "Rengga Prakoso Nugroho",
       "contentType": "video",
-      "contentDescription": "Membahas tentang parental guiding siswa",
-      "contentUrl": "https://www.youtube.com/watch?v=y6e_kztXG04",
-      "contentThumbnail": "https://youtube.com/abcd",
-      "contentUploadDate": "17/02/2024"
+      "contentDescription": "Pengantar Filsafat Pendidikan",
+      "contentUrl": "https://www.youtube.com/watch?v=-NfvqDZF9eo",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
     },
     {
-      "uuid": "95bf51f2-5956-4b42-a58b-ee2220f84bdc",
-      "contentTitle": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentAuthor": "Guru Kreatif",
-      "contentType": "slides",
-      "contentDescription": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentUrl": "https://docs.google.com/presentation/d/1wS4PnVrCUs6cbH2MM5Q127ufW_AoP5giUbBvYvOXIYM",
-      "contentThumbnail": "https://docs.google.com/presentation/d/1wS4PnVrCUs6cbH2MM5Q127ufW_AoP5giUbBvYvOXIYM",
-      "contentUploadDate": "17/02/2024"
-    },
-    {
-      "uuid": "2f8968f2-e073-4707-97bc-a55e8c459b8e",
-      "contentTitle": "Jembatan Kecerdasan Manusia dan Buatan",
-      "contentAuthor": "Henry Praherdhinono",
-      "contentType": "image",
-      "contentDescription": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentUrl": "https://drive.google.com/file/d/1Z8hgnmZ9EHq8avECzuse4FD8GoxhWovI/view?usp=drive_link",
-      "contentThumbnail": "https://drive.google.com/file/d/1Z8hgnmZ9EHq8avECzuse4FD8GoxhWovI/view?usp=drive_link",
-      "contentUploadDate": "17/02/2024"
-    },
-    {
-      "uuid": "420bc92c-6e3b-4ed3-aed8-7617f86e8232",
-      "contentTitle": "Behind of Pameran Karya Teknologi Pendidikan UM",
-      "contentAuthor": "Rengga Prakoso Nugroho",
-      "contentType": "text",
-      "contentDescription": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentUrl": "https://drive.google.com/file/d/1rnsncCgdMgnUOHPCI-zudmixtUTksfIb/view",
-      "contentThumbnail": "https://drive.google.com/file/d/1rnsncCgdMgnUOHPCI-zudmixtUTksfIb/view",
-      "contentUploadDate": "17/02/2024"
-    },
-    {
-      "uuid": "d0c98656-aa38-477b-b9ee-09fea9872075",
-      "contentTitle": "Model Pengembangan Konten Digital Pendidikan",
+      "uuid": "ee3ac2d3-1957-4605-8fd0-462ae3be3c3c",
+      "contentTitle": "Hakikat Manusia",
       "contentAuthor": "Rengga Prakoso Nugroho",
       "contentType": "video",
-      "contentDescription": "Membahas tentang parental guiding siswa",
-      "contentUrl": "https://www.youtube.com/watch?v=y6e_kztXG04",
-      "contentThumbnail": "https://youtube.com/abcd",
-      "contentUploadDate": "17/02/2024"
+      "contentDescription": "Hakikat Manusia",
+      "contentUrl": "https://www.youtube.com/watch?v=TBVzBQ94Vbc",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
     },
     {
-      "uuid": "df660006-e2b1-4cf1-818d-8cb186586bf3",
-      "contentTitle": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentAuthor": "Guru Kreatif",
-      "contentType": "slides",
-      "contentDescription": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentUrl": "https://docs.google.com/presentation/d/1wS4PnVrCUs6cbH2MM5Q127ufW_AoP5giUbBvYvOXIYM",
-      "contentThumbnail": "https://docs.google.com/presentation/d/1wS4PnVrCUs6cbH2MM5Q127ufW_AoP5giUbBvYvOXIYM",
-      "contentUploadDate": "17/02/2024"
-    },
-    {
-      "uuid": "a1263aca-d813-4e9c-842b-559ab43607ad",
-      "contentTitle": "Jembatan Kecerdasan Manusia dan Buatan",
-      "contentAuthor": "Henry Praherdhinono",
-      "contentType": "image",
-      "contentDescription": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentUrl": "https://drive.google.com/file/d/1Z8hgnmZ9EHq8avECzuse4FD8GoxhWovI/view?usp=drive_link",
-      "contentThumbnail": "https://drive.google.com/file/d/1Z8hgnmZ9EHq8avECzuse4FD8GoxhWovI/view?usp=drive_link",
-      "contentUploadDate": "17/02/2024"
-    },
-    {
-      "uuid": "d12771a3-a4a5-4ca6-9c06-418a353aaa88",
-      "contentTitle": "Behind of Pameran Karya Teknologi Pendidikan UM",
-      "contentAuthor": "Rengga Prakoso Nugroho",
-      "contentType": "text",
-      "contentDescription": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentUrl": "https://drive.google.com/file/d/1rnsncCgdMgnUOHPCI-zudmixtUTksfIb/view",
-      "contentThumbnail": "https://drive.google.com/file/d/1rnsncCgdMgnUOHPCI-zudmixtUTksfIb/view",
-      "contentUploadDate": "17/02/2024"
-    },
-    {
-      "uuid": "caef05f7-9e56-406b-86ce-533fbcdc2719",
-      "contentTitle": "Model Pengembangan Konten Digital Pendidikan",
+      "uuid": "aa81b555-dcc5-49ae-82d9-6f2c03fc8206",
+      "contentTitle": "Hakikat Pendidikan",
       "contentAuthor": "Rengga Prakoso Nugroho",
       "contentType": "video",
-      "contentDescription": "Membahas tentang parental guiding siswa",
-      "contentUrl": "https://www.youtube.com/watch?v=y6e_kztXG04",
-      "contentThumbnail": "https://youtube.com/abcd",
-      "contentUploadDate": "17/02/2024"
+      "contentDescription": "Hakikat Pendidikan",
+      "contentUrl": "https://www.youtube.com/watch?v=Z8giOtTXeCY",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
     },
     {
-      "uuid": "6c01a27f-4ecc-49ff-a266-b5802d4183db",
-      "contentTitle": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentAuthor": "Guru Kreatif",
-      "contentType": "slides",
-      "contentDescription": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentUrl": "https://docs.google.com/presentation/d/1wS4PnVrCUs6cbH2MM5Q127ufW_AoP5giUbBvYvOXIYM",
-      "contentThumbnail": "https://docs.google.com/presentation/d/1wS4PnVrCUs6cbH2MM5Q127ufW_AoP5giUbBvYvOXIYM",
-      "contentUploadDate": "17/02/2024"
-    },
-    {
-      "uuid": "0b3016f2-acd1-4946-9081-a64f0e88202d",
-      "contentTitle": "Jembatan Kecerdasan Manusia dan Buatan",
-      "contentAuthor": "Henry Praherdhinono",
-      "contentType": "image",
-      "contentDescription": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentUrl": "https://drive.google.com/file/d/1Z8hgnmZ9EHq8avECzuse4FD8GoxhWovI/view?usp=drive_link",
-      "contentThumbnail": "https://drive.google.com/file/d/1Z8hgnmZ9EHq8avECzuse4FD8GoxhWovI/view?usp=drive_link",
-      "contentUploadDate": "17/02/2024"
-    },
-    {
-      "uuid": "a2431cf1-dd7b-429d-a77e-7cfb567cbce6",
-      "contentTitle": "Behind of Pameran Karya Teknologi Pendidikan UM",
-      "contentAuthor": "Rengga Prakoso Nugroho",
-      "contentType": "text",
-      "contentDescription": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentUrl": "https://drive.google.com/file/d/1rnsncCgdMgnUOHPCI-zudmixtUTksfIb/view",
-      "contentThumbnail": "https://drive.google.com/file/d/1rnsncCgdMgnUOHPCI-zudmixtUTksfIb/view",
-      "contentUploadDate": "17/02/2024"
-    },
-    {
-      "uuid": "65124b7b-604e-41f2-8c4a-098a70c3c89d",
-      "contentTitle": "Model Pengembangan Konten Digital Pendidikan",
+      "uuid": "60457520-230d-4e1b-bca3-65c48d651a93",
+      "contentTitle": "Sejarah Pendidikan Indonesia",
       "contentAuthor": "Rengga Prakoso Nugroho",
       "contentType": "video",
-      "contentDescription": "Membahas tentang parental guiding siswa",
-      "contentUrl": "https://www.youtube.com/watch?v=y6e_kztXG04",
-      "contentThumbnail": "https://youtube.com/abcd",
-      "contentUploadDate": "17/02/2024"
+      "contentDescription": "Sejarah Pendidikan Indonesia",
+      "contentUrl": "https://www.youtube.com/watch?v=DlYkHDXGhow",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
     },
     {
-      "uuid": "8919fdc8-50bf-40de-b027-d36cac05e7d0",
-      "contentTitle": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentAuthor": "Guru Kreatif",
-      "contentType": "slides",
-      "contentDescription": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentUrl": "https://docs.google.com/presentation/d/1wS4PnVrCUs6cbH2MM5Q127ufW_AoP5giUbBvYvOXIYM",
-      "contentThumbnail": "https://docs.google.com/presentation/d/1wS4PnVrCUs6cbH2MM5Q127ufW_AoP5giUbBvYvOXIYM",
-      "contentUploadDate": "17/02/2024"
-    },
-    {
-      "uuid": "e78ea1b0-5e31-4c02-9132-4cee401aa3c9",
-      "contentTitle": "Jembatan Kecerdasan Manusia dan Buatan",
-      "contentAuthor": "Henry Praherdhinono",
-      "contentType": "image",
-      "contentDescription": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentUrl": "https://drive.google.com/file/d/1Z8hgnmZ9EHq8avECzuse4FD8GoxhWovI/view?usp=drive_link",
-      "contentThumbnail": "https://drive.google.com/file/d/1Z8hgnmZ9EHq8avECzuse4FD8GoxhWovI/view?usp=drive_link",
-      "contentUploadDate": "17/02/2024"
-    },
-    {
-      "uuid": "c1bda254-b81b-43b5-8658-affe8f5f3b79",
-      "contentTitle": "Behind of Pameran Karya Teknologi Pendidikan UM",
-      "contentAuthor": "Rengga Prakoso Nugroho",
-      "contentType": "text",
-      "contentDescription": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentUrl": "https://drive.google.com/file/d/1rnsncCgdMgnUOHPCI-zudmixtUTksfIb/view",
-      "contentThumbnail": "https://drive.google.com/file/d/1rnsncCgdMgnUOHPCI-zudmixtUTksfIb/view",
-      "contentUploadDate": "17/02/2024"
-    },
-    {
-      "uuid": "1f33fe94-9ca6-4563-831f-eeabe3207f55",
-      "contentTitle": "Model Pengembangan Konten Digital Pendidikan",
+      "uuid": "d653096c-c417-40f4-a7ae-2b8c2a2d3507",
+      "contentTitle": "Landasan Pendidikan",
       "contentAuthor": "Rengga Prakoso Nugroho",
       "contentType": "video",
-      "contentDescription": "Membahas tentang parental guiding siswa",
-      "contentUrl": "https://www.youtube.com/watch?v=y6e_kztXG04",
-      "contentThumbnail": "https://youtube.com/abcd",
-      "contentUploadDate": "17/02/2024"
+      "contentDescription": "Landasan Pendidikan",
+      "contentUrl": "https://www.youtube.com/watch?v=eeEGllPZBXo",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
     },
     {
-      "uuid": "d918f8f2-9c5b-467e-843f-ec523e2e0e27",
-      "contentTitle": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentAuthor": "Guru Kreatif",
-      "contentType": "slides",
-      "contentDescription": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentUrl": "https://docs.google.com/presentation/d/1wS4PnVrCUs6cbH2MM5Q127ufW_AoP5giUbBvYvOXIYM",
-      "contentThumbnail": "https://docs.google.com/presentation/d/1wS4PnVrCUs6cbH2MM5Q127ufW_AoP5giUbBvYvOXIYM",
-      "contentUploadDate": "17/02/2024"
-    },
-    {
-      "uuid": "2b16768c-1bb0-42a5-8a62-9c2a1cf4c1ac",
-      "contentTitle": "Jembatan Kecerdasan Manusia dan Buatan",
-      "contentAuthor": "Henry Praherdhinono",
-      "contentType": "image",
-      "contentDescription": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentUrl": "https://drive.google.com/file/d/1Z8hgnmZ9EHq8avECzuse4FD8GoxhWovI/view?usp=drive_link",
-      "contentThumbnail": "https://drive.google.com/file/d/1Z8hgnmZ9EHq8avECzuse4FD8GoxhWovI/view?usp=drive_link",
-      "contentUploadDate": "17/02/2024"
-    },
-    {
-      "uuid": "0d3a9647-102f-4b8c-bf00-eeb250e4ba53",
-      "contentTitle": "Behind of Pameran Karya Teknologi Pendidikan UM",
-      "contentAuthor": "Rengga Prakoso Nugroho",
-      "contentType": "text",
-      "contentDescription": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentUrl": "https://drive.google.com/file/d/1rnsncCgdMgnUOHPCI-zudmixtUTksfIb/view",
-      "contentThumbnail": "https://drive.google.com/file/d/1rnsncCgdMgnUOHPCI-zudmixtUTksfIb/view",
-      "contentUploadDate": "17/02/2024"
-    },
-    {
-      "uuid": "3c026c0b-24e9-4c22-b485-d3e3ad266949",
-      "contentTitle": "Model Pengembangan Konten Digital Pendidikan",
+      "uuid": "d96c9c03-65f8-41d7-a134-d38d9f9b7c84",
+      "contentTitle": "Landasan Psikologi, Ekonomi, dan Sosial Pendidikan",
       "contentAuthor": "Rengga Prakoso Nugroho",
       "contentType": "video",
-      "contentDescription": "Membahas tentang parental guiding siswa",
-      "contentUrl": "https://www.youtube.com/watch?v=y6e_kztXG04",
-      "contentThumbnail": "https://youtube.com/abcd",
-      "contentUploadDate": "17/02/2024"
+      "contentDescription": "Landasan Psikologi, Ekonomi, dan Sosial Pendidikan",
+      "contentUrl": "https://www.youtube.com/watch?v=jY4vphSdnKE",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
     },
     {
-      "uuid": "435b150e-546f-42fd-a437-da67b6ef11d7",
-      "contentTitle": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentAuthor": "Guru Kreatif",
-      "contentType": "slides",
-      "contentDescription": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentUrl": "https://docs.google.com/presentation/d/1wS4PnVrCUs6cbH2MM5Q127ufW_AoP5giUbBvYvOXIYM",
-      "contentThumbnail": "https://docs.google.com/presentation/d/1wS4PnVrCUs6cbH2MM5Q127ufW_AoP5giUbBvYvOXIYM",
-      "contentUploadDate": "17/02/2024"
-    },
-    {
-      "uuid": "1b2bdeea-f914-40a5-ae3c-18fccfb4aa3e",
-      "contentTitle": "Jembatan Kecerdasan Manusia dan Buatan",
-      "contentAuthor": "Henry Praherdhinono",
-      "contentType": "image",
-      "contentDescription": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentUrl": "https://drive.google.com/file/d/1Z8hgnmZ9EHq8avECzuse4FD8GoxhWovI/view?usp=drive_link",
-      "contentThumbnail": "https://drive.google.com/file/d/1Z8hgnmZ9EHq8avECzuse4FD8GoxhWovI/view?usp=drive_link",
-      "contentUploadDate": "17/02/2024"
-    },
-    {
-      "uuid": "338b2741-0644-416c-b200-32629222883f",
-      "contentTitle": "Behind of Pameran Karya Teknologi Pendidikan UM",
-      "contentAuthor": "Rengga Prakoso Nugroho",
-      "contentType": "text",
-      "contentDescription": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentUrl": "https://drive.google.com/file/d/1rnsncCgdMgnUOHPCI-zudmixtUTksfIb/view",
-      "contentThumbnail": "https://drive.google.com/file/d/1rnsncCgdMgnUOHPCI-zudmixtUTksfIb/view",
-      "contentUploadDate": "17/02/2024"
-    },
-    {
-      "uuid": "949de751-8418-47db-8478-ed7340506bb5",
-      "contentTitle": "Model Pengembangan Konten Digital Pendidikan",
+      "uuid": "92477d8f-e9cc-47f2-b97b-6dfb15e5ca30",
+      "contentTitle": "Aliran Filsafat Pendidikna",
       "contentAuthor": "Rengga Prakoso Nugroho",
       "contentType": "video",
-      "contentDescription": "Membahas tentang parental guiding siswa",
-      "contentUrl": "https://www.youtube.com/watch?v=y6e_kztXG04",
-      "contentThumbnail": "https://youtube.com/abcd",
-      "contentUploadDate": "17/02/2024"
+      "contentDescription": "Aliran Filsafat Pendidikna",
+      "contentUrl": "https://www.youtube.com/watch?v=2liMrYKXhaU&t=1s",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
     },
     {
-      "uuid": "067c1302-fe99-463b-988d-61ff5b134398",
-      "contentTitle": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentAuthor": "Guru Kreatif",
+      "uuid": "7f3df637-0c41-483f-b0ce-1e11ec687c44",
+      "contentTitle": "Sistem Pendidikan di Indonesia",
+      "contentAuthor": "Rengga Prakoso Nugroho",
+      "contentType": "video",
+      "contentDescription": "Sistem Pendidikan di Indonesia",
+      "contentUrl": "https://www.youtube.com/watch?v=YW4FCdou8P4",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
+    },
+    {
+      "uuid": "584bafb4-feef-42ed-be3d-7882f29861cf",
+      "contentTitle": "Asas Pendidikan di Indonesia",
+      "contentAuthor": "Rengga Prakoso Nugroho",
+      "contentType": "video",
+      "contentDescription": "Asas Pendidikan di Indonesia",
+      "contentUrl": "https://www.youtube.com/watch?v=Fu6PMe4O02c",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
+    },
+    {
+      "uuid": "b7e6bcf0-c8d5-475b-8478-0a5093890d62",
+      "contentTitle": "Sistem Pengajaran",
+      "contentAuthor": "Rengga Prakoso Nugroho",
+      "contentType": "video",
+      "contentDescription": "Sistem Pengajaran",
+      "contentUrl": "https://www.youtube.com/watch?v=yxhs0njo-qk",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
+    },
+    {
+      "uuid": "ede9eda7-0a62-41ad-9424-57133c7e2278",
+      "contentTitle": "Konsep Pembangkit Listrik Sederhana",
+      "contentAuthor": "Rengga Prakoso Nugroho",
+      "contentType": "video",
+      "contentDescription": "Konsep Pembangkit Listrik Sederhana",
+      "contentUrl": "https://www.youtube.com/watch?v=kz3YecylVBk",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
+    },
+    {
+      "uuid": "1de193f4-804b-4c34-9dd5-24c99d422c52",
+      "contentTitle": "Pengantar TalentCMS",
+      "contentAuthor": "Rengga Prakoso Nugroho",
+      "contentType": "video",
+      "contentDescription": "Pengantar TalentCMS",
+      "contentUrl": "https://www.youtube.com/watch?v=ESMRzp_SZbM",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
+    },
+    {
+      "uuid": "20ff615b-a61a-468b-a458-9d867cd9996d",
+      "contentTitle": "Deploy Simple Web Server on Azure VM",
+      "contentAuthor": "Rengga Prakoso Nugroho",
+      "contentType": "video",
+      "contentDescription": "Deploy Simple Web Server on Azure VM",
+      "contentUrl": "https://www.youtube.com/watch?v=vXH0qIXELEA",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
+    },
+    {
+      "uuid": "f1c9fba7-5b88-4749-8dbc-e05f829d2180",
+      "contentTitle": "Installation Ubuntu Server, Docker and Kubernetes",
+      "contentAuthor": "Rengga Prakoso Nugroho",
+      "contentType": "video",
+      "contentDescription": "Installation Ubuntu Server, Docker and Kubernetes",
+      "contentUrl": "https://www.youtube.com/watch?v=ZHP_DA6IzjE",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
+    },
+    {
+      "uuid": "d0b8f661-4012-4108-b085-30f354b7461d",
+      "contentTitle": "Riset Psikologi Pendidikan",
+      "contentAuthor": "Alvindra Rafif",
+      "contentType": "video",
+      "contentDescription": "Riset Psikologi Pendidikan",
+      "contentUrl": "https://www.youtube.com/watch?v=rkrsxQzBS1E",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
+    },
+    {
+      "uuid": "e9031d88-2f2c-4550-9843-eb3301288168",
+      "contentTitle": "Teori Perkembangan Kognitif dan Linguistik",
+      "contentAuthor": "Dendy Prayoga",
+      "contentType": "video",
+      "contentDescription": "Teori Perkembangan Kognitif dan Linguistik",
+      "contentUrl": "https://www.youtube.com/watch?v=YIKReblsGZg",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
+    },
+    {
+      "uuid": "4457acc0-4c1d-473a-9523-8ee734139f6f",
+      "contentTitle": "Perkembangan Peserta Didik",
+      "contentAuthor": "Fadhil Ilham",
+      "contentType": "video",
+      "contentDescription": "Perkembangan Peserta Didik",
+      "contentUrl": "https://www.youtube.com/watch?v=zfZJ_jhMv-M",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
+    },
+    {
+      "uuid": "28f4f400-b4bd-49d9-bca8-1aaa7094fe13",
+      "contentTitle": "Psikologi Perpedaan Individual",
+      "contentAuthor": "Anggit Pamungkas",
+      "contentType": "video",
+      "contentDescription": "Psikologi Perpedaan Individual",
+      "contentUrl": "https://www.youtube.com/watch?v=gF31fhfGrE4",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
+    },
+    {
+      "uuid": "3af8059b-8f16-4513-b128-4bf5379cd82b",
+      "contentTitle": "Teori Motivasi",
+      "contentAuthor": "Hasmo Rafif",
+      "contentType": "video",
+      "contentDescription": "Teori Motivasi",
+      "contentUrl": "https://www.youtube.com/watch?v=e3pKxyRl87o",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
+    },
+    {
+      "uuid": "af6da366-4c7d-40d9-9c2a-c3c193bc1416",
+      "contentTitle": "Lingkungan Belajar Psikologi Pendidikan",
+      "contentAuthor": "Moh. Habibie Zarkasyi",
+      "contentType": "video",
+      "contentDescription": "Lingkungan Belajar Psikologi Pendidikan",
+      "contentUrl": "https://www.youtube.com/watch?v=IsU3LE_QJwc",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
+    },
+    {
+      "uuid": "8b6fe493-283c-4042-a0d0-5bb91b521c46",
+      "contentTitle": "Pengembangan Multimedia Interaktif berbasis SAC",
+      "contentAuthor": "Rengga Prakoso Nugroho",
       "contentType": "slides",
-      "contentDescription": "Exploring Educational Technology Prospect and Career in the Digital Era",
-      "contentUrl": "https://docs.google.com/presentation/d/1wS4PnVrCUs6cbH2MM5Q127ufW_AoP5giUbBvYvOXIYM",
-      "contentThumbnail": "https://docs.google.com/presentation/d/1wS4PnVrCUs6cbH2MM5Q127ufW_AoP5giUbBvYvOXIYM",
-      "contentUploadDate": "17/02/2024"
+      "contentDescription": "Pengembangan Multimedia Interaktif berbasis SAC",
+      "contentUrl": "https://docs.google.com/presentation/d/1nsE2ZFlJK2I1OphMuwfkA1ZFdYRyw08h/edit?usp=drive_link&ouid=107603673677867375131&rtpof=true&sd=true",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
+    },
+    {
+      "uuid": "42a1a3e5-18bf-431f-8ec6-b4e4d4de10c2",
+      "contentTitle": "Implementasi Single Sign On untuk Institusi Pendidikan",
+      "contentAuthor": "Rengga Prakoso Nugroho",
+      "contentType": "slides",
+      "contentDescription": "Implementasi Single Sign On untuk Institusi Pendidikan",
+      "contentUrl": "https://docs.google.com/presentation/d/1nsE2ZFlJK2I1OphMuwfkA1ZFdYRyw08h/edit?usp=drive_link&ouid=107603673677867375131&rtpof=true&sd=true",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
+    },
+    {
+      "uuid": "5d9101df-1e72-4b32-9781-bc9cfa313882",
+      "contentTitle": "Pemanfaatan Google Sites sebagai situs web marketing sederhana",
+      "contentAuthor": "Rengga Prakoso Nugroho",
+      "contentType": "slides",
+      "contentDescription": "Pemanfaatan Google Sites sebagai situs web marketing sederhana",
+      "contentUrl": "https://docs.google.com/presentation/d/1nsE2ZFlJK2I1OphMuwfkA1ZFdYRyw08h/edit?usp=drive_link&ouid=107603673677867375131&rtpof=true&sd=true",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
+    },
+    {
+      "uuid": "5b58615b-271f-40df-88ab-82c9b69509ad",
+      "contentTitle": "Mengenal Sampah Organik, Anorganik dan B3",
+      "contentAuthor": "Dendy Prayoga",
+      "contentType": "Video",
+      "contentDescription": "Mengenal Sampah Organik, Anorganik dan B3",
+      "contentUrl": "https://www.youtube.com/watch?v=HT8RYux6fOk",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
+    },
+    {
+      "uuid": "d0d0a552-0cc1-4048-b320-6de1d7dd9e48",
+      "contentTitle": "Mengenal Alat Ukur Mikrometer",
+      "contentAuthor": "Hilya Nahila",
+      "contentType": "video",
+      "contentDescription": "Mengenal Alat Ukur Mikrometer",
+      "contentUrl": "https://www.youtube.com/watch?v=ojide55R9zs",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
+    },
+    {
+      "uuid": "cf919268-d48c-4f74-8c20-10b81e2163d4",
+      "contentTitle": "Macam macam planet di Galaksi Bima Sakti",
+      "contentAuthor": "Habibie Zarkasyi",
+      "contentType": "video",
+      "contentDescription": "Macam macam planet di Galaksi Bima Sakti",
+      "contentUrl": "https://www.youtube.com/watch?v=JHRVSg3wOu0",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
+    },
+    {
+      "uuid": "f663e645-6080-4f66-8109-6540b1938956",
+      "contentTitle": "Atom dan Penerapannya dalam Kehidupan",
+      "contentAuthor": "Fatiha Zahra",
+      "contentType": "video",
+      "contentDescription": "Atom dan Penerapannya dalam Kehidupan",
+      "contentUrl": "https://www.youtube.com/watch?v=jI4lI2kml5c",
+      "contentThumbnail": "none",
+      "contentUploadDate": "10/07/2023"
     }
   ]
 }
