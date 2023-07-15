@@ -1,3 +1,7 @@
+# UNIVERSE: Main Open Source Application Repository
+
+![Pameran Karya Teknologi Pendidikan 2023](/docs/cover.png)
+
 ## Teknologi yang Digunakan
 
 | App/Service                                       | Description         |
