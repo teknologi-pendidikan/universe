@@ -32,7 +32,7 @@ export function CommonCard({
     >
       {type === 'video' && (
         <Image
-          className="aspect-video w-full rounded-t-lg object-cover object-right-top"
+          className="aspect-video w-full rounded-t-lg object-cover object-center"
           src={`https://img.youtube.com/vi/${getYoutubeVideoId(image)}/hqdefault.jpg`}
           alt="video"
           width={500}
