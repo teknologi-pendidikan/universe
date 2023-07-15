@@ -78,7 +78,7 @@ export default async function Page({ params }: ThematicLearningContentPageViewPr
           className="container mx-auto pt-12"
         >
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {video.slice(0, 3).map((video: LearningContentProperties) => (
+            {video.map((video: LearningContentProperties) => (
               <CommonCard
                 key={video.uuid}
                 title={video.contentTitle}
@@ -97,7 +97,7 @@ export default async function Page({ params }: ThematicLearningContentPageViewPr
           className="container mx-auto pt-12"
         >
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {images.slice(0, 3).map((image: LearningContentProperties) => (
+            {images.map((image: LearningContentProperties) => (
               <CommonCard
                 key={image.uuid}
                 title={image.contentTitle}
@@ -116,7 +116,7 @@ export default async function Page({ params }: ThematicLearningContentPageViewPr
           className="container mx-auto pt-12"
         >
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {slides.slice(0, 3).map((slide: LearningContentProperties) => (
+            {slides.map((slide: LearningContentProperties) => (
               <CommonCard
                 key={slide.uuid}
                 title={slide.contentTitle}
@@ -135,7 +135,7 @@ export default async function Page({ params }: ThematicLearningContentPageViewPr
           className="container mx-auto pt-12"
         >
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {text.slice(0, 3).map((text: LearningContentProperties) => (
+            {text.map((text: LearningContentProperties) => (
               <CommonCard
                 key={text.uuid}
                 title={text.contentTitle}
