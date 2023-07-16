@@ -9,7 +9,7 @@ export default function Document() {
       connect-src 'self' webpack://* https: data:;
       frame-src 'none';
       img-src 'self' blob: https://*.teknologipendidikan.or.id https://is3.cloudhost.id/teknologipendidikan/ https://drive.google.com https://*.googleusercontent.com https://www.netlify.com/img/;
-      script-src 'self' 'unsafe-eval' 'inline-script' 'nonce-${nonce}' 'strict-dynamic' https://www.googletagmanager.com/gtag/js https://netlify-rum.netlify.app/;
+      script-src 'self' 'unsafe-eval' 'unsafe-inline' 'nonce-${nonce}' 'strict-dynamic' https://www.googletagmanager.com/gtag/js https://netlify-rum.netlify.app/;
       style-src 'self' 'unsafe-inline';
       worker-src 'self' blob:;`
   return (
