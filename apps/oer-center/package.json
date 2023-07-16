@@ -10,7 +10,8 @@
     "format": "prettier --write .",
     "type-check": "tsc --noEmit",
     "type-check:watch": "tsc --noEmit --watch",
-    "type-check:ci": "tsc --noEmit --pretty --noEmit --strict"
+    "type-check:ci": "tsc --noEmit --pretty --noEmit --strict",
+    "fetchwarehouse": "npx ts-node .\"/lib/fetchWarehouseData.ts\""
   },
   "dependencies": {
     "@mdx-js/loader": "^2.3.0",
