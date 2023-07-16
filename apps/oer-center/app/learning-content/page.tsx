@@ -9,13 +9,13 @@ export default function Page() {
   const text = LearningContent.learningcontent.filter((content) => content.contentType === 'text')
 
   return (
-    <main className="container mx-auto py-48">
-      <h1 className="text-6xl font-bold text-gray-800">Discover Learning Content</h1>
+    <main className="container mx-auto py-12 lg:py-48">
+      <h1 className="px-10 text-6xl font-bold text-gray-800 lg:px-0">Discover Learning Content</h1>
       <SectionLayout
         title="Lecture Videos"
         id="videos-content"
         subtitle="Open Educational Lecture Videos"
-        className="pt-12"
+        className="container mx-auto px-10 py-6 lg:px-0"
       >
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {videos.map((video) => (
@@ -34,7 +34,7 @@ export default function Page() {
         title="Lecture Slides / Decks"
         id="slides-content"
         subtitle="Open Educational Lecture Slides"
-        className="pt-12"
+        className="container mx-auto px-10 py-6 lg:px-0"
       >
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {slides.map((slide) => (
@@ -53,7 +53,7 @@ export default function Page() {
         title="Lecture Images"
         id="images-content"
         subtitle="Open Educational Lecture Images"
-        className="pt-12"
+        className="container mx-auto px-10 py-6 lg:px-0"
       >
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {images.map((image) => (
@@ -68,7 +68,12 @@ export default function Page() {
           ))}
         </div>
       </SectionLayout>
-      <SectionLayout title="Lecture Notes" id="text-content" subtitle="Open Educational Lecture Text" className="pt-12">
+      <SectionLayout
+        title="Lecture Notes"
+        id="text-content"
+        subtitle="Open Educational Lecture Text"
+        className="container mx-auto px-10 py-6 lg:px-0"
+      >
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {text.map((text) => (
             <CommonCard

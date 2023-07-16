@@ -69,13 +69,13 @@ export default async function Page({ params }: ThematicLearningContentPageViewPr
         id={uuid}
         title={thematicTitle}
         subtitle={thematicDescription}
-        className="container mx-auto pt-12"
+        className="container mx-auto px-10 pt-12 lg:px-0"
       >
         <SectionLayout
           title="Lecture Videos"
           id="videos-content"
           subtitle="Open Educational Lecture Videos"
-          className="container mx-auto pt-12"
+          className="container mx-auto pt-12 "
         >
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
             {video.map((video: LearningContentProperties) => (

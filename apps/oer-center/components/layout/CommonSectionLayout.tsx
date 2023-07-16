@@ -19,12 +19,12 @@ export default function SectionLayout({
     <section id={id} className={className}>
       <div className="flex flex-col items-start justify-start pb-10">
         <h2
-          className="mb-2 text-center text-6xl
-            font-bold text-gray-800"
+          className="mb-2 text-5xl font-bold text-gray-800
+            lg:text-center lg:text-6xl"
         >
           {title}
         </h2>
-        <p className="text-center text-xl text-gray-600">{subtitle}</p>
+        <p className="text-lg text-gray-600 lg:text-center lg:text-xl">{subtitle}</p>
       </div>
       {children}
     </section>

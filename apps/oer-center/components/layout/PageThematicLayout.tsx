@@ -18,12 +18,10 @@ export default function LayoutThematicContent({
   return (
     <section id={id} className={className}>
       <div className="flex flex-col items-start justify-start space-y-16 pb-10">
-        <h1 className="mb-2 max-w-screen-lg text-6xl font-bold text-gray-800">
-          {title}
-        </h1>
+        <h1 className="mb-2 max-w-screen-lg text-5xl font-bold text-gray-800 lg:text-6xl">{title}</h1>
         <div className="flex w-full max-w-screen-md flex-col items-start justify-start space-y-4">
-          <h2 className="text-2xl font-bold">Quickstart: What is {title}</h2>
-          <p className="text-xl">{subtitle}</p>
+          <h2 className="text-xl font-bold lg:text-2xl">Quickstart: What is {title}</h2>
+          <p className="text-md lg:text-xl">{subtitle}</p>
         </div>
       </div>
       {children}

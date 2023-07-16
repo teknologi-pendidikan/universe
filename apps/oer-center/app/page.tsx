@@ -17,7 +17,7 @@ export default function Page() {
         title="Thematic Collections"
         id="thematic-content"
         subtitle="Open Educational Resources with Thematically Category"
-        className="container mx-auto p-12"
+        className="container mx-auto px-10 py-6 lg:px-0"
       >
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {ThematicContent.thematiclist.map((thematic) => (
@@ -41,7 +41,7 @@ export default function Page() {
         title="Lecture Videos"
         id="videos-content"
         subtitle="Open Educational Lecture Videos"
-        className="container mx-auto pt-12"
+        className="container mx-auto px-10 py-6 lg:px-0"
       >
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {videos.slice(0, 3).map((video) => (
@@ -60,7 +60,7 @@ export default function Page() {
         title="Lecture Slides / Decks"
         id="slides-content"
         subtitle="Open Educational Lecture Slides"
-        className="container mx-auto pt-12"
+        className="container mx-auto px-10 py-6 lg:px-0"
       >
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {slides.slice(0, 3).map((slide) => (
@@ -79,7 +79,7 @@ export default function Page() {
         title="Lecture Images"
         id="images-content"
         subtitle="Open Educational Lecture Images"
-        className="container mx-auto pt-12"
+        className="container mx-auto px-10 py-6 lg:px-0"
       >
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {images.slice(0, 3).map((image) => (
@@ -98,7 +98,7 @@ export default function Page() {
         title="Lecture Notes"
         id="text-content"
         subtitle="Open Educational Lecture Text"
-        className="container mx-auto pt-12"
+        className="container mx-auto px-10 py-6 lg:px-0"
       >
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {text.slice(0, 3).map((text) => (
