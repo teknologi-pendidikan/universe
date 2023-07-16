@@ -1,4 +1,5 @@
 import NavigationBar from 'components/common/NavigationBar'
+import GoogleAnalytics from 'components/libs/GoogleAnalytics'
 import type { Metadata } from 'next'
 import React from 'react'
 
@@ -11,13 +12,12 @@ export const metadata: Metadata = {
     'Open Educational Resource Center is Open Educational Resources managed and operated by Teknologi Pendidikan ID. This OER mainly focused on professional development in scope of educational technology proficiency.',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="id">
+      {process.env.NEXT_PUBLIC_GA_TRACKING_ID && (
+        <GoogleAnalytics NEXT_PUBLIC_GA_TRACKING_ID={process.env.NEXT_PUBLIC_GA_TRACKING_ID as string} />
+      )}
       <body>
         <NavigationBar />
         {children}
