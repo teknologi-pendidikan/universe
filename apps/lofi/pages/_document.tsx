@@ -9,17 +9,14 @@ export default function Document() {
       connect-src 'self' webpack://* https: data:;
       frame-src 'none';
       img-src 'self' blob: https://*.teknologipendidikan.or.id https://is3.cloudhost.id/teknologipendidikan/ https://drive.google.com https://*.googleusercontent.com https://www.netlify.com/img/;
-      script-src 'self' 'unsafe-eval' 'nonce-${nonce}' 'strict-dynamic' https://www.googletagmanager.com/gtag/js https://netlify-rum.netlify.app/;
+      script-src 'self' 'unsafe-eval' 'inline-script' 'nonce-${nonce}' 'strict-dynamic' https://www.googletagmanager.com/gtag/js https://netlify-rum.netlify.app/;
       style-src 'self' 'unsafe-inline';
       worker-src 'self' blob:;`
   return (
     <Html lang="id">
       <Head nonce={nonce}>
         <meta name="theme-color" content="#10528B" />
-        <meta
-          name="description"
-          content="Redaksi EDTECH-ID | Majalah dan Surat Kabar Teknologi Pendidikan"
-        />
+        <meta name="description" content="Redaksi EDTECH-ID | Majalah dan Surat Kabar Teknologi Pendidikan" />
         <link rel="manifest" href="/manifest.webmanifest" />
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="robots" content="index, follow" />
