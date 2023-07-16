@@ -8,8 +8,11 @@ import { usePathname } from 'next/navigation'
 export default function NavigationBar() {
   const pathname = usePathname()
   return (
-    <header id="component-layout-header" className="fixed inset-x-0 top-0 z-50 w-full bg-white shadow-md">
-      <div id="global-navigation" className="container mx-auto flex items-center justify-between py-5">
+    <header id="component-layout-header" className="inset-x-0 top-0 z-50 w-full bg-white shadow-md lg:fixed">
+      <div
+        id="global-navigation"
+        className="container mx-auto flex flex-col items-center justify-between space-y-5 py-5 lg:flex-row  lg:space-y-0"
+      >
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
             <Image
@@ -38,7 +41,7 @@ export default function NavigationBar() {
         </nav>
       </div>
       <div id="content-navigation" className="item-start flex justify-between bg-brandblue py-5">
-        <nav className="container mx-auto flex items-center justify-start space-x-8 text-xl font-bold text-white">
+        <nav className="text-md container mx-auto flex items-center justify-center space-x-8 px-5 font-bold text-white lg:justify-start lg:px-0 lg:text-xl">
           {ContentNavigation.map((item) => (
             <Link
               key={item.url}
