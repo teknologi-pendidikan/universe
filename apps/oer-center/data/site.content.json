@@ -1,8 +1,22 @@
 {
   "contentComponentWelcomeHero": {
-    "title": "OER Center",
-    "subtitle": "Welcome to Open Educational Resource Center",
-    "description": "LRC is Open Educational Resources managed and operated by Teknologi Pendidikan ID. This OER mainly focused on professional development in scope of educational technology proficiency. It covers 5 domain",
+    "title": "Educational technology OER Repository",
+    "subtitle": "Welcome to Open Educational Resources Repository",
+    "description": "EDTECH-ID OER Repository is a collection of open educational resources for educational technology. This repository is a place for students and lecturers to share their knowledge through the exchange of learning resources between institutions. With the existence of OER, learners in the field of Educational Technology can contribute their materials and freely license them. This repository's key feature is its ability to expand content collections within the OER, making it an attractive resource for students and lecturers. This unique feature enhances the content collection within the repository, ensuring its continuous growth and expansion along with the evolving needs of educational technology knowledge.",
     "actionText": "Explore open resources now"
+  },
+  "globalContentData": {
+    "description": "Open Educational Resources (OER) are freely accessible learning materials for learners without cost or restrictions. In Indonesia, various universities have spread educational technology knowledge in different directions, resulting in a diverse landscape. However, there is a lack of openly available learning resources among institutions involved in Educational Technology. This project aims to address this gap by developing an open learning resource repository specifically designed for students and lecturers in Educational Technology. The main objective of this repository is to enable learners to share knowledge through the exchange of learning resources between institutions. With the existence of OER, learners in the field of Educational Technology can contribute their materials and freely license them. This repository's key feature is its ability to expand content collections within the OER, making it an attractive resource for students and lecturers. This unique feature enhances the content collection within the repository, ensuring its continuous growth and expansion along with the evolving needs of educational technology knowledge.",
+    "productDescription": "EDTECH-ID OER Repository is a collection of open educational resources for educational technology. This repository is a place for students and lecturers to share their knowledge through the exchange of learning resources between institutions. With the existence of OER, learners in the field of Educational Technology can contribute their materials and freely license them. This repository's key feature is its ability to expand content collections within the OER, making it an attractive resource for students and lecturers. This unique feature enhances the content collection within the repository, ensuring its continuous growth and expansion along with the evolving needs of educational technology knowledge.",
+    "title": "Educational Technology Open Educational Resources Repository",
+    "actionText": "Explore open resources now",
+    "creator": "Teknologi Pendidikan ID - EDTECH-ID Institute Project",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "licenseLogo": "https://licensebuttons.net/l/by/4.0/88x31.png",
+    "licenseDescription": "This work is licensed under a Creative Commons Attribution 4.0 International License.",
+    "affiliation": "Universitas Negeri Malang, Departemen Teknologi Pendidikan",
+    "maintainer": "Teknologi Pendidikan ID - EDTECH-ID Institute Project",
+    "url": "https://sumberbelajar.teknologipendidikan.or.id"
   }
 }
