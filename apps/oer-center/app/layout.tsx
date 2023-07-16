@@ -15,9 +15,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="id">
-      {process.env.NEXT_PUBLIC_GA_TRACKING_ID && (
-        <GoogleAnalytics NEXT_PUBLIC_GA_TRACKING_ID={process.env.NEXT_PUBLIC_GA_TRACKING_ID as string} />
-      )}
+      <GoogleAnalytics GA_TRACKING_ID="G-TVTC8YPJ0H" />
       <body>
         <NavigationBar />
         {children}
