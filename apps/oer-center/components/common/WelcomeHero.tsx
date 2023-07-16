@@ -3,11 +3,11 @@ import Image from 'next/image'
 
 export default function WelcomeHero() {
   return (
-    <section id="welcome-hero" className="hidden lg:relative">
+    <section id="welcome-hero" className="relative hidden lg:block">
       <Image
         src="/welcome-hero-bg.png"
         alt="Welcome Hero Background"
-        className="invisible h-screen max-h-screen w-full object-cover lg:block"
+        className="h-screen max-h-screen w-full object-cover"
         width={1920}
         height={1080}
         quality={75}

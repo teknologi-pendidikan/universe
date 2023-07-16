@@ -69,7 +69,7 @@ export default async function Page({ params }: ThematicLearningContentPageViewPr
         id={uuid}
         title={thematicTitle}
         subtitle={thematicDescription}
-        className="container mx-auto px-10 pt-12 lg:px-0"
+        className="container mx-auto px-10 pt-12 lg:px-0 lg:pt-48"
       >
         <SectionLayout
           title="Lecture Videos"
