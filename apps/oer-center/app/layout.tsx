@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: GlobalSiteContent.globalContentData.productDescription,
     images: [
       {
-        url: 'https://sumberbelajar.teknologipendidikan.or.id/opengraph-image.png',
+        url: 'https://sumberbelajar.teknologipendidikan.sch.id/opengraph-image.png',
         width: 1200,
         height: 630,
         alt: GlobalSiteContent.globalContentData.title,
@@ -43,7 +43,11 @@ export const metadata: Metadata = {
   abstract: GlobalSiteContent.globalContentData.description,
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="id">
       <GoogleAnalytics GA_TRACKING_ID="G-TVTC8YPJ0H" />
