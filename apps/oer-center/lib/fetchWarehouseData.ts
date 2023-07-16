@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable */
 // BEFORE RUNNING:
 // ---------------
 // 1. If not already done, enable the Google Sheets API
@@ -10,6 +10,7 @@
 require('dotenv').config()
 const { google } = require('googleapis')
 
+// @ts-ignore Duplicate identifier 'LearningContentProperties'.
 type LearningContentProperties = {
   uuid: string
   contentTitle: string
