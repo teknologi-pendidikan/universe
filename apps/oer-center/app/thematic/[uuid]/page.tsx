@@ -2,7 +2,11 @@ import SectionLayout from 'components/layout/CommonSectionLayout'
 import LayoutThematicContent from 'components/layout/PageThematicLayout'
 import { CommonCard } from 'components/organism/CommonResourcesCard'
 import LearningContentData from 'data/learning.content.json'
-import { getAllThematicContent, getThematicContent } from 'lib/fetchThematicContent'
+import {
+  getAllThematicContent,
+  getThematicContent,
+} from 'lib/fetchThematicContent'
+import Image from 'next/image'
 import {
   LearningContentProperties,
   ThematicLearningContentPageViewProps,
@@ -11,8 +15,16 @@ import {
 
 export const dynamicParams = false
 
-export default async function Page({ params }: ThematicLearningContentPageViewProps) {
-  const { uuid, thematicTitle, thematicDescription, thematicLearningContents } = (await getThematicContent(
+export default async function Page({
+  params,
+}: ThematicLearningContentPageViewProps) {
+  const {
+    uuid,
+    thematicTitle,
+    thematicDescription,
+    thematicLearningContents,
+    thematicThumbnail,
+  } = (await getThematicContent(
     params.uuid,
   )) as any as ThematicLearningContentProperties
 
@@ -30,46 +42,62 @@ export default async function Page({ params }: ThematicLearningContentPageViewPr
   // })
 
   // filter learning contents by thematic learning contents
-  const getThematicLearningContents = (learningContents: any, thematicLearningContents: any) => {
+  const getThematicLearningContents = (
+    learningContents: any,
+    thematicLearningContents: any,
+  ) => {
     return learningContents.filter((learningContent: any) => {
       return thematicLearningContents.includes(learningContent.uuid)
     })
   }
 
   // filter learning contents by video content type
-  const video = getThematicLearningContents(LearningContentData.learningcontent, thematicLearningContents).filter(
-    (learningContent: any) => {
-      return learningContent.contentType === 'video'
-    },
-  )
+  const video = getThematicLearningContents(
+    LearningContentData.learningcontent,
+    thematicLearningContents,
+  ).filter((learningContent: any) => {
+    return learningContent.contentType === 'video'
+  })
   // filter learning contents by slide content type
-  const images = getThematicLearningContents(LearningContentData.learningcontent, thematicLearningContents).filter(
-    (learningContent: any) => {
-      return learningContent.contentType === 'image'
-    },
-  )
+  const images = getThematicLearningContents(
+    LearningContentData.learningcontent,
+    thematicLearningContents,
+  ).filter((learningContent: any) => {
+    return learningContent.contentType === 'image'
+  })
 
   // filter learning contents by slide content type
-  const slides = getThematicLearningContents(LearningContentData.learningcontent, thematicLearningContents).filter(
-    (learningContent: any) => {
-      return learningContent.contentType === 'slides'
-    },
-  )
+  const slides = getThematicLearningContents(
+    LearningContentData.learningcontent,
+    thematicLearningContents,
+  ).filter((learningContent: any) => {
+    return learningContent.contentType === 'slides'
+  })
 
   // filter learning contents by text content type
-  const text = getThematicLearningContents(LearningContentData.learningcontent, thematicLearningContents).filter(
-    (learningContent: any) => {
-      return learningContent.contentType === 'text'
-    },
-  )
+  const text = getThematicLearningContents(
+    LearningContentData.learningcontent,
+    thematicLearningContents,
+  ).filter((learningContent: any) => {
+    return learningContent.contentType === 'text'
+  })
 
   return (
     <main>
+      <Image
+        src={thematicThumbnail}
+        alt="hero"
+        width={1280}
+        height={426}
+        className="container mx-auto mt-48 hidden w-full rounded-lg lg:block"
+        quality={75}
+        unoptimized={true}
+      />
       <LayoutThematicContent
         id={uuid}
         title={thematicTitle}
         subtitle={thematicDescription}
-        className="container mx-auto px-10 pt-12 lg:px-0 lg:pt-48"
+        className="container mx-auto px-10 pt-12 lg:px-0 lg:pt-6"
       >
         <SectionLayout
           title="Lecture Videos"
