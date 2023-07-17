@@ -1,6 +1,10 @@
 import LearningContents from 'data/learning.content.json'
 import ThematicContents from 'data/thematic.content.json'
 import { MetadataRoute } from 'next'
+import {
+  LearningContentProperties,
+  ThematicLearningContentProperties,
+} from 'types/global'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Learning Content
