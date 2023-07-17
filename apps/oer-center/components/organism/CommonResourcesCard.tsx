@@ -33,7 +33,9 @@ export function CommonCard({
       {type === 'video' && (
         <Image
           className="aspect-video w-full rounded-t-lg object-cover object-center"
-          src={`https://img.youtube.com/vi/${getYoutubeVideoId(image)}/hqdefault.jpg`}
+          src={`https://img.youtube.com/vi/${getYoutubeVideoId(
+            image,
+          )}/hqdefault.jpg`}
           alt="video"
           width={500}
           height={200}
@@ -43,14 +45,18 @@ export function CommonCard({
       {type === 'image' && (
         <Image
           className="aspect-[3/1] w-full rounded-t-lg object-cover object-right-top"
-          src={`https://drive.google.com/uc?export=view&id=${getGoogleDriveFileId(image)}`}
+          src={`https://drive.google.com/uc?export=view&id=${getGoogleDriveFileId(
+            image,
+          )}`}
           alt="video"
           width={500}
           height={200}
         />
       )}
       <div className="flex w-full flex-col items-start justify-center space-y-1 p-3">
-        <h3 className="text-2xl font-bold text-gray-800 hover:underline">{title}</h3>
+        <h3 className="text-2xl font-bold text-gray-800 hover:underline">
+          {title}
+        </h3>
         <p className="text-sm text-gray-600">Created by {author}</p>
       </div>
     </Link>
@@ -76,8 +82,10 @@ export function ThematicCard({
         height={200}
       />
       <div className="flex w-full flex-col items-start justify-center space-y-1 p-3">
-        <h3 className="text-2xl font-bold text-gray-800 hover:underline">{title}</h3>
-        <p className="text-base text-gray-800">{description}</p>
+        <h3 className="text-2xl font-bold text-gray-800 hover:underline">
+          {title}
+        </h3>
+        <p className="line-clamp-3 text-base text-gray-800">{description}</p>
       </div>
     </Link>
   )
