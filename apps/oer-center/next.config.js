@@ -1,5 +1,10 @@
 const nextSafe = require('next-safe')
 const withMDX = require('@next/mdx')()
+const withPWA = require('@ducanh2912/next-pwa').default({
+  dest: 'public',
+  reloadOnOnline: true,
+  disable: true,
+})
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -93,4 +98,4 @@ const nextConfig = {
   },
 }
 
-module.exports = withMDX(nextConfig)
+module.exports = withMDX(withPWA(nextConfig))

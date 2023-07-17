@@ -39,3 +39,5 @@ dist/
 apps/**yarn.lock
 apps/**package-lock.json
 apps/**/pnpm-lock.yaml
+apps/oer-center/public/sw*
+apps/oer-center/public/workbox-*
