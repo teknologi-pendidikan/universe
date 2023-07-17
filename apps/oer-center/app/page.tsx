@@ -34,7 +34,7 @@ export default function Page() {
       <Banner
         title="Are you a teacher in a disadvantaged, frontier, and outermost area?"
         description="We have a special collection of learning materials for your students!"
-        ctaLink="/thematic/outermost-area"
+        ctaLink="/thematic/45bc7885-93af-43ee-b935-63de353e7d40"
         ctaText="Explore the collection"
       />
       <SectionLayout
