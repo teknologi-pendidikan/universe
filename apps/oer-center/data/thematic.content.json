@@ -4,7 +4,7 @@
       "thematicTitle": "Pengantar Ilmu Kependidikan",
       "uuid": "f37cf60c-8314-480a-be1e-c1bf34a7549d",
       "thematicDescription": "Pengantar Ilmu Kependidikan merupakan koleksi konten pembelajaran yang secara fokus mengenalkan konsep dasar dan prinsip prinsip utama negara Indonesia dalam menjalankan pendidikan bagi warga negaranya baik secara teknis maupun konsep umum yang mudah dipahami oleh masyarakat umum.",
-      "thematicThumbnail": "/placeholder.jpg",
+      "thematicThumbnail": "/content/thematic_pik.png",
       "thematicLearningContents": [
         "584bafb4-feef-42ed-be3d-7882f29861cf",
         "60457520-230d-4e1b-bca3-65c48d651a93",
@@ -23,7 +23,7 @@
       "thematicTitle": "Kecakapan Kependidikan Dasar",
       "uuid": "77ab9580-7185-462b-a7ba-c77ebf66f847",
       "thematicDescription": "Kumpulaan video dan sumber belajar dari teori - teori kependidikan dasar bagi para guru. Penyampaian yang sederhana dan dibuat oleh para mahasiswa untuk disampaikan secara ringkas dan praktis.",
-      "thematicThumbnail": "/placeholder.jpg",
+      "thematicThumbnail": "/content/thematic_kkd.png",
       "thematicLearningContents": [
         "ef721ede-23b4-4e1c-be76-82e8ce71f82c",
         "1746e0ac-5a19-4272-bcf0-74bd08f32007",
@@ -47,7 +47,7 @@
       "thematicTitle": "Frontier Project",
       "uuid": "45bc7885-93af-43ee-b935-63de353e7d40",
       "thematicDescription": "Frontier merupakan kumpulan sumber belajar yang dikhususkan bagi guru dan tenaga pendidik yang bertugas di wilayah 3T di Indonesia. Koleksi frontier terdiri dari video pengembangan kompetensi guru hingga media pembelajaran video dan presentasi sederhana yang ramah terhadap ketidaktersediaan infrastruktur teknologi maupun sarana prasaranan yang memadai.",
-      "thematicThumbnail": "/placeholder.jpg",
+      "thematicThumbnail": "/content/thematic_frontier.png",
       "thematicLearningContents": [
         "5b58615b-271f-40df-88ab-82c9b69509ad",
         "f663e645-6080-4f66-8109-6540b1938956",
@@ -79,7 +79,7 @@
       "thematicTitle": "Kecakapan Teknologi Informasi Guru dan Sekolah",
       "uuid": "1208e7ff-8f73-4054-85df-2a7dbf86256a",
       "thematicDescription": "Koleksi konten yang berfokus pada pengembangan sumberdaya digital baik tata kelola digital maupun pengembangan media pembelajaran digital secara sederhana.",
-      "thematicThumbnail": "/placeholder.jpg",
+      "thematicThumbnail": "/content/thematic_ktig.png",
       "thematicLearningContents": [
         "42a1a3e5-18bf-431f-8ec6-b4e4d4de10c2",
         "5d9101df-1e72-4b32-9781-bc9cfa313882",
