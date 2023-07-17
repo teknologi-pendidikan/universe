@@ -1,6 +1,6 @@
 'use client'
 
-import Content from 'data/policy.guideline.mdx'
+import Content from 'data/support.guideline.mdx'
 
 export default function Page() {
   return (
