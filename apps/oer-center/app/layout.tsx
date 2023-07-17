@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: GlobalSiteContent.globalContentData.productDescription,
     images: [
       {
-        url: 'https://sumberbelajar.teknologipendidikan.sch.id/opengraph-image.png',
+        url: '/opengraph-image.png',
         width: 1200,
         height: 630,
         alt: GlobalSiteContent.globalContentData.title,
@@ -41,6 +41,7 @@ export const metadata: Metadata = {
     ],
   },
   abstract: GlobalSiteContent.globalContentData.description,
+  metadataBase: new URL('https://sumberbelajar.teknologipendidikan.sch.id'),
 }
 
 export default function RootLayout({
