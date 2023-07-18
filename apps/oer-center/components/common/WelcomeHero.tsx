@@ -15,7 +15,7 @@ export default function WelcomeHero() {
       />
       <div id="hero-content" className="absolute bottom-10 w-full">
         <div className="flex max-w-2xl flex-col items-start justify-start space-y-4 pt-32 lg:p-12">
-          <h1 className="bg-brandblue p-3  text-2xl font-bold text-white">
+          <h1 className="bg-brandblue-600 p-3  text-2xl font-bold text-white">
             {ContentData.contentComponentWelcomeHero.title}
           </h1>
           <p className="bg-brandyellow p-3 text-2xl font-bold text-brandblue-800">
