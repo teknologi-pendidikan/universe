@@ -1,15 +1,26 @@
 import WelcomeHero from 'components/common/WelcomeHero'
 import SectionLayout from 'components/layout/CommonSectionLayout'
 import Banner from 'components/organism/CommonBanner'
-import { CommonCard, ThematicCard } from 'components/organism/CommonResourcesCard'
+import {
+  CommonCard,
+  ThematicCard,
+} from 'components/organism/CommonResourcesCard'
 import LearningContent from 'data/learning.content.json'
 import ThematicContent from 'data/thematic.content.json'
 
 export default function Page() {
-  const videos = LearningContent.learningcontent.filter((content) => content.contentType === 'video')
-  const slides = LearningContent.learningcontent.filter((content) => content.contentType === 'slides')
-  const images = LearningContent.learningcontent.filter((content) => content.contentType === 'image')
-  const text = LearningContent.learningcontent.filter((content) => content.contentType === 'text')
+  const videos = LearningContent.learningcontent.filter(
+    (content) => content.contentType === 'video',
+  )
+  const slides = LearningContent.learningcontent.filter(
+    (content) => content.contentType === 'slides',
+  )
+  const images = LearningContent.learningcontent.filter(
+    (content) => content.contentType === 'image',
+  )
+  const text = LearningContent.learningcontent.filter(
+    (content) => content.contentType === 'text',
+  )
   return (
     <main>
       <WelcomeHero />
@@ -36,6 +47,7 @@ export default function Page() {
         description="We have a special collection of learning materials for your students!"
         ctaLink="/thematic/45bc7885-93af-43ee-b935-63de353e7d40"
         ctaText="Explore the collection"
+        className="bg-brandblue-600 text-white"
       />
       <SectionLayout
         title="Lecture Videos"
