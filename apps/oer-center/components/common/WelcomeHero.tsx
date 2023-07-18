@@ -10,7 +10,8 @@ export default function WelcomeHero() {
         className="h-screen max-h-screen w-full object-cover"
         width={1920}
         height={1080}
-        quality={75}
+        quality={80}
+        key="welcome-hero-bg"
       />
       <div id="hero-content" className="absolute bottom-10 w-full">
         <div className="flex max-w-2xl flex-col items-start justify-start space-y-4 pt-32 lg:p-12">
@@ -25,7 +26,10 @@ export default function WelcomeHero() {
           </p>
         </div>
       </div>
-      <div id="hero-bottomline" className="absolute bottom-0 w-full bg-brandblue-800">
+      <div
+        id="hero-bottomline"
+        className="absolute bottom-0 w-full bg-brandblue-800"
+      >
         <p className="p-2 text-center text-lg font-bold text-brandyellow">
           {ContentData.contentComponentWelcomeHero.actionText}
         </p>
