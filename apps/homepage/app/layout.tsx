@@ -1,5 +1,6 @@
 import Footer from 'components/organism.footer'
 import Navbar from 'components/organism.navbar'
+import React from 'react'
 
 // These styles apply to every route in the application
 import './globals.css'
