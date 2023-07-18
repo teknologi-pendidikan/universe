@@ -1,7 +1,9 @@
+'use client'
+
 import symbol_horizontal from 'assets/symbol-horizontal.svg'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
+import { usePathname } from 'next/navigation'
 
 const NAVLINK = [
   {
@@ -23,7 +25,7 @@ const NAVLINK = [
 ]
 
 function Navbar() {
-  const router = useRouter()
+  const router = usePathname()
   return (
     <header
       id="navbar-wrapper"
@@ -37,7 +39,7 @@ function Navbar() {
               key={item.href}
               href={item.href}
               className={
-                router.pathname === item.href
+                router === item.href
                   ? 'text-gray-800 underline underline-offset-8 transition duration-300 hover:text-gray-600'
                   : 'text-gray-800 transition duration-300 hover:text-gray-600'
               }
