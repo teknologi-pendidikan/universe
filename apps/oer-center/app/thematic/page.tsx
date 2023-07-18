@@ -2,7 +2,7 @@ import SectionLayout from 'components/layout/CommonSectionLayout'
 
 export default function ThematicBrowserPage() {
   return (
-    <main>
+    <main id="main-content" tabIndex={-1} className="focus:outline-1">
       <SectionLayout
         id="thematic-resources"
         className="container mx-auto py-48"

@@ -36,9 +36,9 @@ export function CommonCard({
           src={`https://img.youtube.com/vi/${getYoutubeVideoId(
             image,
           )}/hqdefault.jpg`}
-          alt="video"
           width={500}
           height={200}
+          alt=""
         />
       )}
 
@@ -48,9 +48,9 @@ export function CommonCard({
           src={`https://drive.google.com/uc?export=view&id=${getGoogleDriveFileId(
             image,
           )}`}
-          alt="video"
           width={500}
           height={200}
+          alt=""
         />
       )}
       <div className="flex w-full flex-col items-start justify-center space-y-1 p-3">
@@ -77,7 +77,7 @@ export function ThematicCard({
       <Image
         className="aspect-[3/1] w-full rounded-t-lg object-cover object-right-top"
         src={image}
-        alt="thematic"
+        alt=""
         width={500}
         height={200}
       />

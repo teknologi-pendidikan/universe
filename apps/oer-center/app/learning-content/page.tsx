@@ -3,14 +3,28 @@ import { CommonCard } from 'components/organism/CommonResourcesCard'
 import LearningContent from 'data/learning.content.json'
 
 export default function Page() {
-  const videos = LearningContent.learningcontent.filter((content) => content.contentType === 'video')
-  const slides = LearningContent.learningcontent.filter((content) => content.contentType === 'slides')
-  const images = LearningContent.learningcontent.filter((content) => content.contentType === 'image')
-  const text = LearningContent.learningcontent.filter((content) => content.contentType === 'text')
+  const videos = LearningContent.learningcontent.filter(
+    (content) => content.contentType === 'video',
+  )
+  const slides = LearningContent.learningcontent.filter(
+    (content) => content.contentType === 'slides',
+  )
+  const images = LearningContent.learningcontent.filter(
+    (content) => content.contentType === 'image',
+  )
+  const text = LearningContent.learningcontent.filter(
+    (content) => content.contentType === 'text',
+  )
 
   return (
-    <main className="container mx-auto py-12 lg:py-48">
-      <h1 className="px-10 text-6xl font-bold text-gray-800 lg:px-0">Discover Learning Content</h1>
+    <main
+      className="container mx-auto py-12 lg:py-48"
+      id="main-content"
+      tabIndex={-1}
+    >
+      <h1 className="px-10 text-6xl font-bold text-gray-800 lg:px-0">
+        Discover Learning Content
+      </h1>
       <SectionLayout
         title="Lecture Videos"
         id="videos-content"

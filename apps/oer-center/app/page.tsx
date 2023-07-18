@@ -22,7 +22,7 @@ export default function Page() {
     (content) => content.contentType === 'text',
   )
   return (
-    <main>
+    <main id="main-content" tabIndex={-1} className="focus:outline-1">
       <WelcomeHero />
       <SectionLayout
         title="Thematic Collections"

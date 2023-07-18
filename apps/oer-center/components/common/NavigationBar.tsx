@@ -10,14 +10,14 @@ export default function NavigationBar() {
   return (
     <header
       id="component-layout-header"
-      className="inset-x-0 top-0 z-50 w-full bg-white shadow-md lg:fixed"
+      className="top-0 z-10 w-full bg-white shadow-md lg:fixed"
     >
       <div
         id="global-navigation"
         className="container mx-auto flex flex-col items-center justify-between space-y-5 py-5 lg:flex-row  lg:space-y-0"
       >
         <div className="flex items-center">
-          <Link href="/" className="flex items-center">
+          <div className="flex items-center">
             <Image
               src="/logo-horizontal-color.svg"
               alt="Logo EDTECH-ID"
@@ -25,7 +25,7 @@ export default function NavigationBar() {
               width={100}
               height={50}
             />
-          </Link>
+          </div>
         </div>
         <nav className="flex items-center justify-around space-x-8 text-lg">
           {GlobalNavigation.map((item) => (

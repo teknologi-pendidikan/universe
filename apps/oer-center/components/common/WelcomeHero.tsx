@@ -18,10 +18,10 @@ export default function WelcomeHero() {
           <h1 className="bg-brandblue-600 p-3  text-2xl font-bold text-white">
             {ContentData.contentComponentWelcomeHero.title}
           </h1>
-          <p className="bg-brandyellow p-3 text-2xl font-bold text-brandblue-800">
+          <h2 className="bg-brandyellow p-3 text-2xl font-bold text-brandblue-800">
             {ContentData.contentComponentWelcomeHero.subtitle}
-          </p>
-          <p className="line-clamp-4 hidden bg-brandgreen p-3 text-base text-white lg:line-clamp-none lg:block">
+          </h2>
+          <p className="line-clamp-4 hidden bg-green-700 p-3 text-base text-white lg:line-clamp-none lg:block">
             {ContentData.contentComponentWelcomeHero.description}
           </p>
         </div>
@@ -30,9 +30,9 @@ export default function WelcomeHero() {
         id="hero-bottomline"
         className="absolute bottom-0 w-full bg-brandblue-800"
       >
-        <p className="p-2 text-center text-lg font-bold text-brandyellow">
+        <h3 className="p-2 text-center text-lg font-bold text-brandyellow">
           {ContentData.contentComponentWelcomeHero.actionText}
-        </p>
+        </h3>
       </div>
     </section>
   )

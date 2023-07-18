@@ -53,6 +53,12 @@ export default function RootLayout({
     <html lang="id">
       <GoogleAnalytics GA_TRACKING_ID="G-TVTC8YPJ0H" />
       <body>
+        <a
+          href="#main-content"
+          className="fixed -left-64 z-50 rounded-lg bg-gray-900 p-4 text-2xl font-bold text-white focus:left-4 focus:top-4"
+        >
+          Skip Navigation
+        </a>
         <NavigationBar />
         {children}
       </body>
