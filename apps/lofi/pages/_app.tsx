@@ -1,4 +1,5 @@
 import type { AppProps } from 'next/app'
+import Script from 'next/script'
 import { GoogleAnalytics, event } from 'nextjs-google-analytics'
 import 'styles/globals.css'
 
@@ -22,6 +23,17 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <GoogleAnalytics trackPageViews />
+      <Script
+        id="Adsense-id"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        crossOrigin="anonymous"
+        data-ad-client="ca-pub-7675866095389123"
+        async
+        strategy="afterInteractive"
+        onError={(e) => {
+          console.error('Script failed to load', e)
+        }}
+      ></Script>
       <Component {...pageProps} />
     </>
   )

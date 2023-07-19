@@ -13,11 +13,12 @@ const nextConfig = {
           // contentSecurityPolicy: false
           contentSecurityPolicy: {
             'connect-src': "'self' webpack://* https: data:",
-            'frame-src': "'none'",
+            'frame-src':
+              'https://googleads.g.doubleclick.net https://www.google.com https://tpc.googlesyndication.com',
             'img-src':
-              "'self' blob: https://*.teknologipendidikan.or.id https://is3.cloudhost.id/teknologipendidikan/ https://drive.google.com https://*.googleusercontent.com https://www.netlify.com/img/",
+              "'self' blob: https://pagead2.googlesyndication.com https://*.teknologipendidikan.or.id https://is3.cloudhost.id/teknologipendidikan/ https://drive.google.com https://*.googleusercontent.com https://www.netlify.com/img/",
             'script-src':
-              "'self' 'unsafe-inline' https://www.googletagmanager.com/gtag/js https://netlify-rum.netlify.app/",
+              "'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com/gtag/js https://netlify-rum.netlify.app/ https://pagead2.googlesyndication.com https://partner.googleadservices.com https://adservice.google.com https://tpc.googlesyndication.com",
             'style-src': "'self' 'unsafe-inline'",
             'worker-src': "'self' blob:",
             'report-uri': 'https://dptsi.edtech.or.id',
@@ -43,7 +44,8 @@ const nextConfig = {
         headers: nextSafe({
           isDev: false,
           contentSecurityPolicy: {
-            'connect-src': "'self' webpack://* https: data: blob: http://localhost:8081/api/v1",
+            'connect-src':
+              "'self' webpack://* https: data: blob: http://localhost:8081/api/v1",
             'frame-src': "'none' ",
             'img-src':
               "'self' blob: https://*.teknologipendidikan.or.id https://*.githubusercontent.com https://is3.cloudhost.id/teknologipendidikan/ https://drive.google.com https://*.googleusercontent.com https://www.netlify.com/img/",
