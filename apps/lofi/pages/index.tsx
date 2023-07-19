@@ -11,6 +11,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -216,6 +217,14 @@ export default function Home({ posts }: Props) {
         </div>
       </section>
       <RunningEvents />
+      <ins
+        className="adsbygoogle block"
+        data-ad-client="ca-pub-7675866095389123"
+        data-ad-slot="3330495757"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      ></ins>
+      <Script>(adsbygoogle = window.adsbygoogle || []).push({});</Script>
       <section
         id="new-release"
         className="container mx-auto mb-8 mt-5 max-w-screen-xl px-4"
@@ -248,7 +257,7 @@ export default function Home({ posts }: Props) {
             {sortedPosts.slice(2, 5).map(({ slug, frontmatter }) => (
               <Link
                 key={slug}
-                className="col-span-2 flex h-full w-full border-spacing-4 flex-col border-b-2 border-gray-200 pb-4 pt-4 lg:max-w-sm lg:pt-0"
+                className="border-spacing-4 col-span-2 flex h-full w-full flex-col border-b-2 border-gray-200 pb-4 pt-4 lg:max-w-sm lg:pt-0"
                 href={slug}
               >
                 <div className="flex flex-col-reverse lg:flex-row">
