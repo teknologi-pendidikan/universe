@@ -224,7 +224,9 @@ export default function Home({ posts }: Props) {
         data-ad-format="auto"
         data-full-width-responsive="true"
       ></ins>
-      <Script>(adsbygoogle = window.adsbygoogle || []).push({});</Script>
+      <Script id="adsgoogle-banner">
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </Script>
       <section
         id="new-release"
         className="container mx-auto mb-8 mt-5 max-w-screen-xl px-4"
