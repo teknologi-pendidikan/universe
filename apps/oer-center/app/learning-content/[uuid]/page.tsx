@@ -1,4 +1,5 @@
 import LayoutCommonContent from 'components/layout/CommonContentLayout'
+import { randomUUID } from 'crypto'
 import { getGoogleDriveFileId, getYoutubeVideoId } from 'lib/contentTypeChecker'
 import {
   getAllLearningContent,
@@ -43,6 +44,7 @@ export default async function Page({ params }: LearningContentPageViewProps) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
           key={`json-ld-${jsonLd['@type']}`}
+          id={`json-ld-${jsonLd['@type']}-${randomUUID()}`}
         />
       )}
       <LayoutCommonContent

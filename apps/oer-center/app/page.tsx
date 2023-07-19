@@ -5,10 +5,10 @@ import {
   CommonCard,
   ThematicCard,
 } from 'components/organism/CommonResourcesCard'
+import { randomUUID } from 'crypto'
 import LearningContent from 'data/learning.content.json'
 import ThematicContent from 'data/thematic.content.json'
 import Script from 'next/script'
-
 import { Course, ItemList, WithContext } from 'schema-dts'
 
 export default function Page() {
@@ -150,6 +150,7 @@ export default function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         key={`json-ld-${jsonLd['@type']}`}
+        id={`json-ld-${jsonLd['@type']}-${randomUUID()}`}
       />
       <WelcomeHero />
       <SectionLayout

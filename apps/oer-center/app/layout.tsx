@@ -1,5 +1,6 @@
 import NavigationBar from 'components/common/NavigationBar'
 import GoogleAnalytics from 'components/libs/GoogleAnalytics'
+import { randomUUID } from 'crypto'
 import GlobalSiteContent from 'data/site.content.json'
 import type { Metadata } from 'next'
 import Script from 'next/script'
@@ -90,6 +91,7 @@ export default function RootLayout({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         key={`json-ld-${jsonLd['@type']}`}
+        id={`json-ld-${jsonLd['@type']}-${randomUUID()}`}
       />
       <body>
         <a
