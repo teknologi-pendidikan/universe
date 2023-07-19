@@ -5,6 +5,7 @@ import {
   getLearningContent,
 } from 'lib/fetchLearningContent'
 import Image from 'next/image'
+import Script from 'next/script'
 import {
   LearningContentPageViewProps,
   LearningContentProperties,
@@ -23,8 +24,27 @@ export default async function Page({ params }: LearningContentPageViewProps) {
     contentUrl,
   } = (await getLearningContent(params.uuid)) as LearningContentProperties
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': ['VideoObject', 'LearningResource'],
+    name: contentTitle,
+    description: contentDescription,
+    learningResourceType: contentType,
+    educationLevel: 'TertiaryEducation',
+    contentUrl: contentUrl,
+    thumbnailUrl: contentUrl,
+    uploadDate: contentUploadDate,
+  }
+
   return (
     <main id="main-content" tabIndex={-1}>
+      {contentType === 'video' && (
+        <Script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          key={`json-ld-${jsonLd['@type']}`}
+        />
+      )}
       <LayoutCommonContent
         title={contentTitle}
         subtitle={contentDescription}

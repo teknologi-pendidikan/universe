@@ -7,6 +7,9 @@ import {
 } from 'components/organism/CommonResourcesCard'
 import LearningContent from 'data/learning.content.json'
 import ThematicContent from 'data/thematic.content.json'
+import Script from 'next/script'
+
+import { Course, ItemList, WithContext } from 'schema-dts'
 
 export default function Page() {
   const videos = LearningContent.learningcontent.filter(
@@ -21,8 +24,133 @@ export default function Page() {
   const text = LearningContent.learningcontent.filter(
     (content) => content.contentType === 'text',
   )
+
+  const videosCourse = videos.map((video) => {
+    const course: WithContext<Course> = {
+      '@context': 'https://schema.org',
+      '@type': 'Course',
+      name: video.contentTitle,
+      description: video.contentDescription,
+      provider: {
+        '@type': 'Organization',
+        name: 'Teknologi Pendidikan ID',
+      },
+      url: `https://sumberbelajar.teknologipendidikan.sch.id/learning-content/${video.uuid}`,
+      thumbnailUrl: video.contentUrl,
+      dateCreated: video.contentUploadDate,
+      inLanguage: 'id-ID',
+      genre: 'video',
+      isAccessibleForFree: true,
+      license: 'https://creativecommons.org/licenses/by/4.0/',
+      educationalUse: 'lecture',
+      learningResourceType: 'video lecture',
+      typicalAgeRange: '18',
+      timeRequired: 'PT1H',
+      courseCode: video.uuid,
+    }
+    return course
+  })
+
+  const slidesCourse = slides.map((slide) => {
+    const course: WithContext<Course> = {
+      '@context': 'https://schema.org',
+      '@type': 'Course',
+      name: slide.contentTitle,
+      description: slide.contentDescription,
+      provider: {
+        '@type': 'Organization',
+        name: 'Teknologi Pendidikan ID',
+      },
+      url: `https://sumberbelajar.teknologipendidikan.sch.id/learning-content/${slide.uuid}`,
+      thumbnailUrl: slide.contentUrl,
+      dateCreated: slide.contentUploadDate,
+      inLanguage: 'id-ID',
+      genre: 'slides',
+      isAccessibleForFree: true,
+      license: 'https://creativecommons.org/licenses/by/4.0/',
+      educationalUse: 'lecture',
+      learningResourceType: 'slides lecture',
+      typicalAgeRange: '18',
+      timeRequired: 'PT1H',
+      courseCode: slide.uuid,
+    }
+    return course
+  })
+
+  const imagesCourse = images.map((image) => {
+    const course: WithContext<Course> = {
+      '@context': 'https://schema.org',
+      '@type': 'Course',
+      name: image.contentTitle,
+      description: image.contentDescription,
+      provider: {
+        '@type': 'Organization',
+        name: 'Teknologi Pendidikan ID',
+      },
+      url: `https://sumberbelajar.teknologipendidikan.sch.id/learning-content/${image.uuid}`,
+      thumbnailUrl: image.contentUrl,
+      dateCreated: image.contentUploadDate,
+      inLanguage: 'id-ID',
+      genre: 'image',
+      isAccessibleForFree: true,
+      license: 'https://creativecommons.org/licenses/by/4.0/',
+      educationalUse: 'lecture',
+      learningResourceType: 'image lecture',
+      typicalAgeRange: '18',
+      timeRequired: 'PT1H',
+      courseCode: image.uuid,
+    }
+    return course
+  })
+
+  const textCourse = text.map((text) => {
+    const course: WithContext<Course> = {
+      '@context': 'https://schema.org',
+      '@type': 'Course',
+      name: text.contentTitle,
+      description: text.contentDescription,
+      provider: {
+        '@type': 'Organization',
+        name: 'Teknologi Pendidikan ID',
+      },
+      url: `https://sumberbelajar.teknologipendidikan.sch.id/learning-content/${text.uuid}`,
+      thumbnailUrl: text.contentUrl,
+      dateCreated: text.contentUploadDate,
+      inLanguage: 'id-ID',
+      genre: 'text',
+      isAccessibleForFree: true,
+      license: 'https://creativecommons.org/licenses/by/4.0/',
+      educationalUse: 'lecture',
+      learningResourceType: 'text lecture',
+      typicalAgeRange: '18',
+      timeRequired: 'PT1H',
+      courseCode: text.uuid,
+    }
+    return course
+  })
+
+  const jsonLd: WithContext<ItemList> = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    itemListElement: [
+      ...videosCourse,
+      ...slidesCourse,
+      ...imagesCourse,
+      ...textCourse,
+    ],
+    numberOfItems: videosCourse.length,
+    itemListOrder: 'ItemListOrderDescending',
+    name: 'Lecture Videos',
+    description: 'Open Educational Lecture Videos',
+  }
+
   return (
     <main id="main-content" tabIndex={-1} className="focus:outline-1">
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        key={`json-ld-${jsonLd['@type']}`}
+      />
       <WelcomeHero />
       <SectionLayout
         title="Thematic Collections"

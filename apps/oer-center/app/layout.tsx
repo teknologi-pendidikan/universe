@@ -2,7 +2,9 @@ import NavigationBar from 'components/common/NavigationBar'
 import GoogleAnalytics from 'components/libs/GoogleAnalytics'
 import GlobalSiteContent from 'data/site.content.json'
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import React from 'react'
+import { Organization, WithContext } from 'schema-dts'
 
 // These styles apply to every route in the application
 import './globals.css'
@@ -49,9 +51,46 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const jsonLd: WithContext<Organization> = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Teknologi Pendidikan ID',
+    image:
+      'https://sumberbelajar.teknologipendidikan.sch.id/images/icon-512x512.png',
+    description: GlobalSiteContent.globalContentData.description,
+    url: GlobalSiteContent.globalContentData.url,
+    subOrganization: [
+      {
+        '@type': 'Organization',
+        name: 'EDTECH-ID Institute',
+        url: 'https://institute.teknologipendidikan.or.id',
+        logo: 'https://teknologipendidikan.id/images/logo-512x512.png',
+      },
+      {
+        '@type': 'Organization',
+        name: 'UPT Pusat Sumber Belajar',
+        url: 'https://sumberbelajar.teknologipendidikan.sch.id',
+        logo: 'https://sumberbelajar.teknologipendidikan.sch.id/images/icon-512x512.png',
+      },
+    ],
+    slogan: 'Inovasi. Teknologi. Pembelajaran.',
+    sameAs: [
+      'https://www.facebook.com/teknologipendidikan.or.id',
+      'https://www.instagram.com/teknologipendidikan.or.id',
+      'https://www.youtube.com/@teknologi-pendidikan',
+      'https://twitter.com/haloedtechid',
+      'https://www.linkedin.com/company/teknologipendidikan',
+    ],
+  }
+
   return (
     <html lang="id">
       <GoogleAnalytics GA_TRACKING_ID="G-TVTC8YPJ0H" />
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        key={`json-ld-${jsonLd['@type']}`}
+      />
       <body>
         <a
           href="#main-content"
