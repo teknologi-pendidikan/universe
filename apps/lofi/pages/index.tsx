@@ -218,7 +218,8 @@ export default function Home({ posts }: Props) {
       </section>
       <RunningEvents />
       <ins
-        className="adsbygoogle block"
+        className="adsbygoogle"
+        style={{ display: 'block', overflow: 'hidden' }}
         data-ad-client="ca-pub-7675866095389123"
         data-ad-slot="3330495757"
         data-ad-format="auto"
