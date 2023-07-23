@@ -1,8 +1,8 @@
 // tailwind config is required for editor support
 
-const sharedConfig = require("tailwind-config/tailwind.config.js");
+const sharedConfig = require('@edtechid/tailwind-config/tailwind.config.js')
 
 module.exports = {
   presets: [sharedConfig],
-  plugins: [require("@tailwindcss/typography")],
-};
+  plugins: [require('@tailwindcss/typography')],
+}

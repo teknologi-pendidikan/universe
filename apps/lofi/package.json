@@ -22,6 +22,9 @@
     "remark-gfm": "^3.0.1"
   },
   "devDependencies": {
+    "@edtechid/eslint-config-custom": "0.0.1",
+    "@edtechid/tailwind-config": "0.0.1",
+    "@edtechid/tsconfig": "0.0.1",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.4",
     "@tailwindcss/line-clamp": "^0.4.4",
@@ -30,12 +33,9 @@
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "autoprefixer": "10.4.14",
-    "eslint-config-custom": "0.0.1",
     "nextjs-google-analytics": "^2.3.3",
     "postcss": "8.4.24",
-    "tailwind-config": "0.0.1",
     "tailwindcss": "^3.3.3",
-    "tsconfig": "0.0.1",
     "typescript": "^5.1.6"
   }
 }
