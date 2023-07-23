@@ -56,3 +56,11 @@ Example:
 ```bash
 pnpm update react --filter web
 ```
+
+## Running data warehouse
+
+use npx ts-node to run the data warehouse
+
+```bash
+npx ts-node apps/../lib/[warehouse].ts
+```
