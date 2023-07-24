@@ -8,6 +8,7 @@ import React from 'react'
 import { Organization, WithContext } from 'schema-dts'
 
 // These styles apply to every route in the application
+import Footer from 'components/common/Footer'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -102,6 +103,7 @@ export default function RootLayout({
         </a>
         <NavigationBar />
         {children}
+        <Footer />
       </body>
     </html>
   )
