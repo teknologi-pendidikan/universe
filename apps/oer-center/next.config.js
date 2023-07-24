@@ -3,7 +3,8 @@ const withMDX = require('@next/mdx')()
 const withPWA = require('@ducanh2912/next-pwa').default({
   dest: 'public',
   reloadOnOnline: true,
-  disable: true,
+  disable: process.env.NODE_ENV === 'development',
+  register: true,
 })
 
 /** @type {import('next').NextConfig} */

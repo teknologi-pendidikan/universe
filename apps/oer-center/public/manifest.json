@@ -3,11 +3,17 @@
   "short_name": "OER Repository",
   "theme_color": "#FFD026",
   "background_color": "#fff",
-  "display": "minimal-ui",
+  "display": "standalone",
   "orientation": "portrait",
   "scope": "/",
   "start_url": "/",
   "description": "Open Educational Resource Center is Open Educational Resources managed and operated by Teknologi Pendidikan ID. This OER mainly focused on professional development in scope of educational technology proficiency.",
+  "protocol_handlers": [
+    {
+      "protocol": "web+learn",
+      "url": "/learning-content/%s"
+    }
+  ],
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
