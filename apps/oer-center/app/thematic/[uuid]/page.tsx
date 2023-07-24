@@ -83,7 +83,7 @@ export default async function Page({
   })
 
   return (
-    <main id="main-content" tabIndex={-1} className="focus:outline-1">
+    <main id="main-content" tabIndex={-1} className="pb-24 focus:outline-1">
       <Image
         src={thematicThumbnail}
         alt="hero"
