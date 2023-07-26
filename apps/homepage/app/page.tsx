@@ -88,9 +88,9 @@ export default function Home() {
         id="what-we-do"
       >
         <div className="container mx-auto my-14 flex flex-col items-center">
-          <h1 className="text-green mb-8 text-5xl font-bold lg:text-6xl">
+          <h2 className="text-green mb-8 text-5xl font-bold lg:text-6xl">
             What we do?
-          </h1>
+          </h2>
           <p className="max-w-6xl text-center text-xl text-gray-800 lg:text-4xl">
             Memanfaatkan teknologi untuk menciptakan inovasi dalam memfasilitasi
             pembelajaran dan meningkatkan performa manusia.
@@ -108,30 +108,30 @@ export default function Home() {
         id="product-scale"
       >
         <div className="container mx-auto my-24 flex flex-col items-center">
-          <h1 className="mb-24 text-6xl font-bold text-gray-800">
+          <h2 className="mb-24 text-6xl font-bold text-gray-800">
             The impact of our program
-          </h1>
+          </h2>
           <div className="mt-6 flex w-full flex-col items-center justify-around space-y-8 text-center lg:flex-row">
             <div className="flex flex-col items-center justify-center">
-              <h1 className="mb-1 text-8xl font-bold text-gray-800">6</h1>
+              <p className="mb-1 text-8xl font-bold text-gray-800">6</p>
               <p className="max-w-xs text-4xl text-gray-800">
                 Kerjasama Kemahasiswaan
               </p>
             </div>
             <div className="flex flex-col items-center justify-center text-center">
-              <h1 className="mb-1 text-8xl font-bold text-gray-800">12</h1>
+              <p className="mb-1 text-8xl font-bold text-gray-800">12</p>
               <p className="max-w-xs text-4xl text-gray-800">
                 Peningkatan kompetensi
               </p>
             </div>
             <div className="flex flex-col items-center justify-center text-center">
-              <h1 className="mb-1 text-8xl font-bold text-gray-800">3</h1>
+              <p className="mb-1 text-8xl font-bold text-gray-800">3</p>
               <p className="max-w-xs text-4xl text-gray-800">
                 Partner industri teknologi
               </p>
             </div>
             <div className="flex flex-col items-center justify-center text-center">
-              <h1 className="mb-1 text-8xl font-bold text-gray-800">8</h1>
+              <p className="mb-1 text-8xl font-bold text-gray-800">8</p>
               <p className="max-w-xs text-4xl text-gray-800">
                 Aplikasi open source
               </p>
@@ -144,7 +144,7 @@ export default function Home() {
         id="our-process"
       >
         <div className="container mx-auto flex flex-col items-center py-8">
-          <h1 className="mb-14 text-6xl font-bold">How we do it?</h1>
+          <h2 className="mb-14 text-6xl font-bold">How we do it?</h2>
           <p className="max-w-6xl text-xl lg:text-center">
             Kami menciptakan, memanfaatkan, dan mengelola teknologi yang
             tersedia di lingkungan pendidikan. Kami terbuka akan kolaborasi ide,
@@ -203,7 +203,7 @@ export default function Home() {
         id="our-partner"
       >
         <div className="container mx-auto flex flex-col items-center justify-center py-20">
-          <h1 className="mb-14 text-6xl font-bold">Our Partner</h1>
+          <h2 className="mb-14 text-6xl font-bold">Our Partner</h2>
           <div className="grid w-full grid-cols-2 gap-3 lg:grid-cols-3">
             {partner.map((item) => (
               <div key={item.name} className="text-center">
@@ -229,7 +229,7 @@ export default function Home() {
         id="our-team"
       >
         <div className="container mx-auto flex flex-col items-center justify-center py-20">
-          <h1 className="mb-14 text-6xl font-bold">Meet the Team</h1>
+          <h2 className="mb-14 text-6xl font-bold">Meet the Team</h2>
           <p className="mb-32 max-w-6xl text-xl lg:text-center">
             Kami terdiri dari berbagai latar belakang yang berbeda, mulai dari
             mahasiswa, dosen, hingga profesional. Kami memiliki tujuan yang
@@ -265,9 +265,9 @@ export default function Home() {
         id="what-can-we-solve"
       >
         <div className="container mx-auto my-14 flex flex-col items-center">
-          <h1 className="mb-8 text-6xl font-bold text-gray-100">
+          <h2 className="mb-8 text-6xl font-bold text-gray-100">
             What problems we could solve next?
-          </h1>
+          </h2>
           <p className="max-w-6xl text-xl lg:text-center lg:text-4xl">
             Layaknya era pendidikan dan kehidupan manusia, kita dituntut untuk
             bergerak secara adaptif dan kolaboratif dengan tujuan menciptakan
