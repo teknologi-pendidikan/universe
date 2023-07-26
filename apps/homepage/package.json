@@ -15,7 +15,8 @@
   "dependencies": {
     "next": "^13.4.12",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "schema-dts": "^1.1.2"
   },
   "devDependencies": {
     "@edtechid/eslint-config-custom": "0.0.1",
