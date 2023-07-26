@@ -159,15 +159,18 @@ export default function AboutUs() {
         className="bg-gray-100 px-5 py-10 text-gray-700 lg:px-0"
         id="what-can-we-solve"
       >
-        <div className="container mx-auto my-14 flex flex-col items-center">
-          <p className="max-w-6xl text-xl leading-loose lg:text-center lg:text-4xl">
-            Teknologi Pendidikan ID adalahorganisasi nirlaba (komunitas) yang
-            bergerak di bidang pengembangan Pendidikan dan Pembelajaran dan
-            tidak terafiliasi dengan lembaga mana pun, baik partai politik,
-            organisasi kemahasiswaan, perseroan terbatas maupun institusi
-            Pendidikan milik pemerintah lainnya; Kami bekerja sama dengan
-            berbagai pihak untuk menciptakan solusi yang dapat digunakan oleh
-            semua pihak.
+        <div className="container mx-auto my-14 flex flex-col items-center space-y-12">
+          <p className="max-w-6xl text-xl leading-loose lg:text-center lg:text-3xl">
+            Teknologi Pendidikan ID adalah organisasi nirlaba (komunitas) yang
+            bergerak di bidang pengembangan Pendidikan dan Pembelajaran. Kami
+            bekerja sama dengan berbagai pihak untuk menciptakan solusi yang
+            dapat digunakan oleh semua pihak.
+          </p>
+          <p className="max-w-6xl text-lg leading-loose lg:text-center lg:text-2xl">
+            {' '}
+            Teknologi Pendidikan ID beroperasi di bawah naungan PT. Inovasi
+            Teknologi Pembelajaran, sebuah perusahaan yang bergerak di bidang
+            pengembangan pendidikan dan pembelajaran.
           </p>
           <Link
             href="https://aplikasi.teknologipendidikan/sikarsa"
