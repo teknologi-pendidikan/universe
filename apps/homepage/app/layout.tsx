@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     ],
   },
   abstract: GlobalSiteContent.globalContentData.description,
-  metadataBase: new URL('https://sumberbelajar.teknologipendidikan.sch.id'),
+  metadataBase: new URL('https://teknologipendidikan.sch.id'),
 }
 
 export default function RootLayout({
@@ -68,9 +68,15 @@ export default function RootLayout({
       },
       {
         '@type': 'Organization',
+        name: 'PT. Inovasi Teknologi Pembelajaran',
+        url: 'https://teknologipendidikan.biz.id',
+        logo: 'https://teknologipendidikan.id/images/logo-512x512.png',
+      },
+      {
+        '@type': 'Organization',
         name: 'UPT Pusat Sumber Belajar',
-        url: 'https://sumberbelajar.teknologipendidikan.sch.id',
-        logo: 'https://sumberbelajar.teknologipendidikan.sch.id/images/icon-512x512.png',
+        url: 'https://teknologipendidikan.sch.id',
+        logo: 'https://teknologipendidikan.sch.id/images/icon-512x512.png',
       },
     ],
     slogan: 'Inovasi. Teknologi. Pembelajaran.',
