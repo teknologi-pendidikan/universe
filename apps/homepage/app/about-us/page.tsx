@@ -2,8 +2,14 @@ import ICON_Adoption from 'assets/icon_adoption.svg'
 import ICON_kolaborasi from 'assets/icon_kolaborasi.svg'
 import ICON_opensource from 'assets/icon_opensource.svg'
 import ICON_trend from 'assets/icon_trend.svg'
+import GlobalSiteContent from 'data/site.content.json'
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: `Tentang Kami | ${GlobalSiteContent.globalContentData.title}`,
+}
 
 export default function AboutUs() {
   return (
@@ -25,7 +31,7 @@ export default function AboutUs() {
         </div>
       </section>
       <section id="principle" className="container mx-auto px-5 py-64">
-        <div className="grid-cols-min shadow-brandblue-100 grid grid-cols-2 rounded-lg bg-white p-8 text-gray-800 shadow-2xl">
+        <div className="grid-cols-min grid grid-cols-2 rounded-lg bg-white p-8 text-gray-800 shadow-2xl shadow-brandblue-100">
           <div className="flex h-full flex-col items-start justify-center space-y-4 px-12">
             <h2 className="text-4xl font-semibold leading-snug">
               Prinsip kami dalam memberikan kontribusi kepada masyarakat
@@ -58,7 +64,7 @@ export default function AboutUs() {
             alt="Founder EDTECH-ID"
             className="h-[90vh] w-full object-cover"
           />
-          <div className="text-brandblue-700 container absolute inset-0 top-36 mx-auto flex flex-col items-center justify-start space-y-4">
+          <div className="container absolute inset-0 top-36 mx-auto flex flex-col items-center justify-start space-y-4 text-brandblue-700">
             <h2 className="text-center text-4xl font-semibold leading-snug">
               Kami terdiri dari berbagai latar belakang yang berbeda - mulai
               dari mahasiswa, dosen, dan profesional, dari lembaga pendidikan
