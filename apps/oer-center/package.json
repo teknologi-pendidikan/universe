@@ -14,7 +14,7 @@
     "fetchwarehouse": "npx ts-node .\"/lib/fetchWarehouseData.ts\""
   },
   "dependencies": {
-    "@ducanh2912/next-pwa": "^9.3.0",
+    "@ducanh2912/next-pwa": "^9.4.0",
     "@mdx-js/loader": "^2.3.0",
     "@mdx-js/react": "^2.3.0",
     "@next/mdx": "^13.4.12",
@@ -37,8 +37,8 @@
     "@tailwindcss/forms": "^0.5.4",
     "@tailwindcss/line-clamp": "^0.4.4",
     "@tailwindcss/typography": "^0.5.9",
-    "@types/node": "^20.4.4",
-    "@types/react": "^18.2.15",
+    "@types/node": "^20.4.5",
+    "@types/react": "^18.2.16",
     "@types/react-dom": "^18.2.7",
     "autoprefixer": "10.4.14",
     "googleapis": "^122.0.0",
