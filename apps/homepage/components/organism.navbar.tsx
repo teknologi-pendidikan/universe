@@ -19,7 +19,7 @@ const NAVLINK = [
     label: 'Ciptaan Kami',
   },
   {
-    href: '/career',
+    href: 'https://informasi.teknologipendidikan.or.id/culture/penerimaan-anggota',
     label: 'Career',
   },
 ]
@@ -27,10 +27,7 @@ const NAVLINK = [
 function Navbar() {
   const router = usePathname()
   return (
-    <header
-      id="navbar-wrapper"
-      className="py-12 text-xl text-gray-800"
-    >
+    <header id="navbar-wrapper" className="py-12 text-xl text-gray-800">
       <div className="container mx-auto flex flex-row items-center justify-center lg:justify-between">
         <Image src={symbol_horizontal} alt="logo" width={200} height={50} />
         <nav className="hidden items-center space-x-8 lg:block">
