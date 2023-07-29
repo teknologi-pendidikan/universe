@@ -11,7 +11,7 @@
     "postinstall": "manypkg check",
     "local:cms": "npx netlify-cms-proxy-server"
   },
-  "packageManager": "pnpm@7.15.0",
+  "packageManager": "pnpm@8.6.5",
   "dependencies": {
     "@edtechid/eslint-config-custom": "0.0.1",
     "@manypkg/cli": "^0.21.0",
