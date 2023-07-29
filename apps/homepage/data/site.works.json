@@ -1,0 +1,18 @@
+[
+  {
+    "name": "REDAKSI-LOFI",
+    "image": "apps-lofi.jpg",
+    "logo": "logo-redaksi.svg",
+    "description": "Media publikasi opini dan riset populer yang membahas tren pembelajaran dan kebijakan pendidikan.",
+    "link": "https://lofi.teknologipendidikan.or.id",
+    "brandcolor": "bg-brandblue"
+  },
+  {
+    "name": "OER Repository",
+    "image": "apps-oerrepository.jpg",
+    "logo": "",
+    "description": "Repositori sumber belajar terbuka yang dapat digunakan oleh guru dan siswa.",
+    "link": "https://sumberberlajar.teknologipendidikan.sch.id",
+    "brandcolor": "bg-brandgreen"
+  }
+]
