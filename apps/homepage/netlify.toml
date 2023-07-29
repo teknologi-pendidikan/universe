@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/our-works/*"
-  to = "https://proyek-edtechid.netlify.app/:splat"
-  status = 200
-  force = true
