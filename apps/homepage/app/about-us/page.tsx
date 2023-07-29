@@ -1,7 +1,3 @@
-import ICON_Adoption from 'assets/icon_adoption.svg'
-import ICON_kolaborasi from 'assets/icon_kolaborasi.svg'
-import ICON_opensource from 'assets/icon_opensource.svg'
-import ICON_trend from 'assets/icon_trend.svg'
 import GlobalSiteContent from 'data/site.content.json'
 import type { Metadata } from 'next'
 import Image from 'next/image'
@@ -31,7 +27,7 @@ export default function AboutUs() {
         </div>
       </section>
       <section id="principle" className="container mx-auto px-5 py-64">
-        <div className="grid-cols-min grid grid-cols-2 rounded-lg bg-white p-8 text-gray-800 shadow-2xl shadow-brandblue-100">
+        <div className="grid-cols-min grid grid-cols-2 rounded-lg bg-white p-8 text-gray-800 outline outline-1">
           <div className="flex h-full flex-col items-start justify-center space-y-4 px-12">
             <h2 className="text-4xl font-semibold leading-snug">
               Prinsip kami dalam memberikan kontribusi kepada masyarakat
@@ -64,7 +60,7 @@ export default function AboutUs() {
             alt="Founder EDTECH-ID"
             className="h-[90vh] w-full object-cover"
           />
-          <div className="container absolute inset-0 top-36 mx-auto flex flex-col items-center justify-start space-y-4 text-brandblue-700">
+          <div className="container absolute inset-0 top-36 mx-auto flex flex-col items-center justify-start space-y-4 text-gray-700">
             <h2 className="text-center text-4xl font-semibold leading-snug">
               Kami terdiri dari berbagai latar belakang yang berbeda - mulai
               dari mahasiswa, dosen, dan profesional, dari lembaga pendidikan
@@ -77,7 +73,10 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
-      <section id="our-strategy" className="container mx-auto px-5 py-64">
+      <section
+        id="our-strategy"
+        className="container mx-auto flex h-screen items-center justify-center px-5"
+      >
         <div className="container mx-auto flex max-w-screen-xl flex-col items-center justify-start space-y-12 py-4 text-gray-700">
           <h2 className="text-center text-6xl font-semibold leading-snug">
             Kami tidak hanya membangun produk; Kami fokus pada pelaksanaan
@@ -97,66 +96,7 @@ export default function AboutUs() {
         </div>
       </section>
       <section
-        className="bg-gray-800 px-5 py-24 text-gray-100 lg:px-0"
-        id="our-process"
-      >
-        <div className="container mx-auto flex flex-col items-center py-8">
-          <h1 className="mb-14 text-6xl font-bold">How we do it?</h1>
-          <p className="max-w-6xl text-xl lg:text-center">
-            Kami menciptakan, memanfaatkan, dan mengelola teknologi yang
-            tersedia di lingkungan pendidikan. Kami terbuka akan kolaborasi ide,
-            proses serta pengembangan dalam segala lingkup untuk mencapai tujuan
-            sederhana kami. Kami telah bereksperimen dengan berbagai hal untuk
-            menciptakan berbagai berbagai teknologi.
-          </p>
-          <div className="mt-6 flex w-full flex-col items-center justify-around space-y-12 text-center lg:flex-row lg:space-y-0">
-            <div className="flex flex-col items-center ">
-              <Image
-                className="pb-10"
-                src={ICON_kolaborasi}
-                alt=""
-                width={190}
-                height={190}
-              />
-              <p className="max-w-xs  text-4xl">
-                Kolaborasi dengan teknolog muda
-              </p>
-            </div>
-            <div className="flex flex-col items-center justify-center text-center">
-              <Image
-                className="pb-10"
-                src={ICON_trend}
-                alt=""
-                width={190}
-                height={190}
-              />
-              <p className="max-w-xs  text-4xl">Designing trend-based issues</p>
-            </div>
-            <div className="flex flex-col items-center justify-center text-center">
-              <Image
-                className="pb-10"
-                src={ICON_opensource}
-                alt=""
-                width={190}
-                height={190}
-              />
-              <p className="max-w-xs  text-4xl">Open Source Technology</p>
-            </div>
-            <div className="flex flex-col items-center justify-center text-center">
-              <Image
-                className="pb-10"
-                src={ICON_Adoption}
-                alt=""
-                width={190}
-                height={190}
-              />
-              <p className="max-w-xs  text-4xl">User Adoption & Satisfaction</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section
-        className=" px-5 py-10 text-gray-700 lg:px-0"
+        className=" flex h-screen items-center justify-center px-5 py-10 text-gray-700 lg:px-0"
         id="what-can-we-solve"
       >
         <div className="container mx-auto my-14 flex flex-col items-center space-y-12">
