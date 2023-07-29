@@ -59,7 +59,7 @@ export default function Home() {
     <main>
       <section
         id="welcome-banner"
-        className="container mx-auto h-[80vh] bg-gray-100 px-5 text-white lg:px-0"
+        className="container mx-auto h-[80vh]  px-5 text-white lg:px-0"
       >
         <p className="mb-8 mt-24 max-w-2xl text-2xl text-gray-800 lg:mb-32">
           Kami adalah sekelompok kecil ahli teknologi pendidikan yang memiliki
@@ -83,10 +83,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section
-        className="bg-gray-100 px-5 py-12 text-gray-800 lg:px-0"
-        id="what-we-do"
-      >
+      <section className=" px-5 py-12 text-gray-800 lg:px-0" id="what-we-do">
         <div className="container mx-auto my-14 flex flex-col items-center">
           <h2 className="text-green mb-8 text-5xl font-bold lg:text-6xl">
             What we do?
@@ -198,10 +195,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section
-        className="bg-gray-100 px-5 py-8 text-gray-800 lg:px-0"
-        id="our-partner"
-      >
+      <section className=" px-5 py-8 text-gray-800 lg:px-0" id="our-partner">
         <div className="container mx-auto flex flex-col items-center justify-center py-20">
           <h2 className="mb-14 text-6xl font-bold">Our Partner</h2>
           <div className="grid w-full grid-cols-2 gap-3 lg:grid-cols-3">
@@ -225,7 +219,7 @@ export default function Home() {
         </div>
       </section>
       <section
-        className="mb-16 min-h-screen bg-gray-100 px-5 py-8 text-gray-800 lg:px-0"
+        className="mb-16 min-h-screen  px-5 py-8 text-gray-800 lg:px-0"
         id="our-team"
       >
         <div className="container mx-auto flex flex-col items-center justify-center py-20">

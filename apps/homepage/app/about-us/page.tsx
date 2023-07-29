@@ -16,7 +16,7 @@ export default function AboutUs() {
     <main>
       <section
         id="big-about"
-        className="container mx-auto h-[90vh] bg-gray-100 px-5 py-8 text-white lg:px-0"
+        className="container mx-auto h-[90vh]  px-5 py-8 text-white lg:px-0"
       >
         <div className="flex h-full w-full flex-col items-center justify-center space-y-12">
           <p className="max-w-screen-xl text-center text-6xl leading-snug text-gray-800">
@@ -55,7 +55,7 @@ export default function AboutUs() {
         </div>
       </section>
       <section id="team" className="py-24">
-        <div className="relative h-[90vh] w-full bg-gray-100">
+        <div className="relative h-[90vh] w-full ">
           <Image
             src="/full-team.png"
             quality={100}
@@ -156,7 +156,7 @@ export default function AboutUs() {
         </div>
       </section>
       <section
-        className="bg-gray-100 px-5 py-10 text-gray-700 lg:px-0"
+        className=" px-5 py-10 text-gray-700 lg:px-0"
         id="what-can-we-solve"
       >
         <div className="container mx-auto my-14 flex flex-col items-center space-y-12">
@@ -173,7 +173,7 @@ export default function AboutUs() {
             pengembangan pendidikan dan pembelajaran.
           </p>
           <Link
-            href="https://aplikasi.teknologipendidikan/sikarsa"
+            href="https://aplikasi.teknologipendidikan.or.id/sikarsa"
             passHref
             className="mt-12 rounded-full bg-gray-700 px-4 py-3 text-lg text-white hover:bg-gray-900 lg:px-24"
           >

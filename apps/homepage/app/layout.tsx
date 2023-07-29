@@ -97,7 +97,7 @@ export default function RootLayout({
         key={`json-ld-${jsonLd['@type']}`}
         id={`json-ld-${jsonLd['@type']}-${randomUUID()}`}
       />
-      <body className="bg-gray-100">
+      <body>
         <Navbar />
         {children}
         <Footer />

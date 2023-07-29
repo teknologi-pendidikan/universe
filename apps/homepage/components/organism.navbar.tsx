@@ -29,7 +29,7 @@ function Navbar() {
   return (
     <header
       id="navbar-wrapper"
-      className="bg-gray-100 py-12 text-xl text-gray-800"
+      className="py-12 text-xl text-gray-800"
     >
       <div className="container mx-auto flex flex-row items-center justify-center lg:justify-between">
         <Image src={symbol_horizontal} alt="logo" width={200} height={50} />
