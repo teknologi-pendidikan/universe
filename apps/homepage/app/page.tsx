@@ -10,7 +10,7 @@ import LOGO_microsoft from 'assets/logo_microsoft.png'
 import LOGO_um from 'assets/logo_um.png'
 import MUG_hilman from 'assets/mug_hilman.png'
 import MUG_rengga from 'assets/mug_rengga.png'
-import IMAGE_presentasi from 'assets/presentasi-1.png'
+import IMAGE_presentasi from 'assets/presentasi-1.jpg'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -61,25 +61,28 @@ export default function Home() {
         id="welcome-banner"
         className="container mx-auto h-[80vh]  px-5 text-white lg:px-0"
       >
-        <p className="mb-8 mt-24 max-w-2xl text-2xl text-gray-800 lg:mb-32">
-          Kami adalah sekelompok kecil ahli teknologi pendidikan yang memiliki
-          misi untuk membuat pendidikan di Indonesia terbuka dan dapat dirasakan
-          oleh setiap anggota masyarakat.{' '}
-        </p>
-        <h1 className="mb-8 text-6xl font-bold lg:mb-24">
-          <div className="flex flex-col items-start justify-center text-5xl lg:text-8xl">
-            <span className="text-brandblue">Inovasi.</span>
-            <span className="text-brandyellow">Teknologi.</span>
-            <span className="text-brandgreen">Pembelajaran.</span>
+        <div className="flex h-full flex-row items-center justify-between">
+          <div>
+            <p className="mb-8 max-w-2xl text-2xl text-gray-800 lg:mb-32">
+              Kami adalah sekelompok kecil ahli teknologi pendidikan yang
+              memiliki misi untuk membuat pendidikan di Indonesia terbuka dan
+              dapat dirasakan oleh setiap anggota masyarakat.{' '}
+            </p>
+            <h1 className="mb-8 text-6xl font-bold lg:mb-24">
+              <div className="flex flex-col items-start justify-center text-5xl lg:text-8xl">
+                <span className="text-brandblue">Inovasi.</span>
+                <span className="text-brandyellow">Teknologi.</span>
+                <span className="text-brandgreen">Pembelajaran.</span>
+              </div>
+            </h1>
           </div>
-        </h1>
-      </section>
-      <section id="presentationImage" className="px-5 lg:px-0">
-        <div className="w-full">
           <Image
             src={IMAGE_presentasi}
+            width={500}
+            height={500}
             alt=""
-            className="w-max-screen w-full object-fill"
+            className=""
+            unoptimized
           />
         </div>
       </section>
@@ -108,7 +111,7 @@ export default function Home() {
           <h2 className="mb-24 text-6xl font-bold text-gray-800">
             The impact of our program
           </h2>
-          <div className="mt-6 flex w-full flex-col items-center justify-around space-y-8 text-center lg:flex-row">
+          <div className="mt-6 flex w-full flex-col items-center justify-around space-y-8 text-center lg:flex-row lg:items-baseline">
             <div className="flex flex-col items-center justify-center">
               <p className="mb-1 text-8xl font-bold text-gray-800">6</p>
               <p className="max-w-xs text-4xl text-gray-800">
@@ -146,10 +149,9 @@ export default function Home() {
             Kami menciptakan, memanfaatkan, dan mengelola teknologi yang
             tersedia di lingkungan pendidikan. Kami terbuka akan kolaborasi ide,
             proses serta pengembangan dalam segala lingkup untuk mencapai tujuan
-            sederhana kami. Kami telah bereksperimen dengan berbagai hal untuk
-            menciptakan berbagai berbagai teknologi.
+            sederhana kami.
           </p>
-          <div className="mt-6 flex w-full flex-col items-center justify-around space-y-12 text-center lg:flex-row lg:space-y-0">
+          <div className="mt-24 flex w-full flex-col items-center justify-around space-y-12 text-center lg:flex-row lg:space-y-0">
             <div className="flex flex-col items-center ">
               <Image
                 className="pb-10"
