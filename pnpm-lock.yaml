@@ -270,6 +270,70 @@ importers:
         specifier: ^5.1.6
         version: 5.1.6
 
+  apps/template:
+    dependencies:
+      next:
+        specifier: ^13.4.12
+        version: 13.4.12(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0)
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+    devDependencies:
+      '@edtechid/eslint-config-custom':
+        specifier: 0.0.1
+        version: link:../../packages/eslint-config-custom
+      '@edtechid/tailwind-config':
+        specifier: 0.0.1
+        version: link:../../packages/tailwind-config
+      '@edtechid/tsconfig':
+        specifier: 0.0.1
+        version: link:../../packages/tsconfig
+      '@tailwindcss/aspect-ratio':
+        specifier: ^0.4.2
+        version: 0.4.2(tailwindcss@3.3.3)
+      '@tailwindcss/forms':
+        specifier: ^0.5.4
+        version: 0.5.4(tailwindcss@3.3.3)
+      '@tailwindcss/line-clamp':
+        specifier: ^0.4.4
+        version: 0.4.4(tailwindcss@3.3.3)
+      '@tailwindcss/typography':
+        specifier: ^0.5.9
+        version: 0.5.9(tailwindcss@3.3.3)
+      '@types/node':
+        specifier: ^20.4.5
+        version: 20.4.5
+      '@types/react':
+        specifier: ^18.2.16
+        version: 18.2.16
+      '@types/react-dom':
+        specifier: ^18.2.7
+        version: 18.2.7
+      autoprefixer:
+        specifier: 10.4.14
+        version: 10.4.14(postcss@8.4.24)
+      postcss:
+        specifier: 8.4.24
+        version: 8.4.24
+      prettier-plugin-tailwindcss:
+        specifier: ^0.4.1
+        version: 0.4.1(prettier@2.8.8)
+      schema-dts:
+        specifier: ^1.1.2
+        version: 1.1.2(typescript@5.1.6)
+      tailwindcss:
+        specifier: ^3.3.3
+        version: 3.3.3(ts-node@10.9.1)
+      ts-node:
+        specifier: ^10.9.1
+        version: 10.9.1(@types/node@20.4.5)(typescript@5.1.6)
+      typescript:
+        specifier: ^5.1.6
+        version: 5.1.6
+
   packages/eslint-config-custom:
     dependencies:
       eslint-config-next:
@@ -6153,7 +6217,6 @@ packages:
       typescript: '>=4.1.0'
     dependencies:
       typescript: 5.1.6
-    dev: false
 
   /schema-utils@3.3.0:
     resolution: {integrity: sha512-pN/yOAvcC+5rQ5nERGuwrjLlYvLTbCibnZ1I7B1LaiAz9BRBlE9GMgE/eqV30P7aJQUf7Ddimy/RsbYO/GrVGg==}
