@@ -9,7 +9,7 @@ export default function OurWorks() {
         id="header"
         className="container mx-auto flex items-center justify-center px-5 pb-28 pt-12 text-white lg:px-0"
       >
-        <h1 className="text-6xl font-semibold text-gray-700">
+        <h1 className="text-3xl font-semibold text-gray-700 lg:text-6xl">
           Our Work & Impact
         </h1>
       </section>
@@ -19,11 +19,11 @@ export default function OurWorks() {
           id={work.name}
           className={
             index % 2 === 0
-              ? `flex min-h-min flex-row-reverse items-center justify-center bg-brandgreen text-white`
-              : `flex min-h-min flex-row items-center justify-center bg-brandblue text-white`
+              ? `flex flex-col items-center justify-center bg-brandgreen text-white lg:min-h-min lg:flex-row-reverse`
+              : `flex flex-col items-center justify-center bg-brandblue text-white lg:min-h-min lg:flex-row`
           }
         >
-          <div className="w-1/2">
+          <div className="lg:w-1/2">
             <Image
               src={`/${work.image}`}
               alt=""
@@ -33,7 +33,7 @@ export default function OurWorks() {
             />
           </div>
           <div
-            className={`flex h-screen w-1/2 flex-col items-start justify-center space-y-14 px-16`}
+            className={`flex flex-col items-start justify-center space-y-8 px-5 py-8 lg:h-screen lg:w-1/2 lg:space-y-14 lg:px-16`}
           >
             <Image
               src={`/${work.logo}`}
@@ -41,7 +41,7 @@ export default function OurWorks() {
               width={250}
               height={250}
             />
-            <p className="text-5xl font-normal leading-snug">
+            <p className="text-xl font-normal leading-snug lg:text-5xl">
               {work.description}
             </p>
             <div className="flex flex-row items-center justify-start space-x-4">
