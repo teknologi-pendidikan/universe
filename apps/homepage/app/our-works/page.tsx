@@ -19,8 +19,8 @@ export default function OurWorks() {
           id={work.name}
           className={
             index % 2 === 0
-              ? `flex min-h-min flex-row-reverse items-center justify-center text-white`
-              : `flex min-h-min flex-row items-center justify-center text-white`
+              ? `flex min-h-min flex-row-reverse items-center justify-center bg-brandgreen text-white`
+              : `flex min-h-min flex-row items-center justify-center bg-brandblue text-white`
           }
         >
           <div className="w-1/2">
@@ -33,7 +33,7 @@ export default function OurWorks() {
             />
           </div>
           <div
-            className={`flex h-screen w-1/2 flex-col items-start justify-center space-y-14 ${work.brandcolor} px-16`}
+            className={`flex h-screen w-1/2 flex-col items-start justify-center space-y-14 px-16`}
           >
             <Image
               src={`/${work.logo}`}
