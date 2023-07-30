@@ -59,11 +59,11 @@ export default function Home() {
     <main>
       <section
         id="welcome-banner"
-        className="container mx-auto h-[80vh]  px-5 text-white lg:px-0"
+        className="container mx-auto px-5  text-white lg:h-[80vh] lg:px-0"
       >
-        <div className="flex h-full flex-row items-center justify-between">
-          <div>
-            <p className="mb-8 max-w-2xl text-2xl text-gray-800 lg:mb-32">
+        <div className="flex h-full flex-col items-center justify-between lg:flex-row">
+          <div className="flex h-full flex-col items-start justify-evenly">
+            <p className="mb-8 max-w-2xl text-2xl text-gray-800">
               Kami adalah sekelompok kecil ahli teknologi pendidikan yang
               memiliki misi untuk membuat pendidikan di Indonesia terbuka dan
               dapat dirasakan oleh setiap anggota masyarakat.{' '}
