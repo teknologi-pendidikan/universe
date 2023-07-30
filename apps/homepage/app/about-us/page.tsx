@@ -12,10 +12,10 @@ export default function AboutUs() {
     <main>
       <section
         id="big-about"
-        className="container mx-auto h-[90vh]  px-5 py-8 text-white lg:px-0"
+        className="container mx-auto h-[90vh] px-5 text-white lg:px-0"
       >
         <div className="flex h-full w-full flex-col items-center justify-center space-y-12">
-          <p className="max-w-screen-xl text-center text-6xl leading-snug text-gray-800">
+          <p className="max-w-screen-lg text-center text-4xl leading-snug text-gray-800">
             Kami adalah sekelompok kecil ahli teknologi pendidikan yang memiliki
             misi untuk membuat pendidikan di Indonesia terbuka dan dapat
             dirasakan oleh setiap anggota masyarakat.
@@ -51,7 +51,7 @@ export default function AboutUs() {
         </div>
       </section>
       <section id="team" className="py-24">
-        <div className="relative h-[90vh] w-full ">
+        <div className="relative h-[100vh] w-full ">
           <Image
             src="/full-team.png"
             quality={100}
@@ -60,7 +60,7 @@ export default function AboutUs() {
             alt="Founder EDTECH-ID"
             className="h-[90vh] w-full object-cover"
           />
-          <div className="container absolute inset-0 top-36 mx-auto flex flex-col items-center justify-start space-y-4 text-gray-700">
+          <div className="container absolute inset-0 top-14 mx-auto flex flex-col items-center justify-start space-y-4 text-gray-700">
             <h2 className="text-center text-4xl font-semibold leading-snug">
               Kami terdiri dari berbagai latar belakang yang berbeda - mulai
               dari mahasiswa, dosen, dan profesional, dari lembaga pendidikan
