@@ -2,8 +2,8 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <footer className="border border-t-2 border-gray-300">
-      <div className="container mx-auto mb-8 mt-5 ">
+    <footer className="box-border border-0 border-t-[1px] border-solid border-brandblue-500 px-10 lg:px-0">
+      <div className="container mx-auto mb-8 mt-5">
         <div className="flex flex-col space-y-6">
           <div className="flex flex-col items-start justify-start">
             <p className="font-bold text-brandblue-700">

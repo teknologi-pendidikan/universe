@@ -59,12 +59,12 @@ export default async function Page({
     return learningContent.contentType === 'video'
   })
   // filter learning contents by slide content type
-  const images = getThematicLearningContents(
-    LearningContentData.learningcontent,
-    thematicLearningContents,
-  ).filter((learningContent: any) => {
-    return learningContent.contentType === 'image'
-  })
+  // const images = getThematicLearningContents(
+  //   LearningContentData.learningcontent,
+  //   thematicLearningContents,
+  // ).filter((learningContent: any) => {
+  //   return learningContent.contentType === 'image'
+  // })
 
   // filter learning contents by slide content type
   const slides = getThematicLearningContents(
@@ -75,12 +75,12 @@ export default async function Page({
   })
 
   // filter learning contents by text content type
-  const text = getThematicLearningContents(
-    LearningContentData.learningcontent,
-    thematicLearningContents,
-  ).filter((learningContent: any) => {
-    return learningContent.contentType === 'text'
-  })
+  // const text = getThematicLearningContents(
+  //   LearningContentData.learningcontent,
+  //   thematicLearningContents,
+  // ).filter((learningContent: any) => {
+  //   return learningContent.contentType === 'text'
+  // })
 
   return (
     <main id="main-content" tabIndex={-1} className="pb-24 focus:outline-1">
@@ -118,7 +118,7 @@ export default async function Page({
             ))}
           </div>
         </SectionLayout>
-        <SectionLayout
+        {/* <SectionLayout
           title="Lecture Images"
           id="images-content"
           subtitle="Open Educational Lecture Images"
@@ -136,7 +136,7 @@ export default async function Page({
               />
             ))}
           </div>
-        </SectionLayout>
+        </SectionLayout> */}
         <SectionLayout
           title="Lecture Slides / Decks"
           id="slides-content"
@@ -156,7 +156,7 @@ export default async function Page({
             ))}
           </div>
         </SectionLayout>
-        <SectionLayout
+        {/* <SectionLayout
           title="Lecture Notes"
           id="text-content"
           subtitle="Open Educational Lecture Text"
@@ -174,7 +174,7 @@ export default async function Page({
               />
             ))}
           </div>
-        </SectionLayout>
+        </SectionLayout> */}
       </LayoutThematicContent>
     </main>
   )

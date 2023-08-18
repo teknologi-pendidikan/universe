@@ -1,5 +1,6 @@
 import ContentData from 'data/site.content.json'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function WelcomeHero() {
   return (
@@ -28,11 +29,28 @@ export default function WelcomeHero() {
       </div>
       <div
         id="hero-bottomline"
-        className="absolute bottom-0 w-full bg-brandblue-800"
+        className="absolute bottom-0 flex w-full items-center justify-center bg-brandblue-800 "
       >
-        <h3 className="p-2 text-center text-lg font-bold text-brandyellow">
+        <Link
+          href="#thematic-content"
+          className="p-2 text-center text-lg font-bold text-brandyellow underline hover:text-white focus:text-white"
+        >
           {ContentData.contentComponentWelcomeHero.actionText}
-        </h3>
+        </Link>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={2}
+          stroke="currentColor"
+          className="h-6 w-6 text-brandyellow"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
+          />
+        </svg>
       </div>
     </section>
   )

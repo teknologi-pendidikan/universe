@@ -1,10 +1,7 @@
 import WelcomeHero from 'components/common/WelcomeHero'
 import SectionLayout from 'components/layout/CommonSectionLayout'
 import Banner from 'components/organism/CommonBanner'
-import {
-  CommonCard,
-  ThematicCard,
-} from 'components/organism/CommonResourcesCard'
+import { ThematicCard } from 'components/organism/CommonResourcesCard'
 import { randomUUID } from 'crypto'
 import LearningContent from 'data/learning.content.json'
 import ThematicContent from 'data/thematic.content.json'
@@ -171,13 +168,15 @@ export default function Page() {
           ))}
         </div>
       </SectionLayout>
+      {/* disable the feature render ude to simplify the onboarding web */}
       <Banner
-        title="Are you a teacher in a disadvantaged, frontier, and outermost area?"
-        description="We have a special collection of learning materials for your students!"
-        ctaLink="/thematic/45bc7885-93af-43ee-b935-63de353e7d40"
+        title="Do you need more broader collection of learning materials?"
+        description="We have a lot of learning materials for you"
+        ctaLink="/learning-content"
         ctaText="Explore the collection"
         className="bg-brandblue-600 text-white"
       />
+      {/*
       <SectionLayout
         title="Lecture Videos"
         id="videos-content"
@@ -253,7 +252,7 @@ export default function Page() {
             />
           ))}
         </div>
-      </SectionLayout>
+      </SectionLayout> */}
     </main>
   )
 }

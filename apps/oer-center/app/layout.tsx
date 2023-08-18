@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     ],
   },
   abstract: GlobalSiteContent.globalContentData.description,
-  metadataBase: new URL('https://sumberbelajar.teknologipendidikan.sch.id'),
+  metadataBase: new URL(GlobalSiteContent.globalContentData.url),
 }
 
 export default function RootLayout({

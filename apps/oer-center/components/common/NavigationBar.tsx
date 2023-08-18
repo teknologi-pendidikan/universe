@@ -18,13 +18,15 @@ export default function NavigationBar() {
       >
         <div className="flex items-center">
           <div className="flex items-center">
-            <Image
-              src="/logo-horizontal-color.svg"
-              alt="Logo EDTECH-ID"
-              className="h-8 w-full"
-              width={100}
-              height={50}
-            />
+            <Link href="/">
+              <Image
+                src="/logo-horizontal-color.svg"
+                alt="Logo EDTECH-ID"
+                className="h-8 w-full"
+                width={100}
+                height={50}
+              />
+            </Link>
           </div>
         </div>
         <nav className="flex items-center justify-around space-x-8 text-lg">

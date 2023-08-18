@@ -21,10 +21,6 @@ export const ContentNavigation: ContentNavigation = [
 
 export const GlobalNavigation: ContentNavigation = [
   {
-    name: 'Home',
-    url: '/',
-  },
-  {
     name: 'Policy',
     url: '/policy',
   },

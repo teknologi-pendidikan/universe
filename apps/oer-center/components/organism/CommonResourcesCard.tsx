@@ -27,7 +27,7 @@ export function CommonCard({
 }: CardProps) {
   return (
     <Link
-      className="flex flex-col items-start justify-start space-y-2 rounded-lg border border-gray-300 hover:border-gray-700 hover:shadow-md"
+      className="flex flex-col items-start justify-start space-y-2 rounded-lg border border-gray-300 shadow-lg hover:border-gray-700 hover:shadow-md"
       href={`${slug}`}
     >
       {type === 'video' && (
@@ -54,7 +54,7 @@ export function CommonCard({
         />
       )}
       <div className="flex w-full flex-col items-start justify-center space-y-1 p-3">
-        <h3 className="text-2xl font-bold text-gray-800 hover:underline">
+        <h3 className="line-clamp-2 text-xl font-bold text-gray-800 hover:underline">
           {title}
         </h3>
         <p className="text-sm text-gray-600">Created by {author}</p>
