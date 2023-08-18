@@ -15,7 +15,7 @@
   "dependencies": {
     "@edtechid/eslint-config-custom": "0.0.1",
     "@manypkg/cli": "^0.21.0",
-    "dotenv-cli": "^7.2.1",
+    "dotenv-cli": "^7.3.0",
     "eslint": "^8.47.0",
     "googleapis": "^122.0.0",
     "prettier": "2.8.8",
