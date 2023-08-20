@@ -6,6 +6,8 @@ import React from 'react'
 import { Organization, WithContext } from 'schema-dts'
 
 // These styles apply to every route in the application
+import { Theme } from '@radix-ui/themes'
+import '@radix-ui/themes/styles.css'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -95,7 +97,9 @@ export default function RootLayout({
         key={`json-ld-${jsonLd['@type']}`}
         id={`json-ld-${jsonLd['@type']}-${randomUUID()}`}
       />
-      <body className="bg-gray-100">{children}</body>
+      <body className="bg-gray-100">
+        <Theme>{children}</Theme>
+      </body>
     </html>
   )
 }
