@@ -1,7 +1,7 @@
 ---
 title: Mahasiswa TEP Sukses Gelar Pelatihan CV Nasional Membantu Peserta Capai
   Dream Job di Era Digital
-date: 2023-11-25
+date: '2023-15-25 15:41:38'
 description: Dalam rangka praktikum kuliah Evaluasi Program Diklat salah satu
   kelompok yang bernama Lembaga Diklat DEMICCA laksanakan pelatihan Pembuatan
   Curiculum Vitae (CV) dengan mengusung tema “Creating a Standout cv To Get Your
