@@ -1,7 +1,7 @@
 ---
 title: "Kurikulum Merdeka: Pendidikan Kaum Tertindas yang Berevolusi Menjadi
   Pendidikan yang Memerdekakan"
-date: 2024-04-29
+date: '2024-04-29'
 description: "Kurikulum Merdeka, sebuah terobosan baru dalam dunia pendidikan
   Indonesia, digaungkan sebagai jawaban atas kebuntuan sistem pendidikan
   konvensional. Di balik janjinya untuk memerdekakan, pertanyaan kritis muncul:
