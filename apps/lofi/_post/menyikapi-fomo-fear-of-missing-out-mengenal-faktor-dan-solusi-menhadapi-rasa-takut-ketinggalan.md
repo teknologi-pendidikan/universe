@@ -1,6 +1,6 @@
 ---
 title: "Menyikapi FOMO (Fear of Missing Out): Mengenal Faktor dan Solusi
-  Menhadapi Rasa Takut Ketinggalan"
+  Menghadapi Rasa Takut Ketinggalan"
 date: '"2024-05-10"'
 description: Pengenalan dan pemahaman akan FOMO serta penerapan
   strategi-strategi yang tepat dapat membantu individu menghadapi tekanan dan
